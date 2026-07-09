@@ -1,9 +1,10 @@
 package cordova.plugin.daontrust;
 
-import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
+
+import androidx.activity.ComponentActivity;
 
 import com.daon.nfcmanager.TrustNFCManager;
 import com.daon.trustsdk.DaonTrustSDK;
@@ -28,7 +29,7 @@ public class DaonTrustPlugin extends CordovaPlugin {
             final JSONObject options = args.optJSONObject(0);
             final String serverUrl = options != null ? options.optString("serverUrl", "") : "";
 
-            final Activity activity = cordova.getActivity();
+            final ComponentActivity activity = (ComponentActivity) cordova.getActivity();
             Handler mainHandler = new Handler(Looper.getMainLooper());
             mainHandler.post(new Runnable() {
                 @Override
