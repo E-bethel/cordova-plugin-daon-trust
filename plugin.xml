@@ -29,6 +29,9 @@
     </config-file>
 
     <source-file src="src/android/DaonTrustPlugin.java" target-dir="app/src/main/java/cordova/plugin/daontrust" />
+    <source-file src="src/android/com.daon.sdk.trust-1.8.18.aar" target-dir="plugins/cordova-plugin-daon-trust/src/android" />
+    <source-file src="src/android/com.daon.sdk.nfc-1.4.5.aar" target-dir="plugins/cordova-plugin-daon-trust/src/android" />
+    <source-file src="src/android/com.daon.sdk.trust.nfcmanager-1.8.18.aar" target-dir="plugins/cordova-plugin-daon-trust/src/android" />
     <framework src="daon.gradle" custom="true" type="gradleReference" />
   </platform>
 
