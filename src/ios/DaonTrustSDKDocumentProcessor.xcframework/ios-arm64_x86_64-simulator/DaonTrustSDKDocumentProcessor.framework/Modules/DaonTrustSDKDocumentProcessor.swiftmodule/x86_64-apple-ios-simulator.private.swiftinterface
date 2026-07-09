@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DaonTrustSDKDocumentProcessor
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import DaonNFCSDK
+import DaonTrustSDK
+import Swift
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public class NFCAnalyticsEvent : DaonTrustSDK.AnalyticsEvent {
+  final public let eventName: Swift.String
+  public init(eventName: Swift.String)
+  public var name: Swift.String {
+    get
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum DocumentAuthenticationType : Swift.String {
+  case bacThenPace
+  case paceThenBac
+  case bacOnly
+  case paceOnly
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DocumentProcessor : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension DaonTrustSDKDocumentProcessor.DocumentProcessor : DaonTrustSDK.DaonDocumentProcessorModule {
+  @objc dynamic public func isNfcSupported() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func performMrzOcr(image base64String: Swift.String, onCompletion: @escaping (_ isValid: Swift.Bool, _ mrz: Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func performNfcScan(mrzString: Swift.String, challenge: [Swift.UInt8]?, authenticationType: Swift.String?, onCompletion: @escaping ((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func performNfcScan(documentNumber: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String, challenge: [Swift.UInt8]?, authenticationType: Swift.String?, onCompletion: @escaping ((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func cancel(withMessage message: Swift.String?)
+  #endif
+  @objc dynamic public func close()
+}
+extension DaonTrustSDKDocumentProcessor.DocumentProcessor {
+  @_inheritsConvenienceInitializers @objc(DocumentProcessorBuilder) public class Builder : ObjectiveC.NSObject {
+    @objc public func setLicense(_ license: Swift.String) -> DaonTrustSDKDocumentProcessor.DocumentProcessor.Builder
+    @objc public func setErrorDialogMessage(_ message: Swift.String) -> DaonTrustSDKDocumentProcessor.DocumentProcessor.Builder
+    @objc public func build() throws -> DaonTrustSDKDocumentProcessor.DocumentProcessor
+    @objc override dynamic public init()
+    @objc deinit
+  }
+}
+extension DaonTrustSDKDocumentProcessor.DocumentAuthenticationType : Swift.Equatable {}
+extension DaonTrustSDKDocumentProcessor.DocumentAuthenticationType : Swift.Hashable {}
+extension DaonTrustSDKDocumentProcessor.DocumentAuthenticationType : Swift.RawRepresentable {}

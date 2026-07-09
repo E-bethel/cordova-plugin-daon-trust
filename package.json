@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-daon-trust",
+  "version": "1.0.0",
+  "description": "Cordova plugin for the Daon Trust onboarding SDK",
+  "cordova": {
+    "id": "cordova-plugin-daon-trust",
+    "platforms": ["android", "ios"]
+  },
+  "keywords": ["cordova", "android", "ios", "daon", "trust"],
+  "license": "MIT"
+}

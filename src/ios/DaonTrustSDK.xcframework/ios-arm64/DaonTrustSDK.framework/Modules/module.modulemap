@@ -1,0 +1,4 @@
+framework module DaonTrustSDK {
+  header "DaonTrustSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,1509 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DaonNFCSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
+import CommonCrypto
+import CoreNFC
+import CryptoKit
+import CryptoTokenKit
+@_exported import DaonNFCSDK
+import Foundation
+import OSLog
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _CoreNFC_UIKit
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class IXNFCPassportParameters : DaonNFCSDK.IXNFCParameters {
+  @objc public static let documentNumber: Swift.String
+  @objc public static let dateOfBirth: Swift.String
+  @objc public static let dateOfExpiry: Swift.String
+  public enum ParametersError : Swift.Error {
+    case bacDataCantBeNull
+    public static func == (a: DaonNFCSDK.IXNFCPassportParameters.ParametersError, b: DaonNFCSDK.IXNFCPassportParameters.ParametersError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc override dynamic public init()
+  @objc convenience public init(mrz: Swift.String) throws
+  @objc convenience public init(documentNumber: Swift.String, dateOfBirth: Foundation.Date, dateOfExpiry: Foundation.Date)
+  @objc(enablePhoto:) public func set(photo: Swift.Bool)
+  @objc(enableRawData:) public func set(data: Swift.Bool)
+  @available(*, deprecated, message: "Use setAuthenticationType() instead.")
+  @objc public func enablePACEAuthentication(enabled: Swift.Bool)
+  @objc public func setAuthenticationType(_ type: DaonNFCSDK.IXNFCAuthenticationType)
+  @objc(setChallenge:) public func set(challenge: [Swift.UInt8])
+  @objc deinit
+}
+public enum OID : Swift.String {
+  case etsiQcsCompliance
+  case etsiQcsRetentionPeriod
+  case etsiQcsQcSSCD
+  case dsa
+  case ecPublicKey
+  case prime256v1
+  case ecdsaWithSHA256
+  case ecdsaWithSHA512
+  case rsaEncryption
+  case RSASSAPSS
+  case sha256WithRSA
+  case md5WithRSA
+  case sha1WithRSA
+  case sha1
+  case pkcsSha256
+  case sha2Family
+  case sha3_244
+  case sha3_256
+  case sha3_384
+  case md5
+  case pkcs7data
+  case pkcs7signedData
+  case pkcs7envelopedData
+  case emailAddress
+  case signingCertificateV2
+  case contentType
+  case messageDigest
+  case signingTime
+  case certificateExtension
+  case jurisdictionOfIncorporationSP
+  case jurisdictionOfIncorporationC
+  case authorityInfoAccess
+  case qcStatements
+  case cps
+  case unotice
+  case serverAuth
+  case clientAuth
+  case ocsp
+  case caIssuers
+  case dateOfBirth
+  case sha256
+  case VeriSignEVpolicy
+  case extendedValidation
+  case organizationValidated
+  case subjectKeyIdentifier
+  case keyUsage
+  case subjectAltName
+  case issuerAltName
+  case basicConstraints
+  case cRLDistributionPoints
+  case certificatePolicies
+  case authorityKeyIdentifier
+  case extKeyUsage
+  case subjectDirectoryAttributes
+  case organizationName
+  case organizationalUnitName
+  case businessCategory
+  case postalCode
+  case commonName
+  case surname
+  case givenName
+  case dnQualifier
+  case serialNumber
+  case countryName
+  case localityName
+  case stateOrProvinceName
+  case streetAddress
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class X509Certificate : ObjectiveC.NSObject {
+  convenience public init(data: Foundation.Data) throws
+  public init(der: Foundation.Data) throws
+  convenience public init(pem: Foundation.Data) throws
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var encoded: Foundation.Data? {
+    @objc get
+  }
+  #endif
+  @objc public func checkValidity(_ date: Foundation.Date = Date()) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var version: Swift.Int? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var serialNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var issuerDistinguishedName: Swift.String? {
+    @objc get
+  }
+  #endif
+  public var issuerOIDs: [Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func issuer(oid: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func issuer(dn: DaonNFCSDK.ASN1DistinguishedNames) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var subjectDistinguishedName: Swift.String? {
+    @objc get
+  }
+  #endif
+  public var subjectOIDs: [Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func subject(oid: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func subject(dn: DaonNFCSDK.ASN1DistinguishedNames) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var notBefore: Foundation.Date? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var notAfter: Foundation.Date? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var signature: Foundation.Data? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var sigAlgName: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var sigAlgOID: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var sigAlgParams: Foundation.Data? {
+    get
+  }
+  #endif
+  public var keyUsage: [Swift.Bool] {
+    get
+  }
+  public var extendedKeyUsage: [Swift.String] {
+    get
+  }
+  public var subjectAlternativeNames: [Swift.String] {
+    get
+  }
+  public var issuerAlternativeNames: [Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var publicKey: DaonNFCSDK.X509PublicKey? {
+    @objc get
+  }
+  #endif
+  public var criticalExtensionOIDs: [Swift.String] {
+    get
+  }
+  public var nonCriticalExtensionOIDs: [Swift.String] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func extensionObject(oid: DaonNFCSDK.OID) -> DaonNFCSDK.X509Extension?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func extensionObject(oid: Swift.String) -> DaonNFCSDK.X509Extension?
+  #endif
+  @objc deinit
+}
+public class PKCS7 {
+  public init(data: Foundation.Data) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var digestAlgorithm: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var digestAlgorithmName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var certificate: DaonNFCSDK.X509Certificate? {
+    get
+  }
+  #endif
+  public var certificates: [DaonNFCSDK.X509Certificate] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var data: Foundation.Data? {
+    get
+  }
+  #endif
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class X509PublicKey : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var algOid: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var algName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var algParams: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var key: Foundation.Data? {
+    @objc get
+  }
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class IXNFCTagReaderInfo : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int {
+    get
+  }
+  @objc public var message: Swift.String? {
+    get
+  }
+  @objc public var percent: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+@objc public protocol IXNFCTagReaderDelegate {
+  @objc func tagReaderDidFinish(data: DaonNFCSDK.IXNFCTagData)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func tagReaderFailed(error: (any Swift.Error)?)
+  #endif
+  @objc func tagReaderInformation(info: DaonNFCSDK.IXNFCTagReaderInfo)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc optional func onAnalyticsDataReady(_ name: Swift.String, _ analyticsData: Swift.String?)
+  #endif
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class IXNFCPassportData : DaonNFCSDK.IXNFCTagData {
+  @objc public static let tagDataInfoDG1: Swift.Int
+  @objc public static let tagDataInfoDG1Success: Swift.Int
+  @objc public static let tagDataInfoDG1Fail: Swift.Int
+  @objc public static let tagDataInfoDG2: Swift.Int
+  @objc public static let tagDataInfoDG2Success: Swift.Int
+  @objc public static let tagDataInfoDG2Fail: Swift.Int
+  @objc public static let tagDataInfoDG3: Swift.Int
+  @objc public static let tagDataInfoDG3Success: Swift.Int
+  @objc public static let tagDataInfoDG3Fail: Swift.Int
+  @objc public static let tagDataInfoDG4: Swift.Int
+  @objc public static let tagDataInfoDG4Success: Swift.Int
+  @objc public static let tagDataInfoDG4Fail: Swift.Int
+  @objc public static let tagDataInfoDG5: Swift.Int
+  @objc public static let tagDataInfoDG5Success: Swift.Int
+  @objc public static let tagDataInfoDG5Fail: Swift.Int
+  @objc public static let tagDataInfoDG6: Swift.Int
+  @objc public static let tagDataInfoDG6Success: Swift.Int
+  @objc public static let tagDataInfoDG6Fail: Swift.Int
+  @objc public static let tagDataInfoDG7: Swift.Int
+  @objc public static let tagDataInfoDG7Success: Swift.Int
+  @objc public static let tagDataInfoDG7Fail: Swift.Int
+  @objc public static let tagDataInfoDG8: Swift.Int
+  @objc public static let tagDataInfoDG8Success: Swift.Int
+  @objc public static let tagDataInfoDG8Fail: Swift.Int
+  @objc public static let tagDataInfoDG9: Swift.Int
+  @objc public static let tagDataInfoDG9Success: Swift.Int
+  @objc public static let tagDataInfoDG9Fail: Swift.Int
+  @objc public static let tagDataInfoDG10: Swift.Int
+  @objc public static let tagDataInfoDG10Success: Swift.Int
+  @objc public static let tagDataInfoDG10Fail: Swift.Int
+  @objc public static let tagDataInfoDG11: Swift.Int
+  @objc public static let tagDataInfoDG11Success: Swift.Int
+  @objc public static let tagDataInfoDG11Fail: Swift.Int
+  @objc public static let tagDataInfoDG12: Swift.Int
+  @objc public static let tagDataInfoDG12Success: Swift.Int
+  @objc public static let tagDataInfoDG12Fail: Swift.Int
+  @objc public static let tagDataInfoDG13: Swift.Int
+  @objc public static let tagDataInfoDG13Success: Swift.Int
+  @objc public static let tagDataInfoDG13Fail: Swift.Int
+  @objc public static let tagDataInfoDG14: Swift.Int
+  @objc public static let tagDataInfoDG14Success: Swift.Int
+  @objc public static let tagDataInfoDG14Fail: Swift.Int
+  @objc public static let tagDataInfoDG15: Swift.Int
+  @objc public static let tagDataInfoDG15Success: Swift.Int
+  @objc public static let tagDataInfoDG15Fail: Swift.Int
+  @objc public static let tagDataInfoDG16: Swift.Int
+  @objc public static let tagDataInfoDG16Success: Swift.Int
+  @objc public static let tagDataInfoDG16Fail: Swift.Int
+  @objc public static let tagDataInfoCardAccess: Swift.Int
+  @objc public static let tagDataInfoCardAccessSuccess: Swift.Int
+  @objc public static let tagDataInfoCardAccessFail: Swift.Int
+  @objc public static let tagDataInfoSOD: Swift.Int
+  @objc public static let tagDataInfoSODSuccess: Swift.Int
+  @objc public static let tagDataInfoSODFail: Swift.Int
+  @objc public static let tagDataInfoCOM: Swift.Int
+  @objc public static let tagDataInfoCOMFileList: Swift.Int
+  @objc public static let tagDataInfoCOMSuccess: Swift.Int
+  @objc public static let tagDataInfoCOMFail: Swift.Int
+  @objc public static let tagDataInfoPACE: Swift.Int
+  @objc public static let tagDataInfoPACESuccess: Swift.Int
+  @objc public static let tagDataInfoPACEFail: Swift.Int
+  @objc public static let tagDataInfoPACENotSupported: Swift.Int
+  @objc public static let tagDataInfoBAC: Swift.Int
+  @objc public static let tagDataInfoBACSuccess: Swift.Int
+  @objc public static let tagDataInfoBACFail: Swift.Int
+  @objc public static let tagDataInfoLicenseCheck: Swift.Int
+  @objc public static let tagDataInfoLicenseCheckSuccess: Swift.Int
+  @objc public static let tagDataInfoLicenseCheckFail: Swift.Int
+  @objc public static let tagDataInfoAA: Swift.Int
+  @objc public static let tagDataInfoAANoData: Swift.Int
+  @objc public static let tagDataInfoAANoChallenge: Swift.Int
+  @objc public static let tagDataInfoAAVerified: Swift.Int
+  @objc public static let tagDataInfoAANotVerified: Swift.Int
+  @objc public static let tagDataInfoDSC: Swift.Int
+  @objc public static let tagDataInfoDSCVerified: Swift.Int
+  @objc public static let tagDataInfoDSCNotVerified: Swift.Int
+  @objc public static let tagDataIssueDataGroupHashInvalid: Swift.Int
+  @objc public static let tagDataIssueDataGroupUnsupported: Swift.Int
+  @objc public static let tagDataIssueDataGroupNotRead: Swift.Int
+  @objc public static let tagDataIssueCSCAVerifyFailed: Swift.Int
+  @objc public static let tagDataIssueDSCSignatureFailed: Swift.Int
+  @objc public static let tagDataInfoDevice: Swift.Int
+  @objc public static let tagDataInfoReaderConfiguration: Swift.Int
+  @objc public static let tagDataInfoNoData: Swift.Int
+  @objc public static let tagDataInfoDigestAlgorithm: Swift.Int
+  @objc public static let tagDataInfoSignatureDigestAlgorithm: Swift.Int
+  @objc public static let tagDataInfoSignatureAlgorithm: Swift.Int
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var mrz: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var address: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var placeOfBirth: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var documentNumbers: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var firstName: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var lastName: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var gender: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var state: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var nationality: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var dateOfBirth: Foundation.Date? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var dateOfExpiry: Foundation.Date? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var dateOfIssue: Foundation.Date? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var documentNumber: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var personalNumber: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var documentCode: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var issuingAuthority: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var photo: UIKit.UIImage? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var certificate: DaonNFCSDK.X509Certificate? {
+    @objc get
+  }
+  #endif
+  @objc public var isExpired: Swift.Bool {
+    @objc get
+  }
+  @objc public var isCertificateVerified: Swift.Bool {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override public func json() -> Swift.String?
+  #endif
+  @objc override public func isEmpty() -> Swift.Bool
+  @objc override public func all() -> Foundation.NSDictionary
+  @objc override public func issues() -> [DaonNFCSDK.IXNFCIssue]
+  @objc(verify:) public func verify(csca: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class IXNFCTagReaderData : DaonNFCSDK.IXNFCTagData {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  public func getIssues() -> [DaonNFCSDK.IXNFCIssue]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func get(key: Swift.String) -> Swift.String?
+  #endif
+  @objc public func getBool(key: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func getDate(key: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func getImage(key: Swift.String) -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getCertificate(key: Swift.String) -> DaonNFCSDK.X509Certificate?
+  #endif
+  public func keys() -> Swift.Dictionary<Swift.String, Any>.Keys
+  @objc override public func all() -> Foundation.NSDictionary
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override public func json() -> Swift.String?
+  #endif
+  @objc override public func isEmpty() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class IXNFCDateParser : ObjectiveC.NSObject {
+  @objc public static let ISO8601Format: Swift.String
+  @objc public static let shortDateFormat: Swift.String
+  @objc public static let longDateFormat: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(date:) public static func date(from: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(string:format:) public static func string(from: Foundation.Date?, format: Swift.String = ISO8601Format) -> Swift.String
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension DaonNFCSDK.BigUInt {
+  public func squareRoot() -> DaonNFCSDK.BigUInt
+}
+extension DaonNFCSDK.BigInt {
+  public func squareRoot() -> DaonNFCSDK.BigInt
+}
+extension DaonNFCSDK.BigUInt {
+  public func quotientAndRemainder(dividingBy y: DaonNFCSDK.BigUInt) -> (quotient: DaonNFCSDK.BigUInt, remainder: DaonNFCSDK.BigUInt)
+  public static func / (x: DaonNFCSDK.BigUInt, y: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static func % (x: DaonNFCSDK.BigUInt, y: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static func /= (x: inout DaonNFCSDK.BigUInt, y: DaonNFCSDK.BigUInt)
+  public static func %= (x: inout DaonNFCSDK.BigUInt, y: DaonNFCSDK.BigUInt)
+}
+extension DaonNFCSDK.BigInt {
+  public func quotientAndRemainder(dividingBy y: DaonNFCSDK.BigInt) -> (quotient: DaonNFCSDK.BigInt, remainder: DaonNFCSDK.BigInt)
+  public static func / (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func % (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public func modulus(_ mod: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+}
+extension DaonNFCSDK.BigInt {
+  public static func /= (a: inout DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt)
+  public static func %= (a: inout DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt)
+}
+extension DaonNFCSDK.BigUInt {
+  prefix public static func ~ (a: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static func |= (a: inout DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt)
+  public static func &= (a: inout DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt)
+  public static func ^= (a: inout DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt)
+}
+extension DaonNFCSDK.BigInt {
+  prefix public static func ~ (x: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func & (lhs: inout DaonNFCSDK.BigInt, rhs: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func | (lhs: inout DaonNFCSDK.BigInt, rhs: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func ^ (lhs: inout DaonNFCSDK.BigInt, rhs: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func &= (lhs: inout DaonNFCSDK.BigInt, rhs: DaonNFCSDK.BigInt)
+  public static func |= (lhs: inout DaonNFCSDK.BigInt, rhs: DaonNFCSDK.BigInt)
+  public static func ^= (lhs: inout DaonNFCSDK.BigInt, rhs: DaonNFCSDK.BigInt)
+}
+extension DaonNFCSDK.BigUInt {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<T>(exactly source: T) where T : Swift.BinaryInteger
+  #endif
+  public init<T>(_ source: T) where T : Swift.BinaryInteger
+  public init<T>(truncatingIfNeeded source: T) where T : Swift.BinaryInteger
+  public init<T>(clamping source: T) where T : Swift.BinaryInteger
+}
+extension DaonNFCSDK.BigInt {
+  public init()
+  public init(_ integer: DaonNFCSDK.BigUInt)
+  public init<T>(_ source: T) where T : Swift.BinaryInteger
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<T>(exactly source: T) where T : Swift.BinaryInteger
+  #endif
+  public init<T>(clamping source: T) where T : Swift.BinaryInteger
+  public init<T>(truncatingIfNeeded source: T) where T : Swift.BinaryInteger
+}
+extension DaonNFCSDK.BigUInt : Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.UInt64)
+  public typealias IntegerLiteralType = Swift.UInt64
+}
+extension DaonNFCSDK.BigInt : Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.Int64)
+  public typealias IntegerLiteralType = Swift.Int64
+}
+extension DaonNFCSDK.BigUInt {
+  public func isStrongProbablePrime(_ base: DaonNFCSDK.BigUInt) -> Swift.Bool
+  public func isPrime(rounds: Swift.Int = 10) -> Swift.Bool
+}
+extension DaonNFCSDK.BigInt {
+  public func isStrongProbablePrime(_ base: DaonNFCSDK.BigInt) -> Swift.Bool
+  public func isPrime(rounds: Swift.Int = 10) -> Swift.Bool
+}
+extension DaonNFCSDK.BigUInt {
+  public static func >>= <Other>(lhs: inout DaonNFCSDK.BigUInt, rhs: Other) where Other : Swift.BinaryInteger
+  public static func <<= <Other>(lhs: inout DaonNFCSDK.BigUInt, rhs: Other) where Other : Swift.BinaryInteger
+  public static func >> <Other>(lhs: DaonNFCSDK.BigUInt, rhs: Other) -> DaonNFCSDK.BigUInt where Other : Swift.BinaryInteger
+  public static func << <Other>(lhs: DaonNFCSDK.BigUInt, rhs: Other) -> DaonNFCSDK.BigUInt where Other : Swift.BinaryInteger
+}
+extension DaonNFCSDK.BigInt {
+  public static func &<< (left: DaonNFCSDK.BigInt, right: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func &<<= (left: inout DaonNFCSDK.BigInt, right: DaonNFCSDK.BigInt)
+  public static func &>> (left: DaonNFCSDK.BigInt, right: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func &>>= (left: inout DaonNFCSDK.BigInt, right: DaonNFCSDK.BigInt)
+  public static func << <Other>(lhs: DaonNFCSDK.BigInt, rhs: Other) -> DaonNFCSDK.BigInt where Other : Swift.BinaryInteger
+  public static func <<= <Other>(lhs: inout DaonNFCSDK.BigInt, rhs: Other) where Other : Swift.BinaryInteger
+  public static func >> <Other>(lhs: DaonNFCSDK.BigInt, rhs: Other) -> DaonNFCSDK.BigInt where Other : Swift.BinaryInteger
+  public static func >>= <Other>(lhs: inout DaonNFCSDK.BigInt, rhs: Other) where Other : Swift.BinaryInteger
+}
+extension DaonNFCSDK.BigUInt : Swift.Strideable {
+  public typealias Stride = DaonNFCSDK.BigInt
+  public func advanced(by n: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigUInt
+  public func distance(to other: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigInt
+}
+extension DaonNFCSDK.BigInt : Swift.Strideable {
+  public typealias Stride = DaonNFCSDK.BigInt
+  public func advanced(by n: DaonNFCSDK.BigInt.Stride) -> DaonNFCSDK.BigInt
+  public func distance(to other: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt.Stride
+}
+extension DaonNFCSDK.BigInt : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension DaonNFCSDK.BigUInt : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension DaonNFCSDK.BigUInt {
+  public subscript(bitAt index: Swift.Int) -> Swift.Bool {
+    get
+    set
+  }
+}
+extension DaonNFCSDK.BigUInt {
+  public var bitWidth: Swift.Int {
+    get
+  }
+  public var leadingZeroBitCount: Swift.Int {
+    get
+  }
+  public var trailingZeroBitCount: Swift.Int {
+    get
+  }
+}
+extension DaonNFCSDK.BigInt {
+  public var bitWidth: Swift.Int {
+    get
+  }
+  public var trailingZeroBitCount: Swift.Int {
+    get
+  }
+}
+extension DaonNFCSDK.BigUInt {
+  public struct Words : Swift.RandomAccessCollection {
+    public var startIndex: Swift.Int {
+      get
+    }
+    public var endIndex: Swift.Int {
+      get
+    }
+    public subscript(index: Swift.Int) -> DaonNFCSDK.BigUInt.Word {
+      get
+    }
+    public typealias Element = DaonNFCSDK.BigUInt.Word
+    public typealias Index = Swift.Int
+    public typealias Indices = Swift.Range<Swift.Int>
+    public typealias Iterator = Swift.IndexingIterator<DaonNFCSDK.BigUInt.Words>
+    public typealias SubSequence = Swift.Slice<DaonNFCSDK.BigUInt.Words>
+  }
+  public var words: DaonNFCSDK.BigUInt.Words {
+    get
+  }
+  public init<Words>(words: Words) where Words : Swift.Sequence, Words.Element == Swift.UInt
+}
+extension DaonNFCSDK.BigInt {
+  public struct Words : Swift.RandomAccessCollection {
+    public typealias Indices = Swift.CountableRange<Swift.Int>
+    public var count: Swift.Int {
+      get
+    }
+    public var indices: DaonNFCSDK.BigInt.Words.Indices {
+      get
+    }
+    public var startIndex: Swift.Int {
+      get
+    }
+    public var endIndex: Swift.Int {
+      get
+    }
+    public subscript(index: Swift.Int) -> Swift.UInt {
+      get
+    }
+    public typealias Element = Swift.UInt
+    public typealias Index = Swift.Int
+    public typealias Iterator = Swift.IndexingIterator<DaonNFCSDK.BigInt.Words>
+    public typealias SubSequence = Swift.Slice<DaonNFCSDK.BigInt.Words>
+  }
+  public var words: DaonNFCSDK.BigInt.Words {
+    get
+  }
+  public init<S>(words: S) where S : Swift.Sequence, S.Element == Swift.UInt
+}
+extension DaonNFCSDK.BigUInt {
+  public init(_ buffer: Swift.UnsafeRawBufferPointer)
+  public func serializeToBuffer() -> Swift.UnsafeRawBufferPointer
+  public init(_ data: Foundation.Data)
+  public func serialize() -> Foundation.Data
+}
+extension DaonNFCSDK.BigInt {
+  public init(_ buffer: Swift.UnsafeRawBufferPointer)
+  public func serializeToBuffer() -> Swift.UnsafeRawBufferPointer
+  public init(_ data: Foundation.Data)
+  public func serialize() -> Foundation.Data
+}
+extension DaonNFCSDK.BigUInt {
+  public mutating func subtractReportingOverflow(_ b: DaonNFCSDK.BigUInt, shiftedBy shift: Swift.Int = 0) -> Swift.Bool
+  public func subtractingReportingOverflow(_ other: DaonNFCSDK.BigUInt, shiftedBy shift: Swift.Int) -> (partialValue: DaonNFCSDK.BigUInt, overflow: Swift.Bool)
+  public func subtractingReportingOverflow(_ other: DaonNFCSDK.BigUInt) -> (partialValue: DaonNFCSDK.BigUInt, overflow: Swift.Bool)
+  public mutating func subtract(_ other: DaonNFCSDK.BigUInt, shiftedBy shift: Swift.Int = 0)
+  public func subtracting(_ other: DaonNFCSDK.BigUInt, shiftedBy shift: Swift.Int = 0) -> DaonNFCSDK.BigUInt
+  public mutating func decrement(shiftedBy shift: Swift.Int = 0)
+  public static func - (a: DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static func -= (a: inout DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt)
+}
+extension DaonNFCSDK.BigInt {
+  public mutating func negate()
+  public static func - (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func -= (a: inout DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt)
+}
+extension DaonNFCSDK.BigUInt : Swift.Comparable {
+  public static func compare(_ a: DaonNFCSDK.BigUInt, _ b: DaonNFCSDK.BigUInt) -> Foundation.ComparisonResult
+  public static func == (a: DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt) -> Swift.Bool
+  public static func < (a: DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt) -> Swift.Bool
+}
+extension DaonNFCSDK.BigInt : Swift.Comparable {
+  public static func == (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> Swift.Bool
+  public static func < (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> Swift.Bool
+}
+extension DaonNFCSDK.BigUInt {
+  public func greatestCommonDivisor(with b: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func inverse(_ modulus: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt?
+  #endif
+}
+extension DaonNFCSDK.BigInt {
+  public func greatestCommonDivisor(with b: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func inverse(_ modulus: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt?
+  #endif
+}
+extension DaonNFCSDK.BigUInt {
+  public static func + (a: DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static func += (a: inout DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt)
+}
+extension DaonNFCSDK.BigInt {
+  public static func + (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func += (a: inout DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt)
+}
+public struct BigInt : Swift.SignedInteger, Swift.Sendable {
+  public enum Sign : Swift.Sendable {
+    case plus
+    case minus
+    public static func == (a: DaonNFCSDK.BigInt.Sign, b: DaonNFCSDK.BigInt.Sign) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public typealias Magnitude = DaonNFCSDK.BigUInt
+  public typealias Word = DaonNFCSDK.BigUInt.Word
+  public static var isSigned: Swift.Bool {
+    get
+  }
+  public var magnitude: DaonNFCSDK.BigUInt
+  public var sign: DaonNFCSDK.BigInt.Sign
+  public init(sign: DaonNFCSDK.BigInt.Sign, magnitude: DaonNFCSDK.BigUInt)
+  public var isZero: Swift.Bool {
+    get
+  }
+  public func signum() -> DaonNFCSDK.BigInt
+}
+extension DaonNFCSDK.BigUInt {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<S>(_ text: S, radix: Swift.Int = 10) where S : Swift.StringProtocol
+  #endif
+}
+extension DaonNFCSDK.BigInt {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<S>(_ text: S, radix: Swift.Int = 10) where S : Swift.StringProtocol
+  #endif
+}
+extension Swift.String {
+  public init(_ v: DaonNFCSDK.BigUInt)
+  public init(_ v: DaonNFCSDK.BigUInt, radix: Swift.Int, uppercase: Swift.Bool = false)
+  public init(_ value: DaonNFCSDK.BigInt, radix: Swift.Int = 10, uppercase: Swift.Bool = false)
+}
+extension DaonNFCSDK.BigUInt : Swift.ExpressibleByStringLiteral {
+  public init(unicodeScalarLiteral value: Swift.UnicodeScalar)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.UnicodeScalar
+}
+extension DaonNFCSDK.BigInt : Swift.ExpressibleByStringLiteral {
+  public init(unicodeScalarLiteral value: Swift.UnicodeScalar)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.UnicodeScalar
+}
+extension DaonNFCSDK.BigUInt : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension DaonNFCSDK.BigInt : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension DaonNFCSDK.BigUInt : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension DaonNFCSDK.BigInt : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension DaonNFCSDK.BigUInt : Swift.CustomPlaygroundDisplayConvertible {
+  public var playgroundDescription: Any {
+    get
+  }
+}
+extension DaonNFCSDK.BigInt : Swift.CustomPlaygroundDisplayConvertible {
+  public var playgroundDescription: Any {
+    get
+  }
+}
+extension DaonNFCSDK.BigUInt {
+  public func power(_ exponent: Swift.Int) -> DaonNFCSDK.BigUInt
+  public func power(_ exponent: DaonNFCSDK.BigUInt, modulus: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+}
+extension DaonNFCSDK.BigInt {
+  public func power(_ exponent: Swift.Int) -> DaonNFCSDK.BigInt
+  public func power(_ exponent: DaonNFCSDK.BigInt, modulus: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+}
+extension DaonNFCSDK.BigUInt {
+  public mutating func multiply(byWord y: DaonNFCSDK.BigUInt.Word)
+  public func multiplied(byWord y: DaonNFCSDK.BigUInt.Word) -> DaonNFCSDK.BigUInt
+  public mutating func multiplyAndAdd(_ x: DaonNFCSDK.BigUInt, _ y: DaonNFCSDK.BigUInt.Word, shiftedBy shift: Swift.Int = 0)
+  public func multiplied(by y: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static let directMultiplicationLimit: Swift.Int
+  public static func * (x: DaonNFCSDK.BigUInt, y: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+  public static func *= (a: inout DaonNFCSDK.BigUInt, b: DaonNFCSDK.BigUInt)
+}
+extension DaonNFCSDK.BigInt {
+  public static func * (a: DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt) -> DaonNFCSDK.BigInt
+  public static func *= (a: inout DaonNFCSDK.BigInt, b: DaonNFCSDK.BigInt)
+}
+extension DaonNFCSDK.BigUInt {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<T>(exactly source: T) where T : Swift.BinaryFloatingPoint
+  #endif
+  public init<T>(_ source: T) where T : Swift.BinaryFloatingPoint
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(exactly source: Foundation.Decimal)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(truncating source: Foundation.Decimal)
+  #endif
+}
+extension DaonNFCSDK.BigInt {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?<T>(exactly source: T) where T : Swift.BinaryFloatingPoint
+  #endif
+  public init<T>(_ source: T) where T : Swift.BinaryFloatingPoint
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(exactly source: Foundation.Decimal)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(truncating source: Foundation.Decimal)
+  #endif
+}
+extension Swift.BinaryFloatingPoint where Self.RawExponent : Swift.FixedWidthInteger, Self.RawSignificand : Swift.FixedWidthInteger {
+  public init(_ value: DaonNFCSDK.BigInt)
+  public init(_ value: DaonNFCSDK.BigUInt)
+}
+extension DaonNFCSDK.BigInt.Sign {
+  public init(_ sign: Swift.FloatingPointSign)
+}
+extension Foundation.Decimal {
+  public init(_ value: DaonNFCSDK.BigUInt)
+  public init(_ value: DaonNFCSDK.BigInt)
+}
+extension DaonNFCSDK.BigUInt : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension DaonNFCSDK.BigInt : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension DaonNFCSDK.BigUInt {
+  public static func randomInteger<RNG>(withMaximumWidth width: Swift.Int, using generator: inout RNG) -> DaonNFCSDK.BigUInt where RNG : Swift.RandomNumberGenerator
+  public static func randomInteger(withMaximumWidth width: Swift.Int) -> DaonNFCSDK.BigUInt
+  public static func randomInteger<RNG>(withExactWidth width: Swift.Int, using generator: inout RNG) -> DaonNFCSDK.BigUInt where RNG : Swift.RandomNumberGenerator
+  public static func randomInteger(withExactWidth width: Swift.Int) -> DaonNFCSDK.BigUInt
+  public static func randomInteger<RNG>(lessThan limit: DaonNFCSDK.BigUInt, using generator: inout RNG) -> DaonNFCSDK.BigUInt where RNG : Swift.RandomNumberGenerator
+  public static func randomInteger(lessThan limit: DaonNFCSDK.BigUInt) -> DaonNFCSDK.BigUInt
+}
+public struct BigUInt : Swift.UnsignedInteger, Swift.Sendable {
+  public typealias Word = Swift.UInt
+  public init()
+  public init(words: [DaonNFCSDK.BigUInt.Word])
+  public typealias Magnitude = DaonNFCSDK.BigUInt
+}
+extension DaonNFCSDK.BigUInt {
+  public static var isSigned: Swift.Bool {
+    get
+  }
+  public var isZero: Swift.Bool {
+    get
+  }
+  public func signum() -> DaonNFCSDK.BigUInt
+}
+@_hasMissingDesignatedInitializers public class ASN1Object : Swift.CustomStringConvertible {
+  public var rawValue: Foundation.Data?
+  public var value: Any?
+  public var identifier: DaonNFCSDK.ASN1Identifier?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func sub(_ index: Swift.Int) -> DaonNFCSDK.ASN1Object?
+  #endif
+  public func subCount() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func sub(oid: Swift.String, path: [Swift.Int]) -> DaonNFCSDK.ASN1Object?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func sub(parent: DaonNFCSDK.ASN1Object?, path: [Swift.Int]) -> DaonNFCSDK.ASN1Object?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func findParent(oid: Swift.String) -> DaonNFCSDK.ASN1Object?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func findOid(_ oid: DaonNFCSDK.OID) -> DaonNFCSDK.ASN1Object?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func findOid(_ oid: Swift.String) -> DaonNFCSDK.ASN1Object?
+  #endif
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@objc public enum IXNFCAuthenticationType : Swift.Int {
+  case bacThenPace = 0
+  case paceThenBac = 1
+  case bacOnly = 2
+  case paceOnly = 3
+  public var description: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct ASN1DistinguishedNames : Swift.Sendable {
+  public let oid: Swift.String
+  public let representation: Swift.String
+  public static let commonName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let dnQualifier: DaonNFCSDK.ASN1DistinguishedNames
+  public static let serialNumber: DaonNFCSDK.ASN1DistinguishedNames
+  public static let givenName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let surname: DaonNFCSDK.ASN1DistinguishedNames
+  public static let organizationalUnitName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let organizationName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let streetAddress: DaonNFCSDK.ASN1DistinguishedNames
+  public static let localityName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let stateOrProvinceName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let countryName: DaonNFCSDK.ASN1DistinguishedNames
+  public static let email: DaonNFCSDK.ASN1DistinguishedNames
+}
+@_hasMissingDesignatedInitializers @objc public class IXNFCIssue : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var issue: Swift.Int {
+    get
+  }
+  @objc public var message: Swift.String {
+    get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
+  @objc deinit
+}
+@_Concurrency.MainActor @objc public protocol IXNFCTagReader {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor func read(parameters: DaonNFCSDK.IXNFCParameters, delegate: (any DaonNFCSDK.IXNFCTagReaderDelegate)?)
+  #endif
+}
+public enum IXNFCTagError : Swift.Error {
+  case NoData
+  case InvalidResponse(dataGroupId: Swift.String, expectedTag: Swift.Int, actualTag: Swift.Int)
+  case UnknownTag
+  case NoConnectedTag
+  case MissingMandatoryFields
+  case NotImplemented
+  case License
+  case NFCNotSupported
+  case DataNotRead
+  case UnsupportedImageFormat
+  case D087Malformed
+  case InvalidChecksum
+  case CannotDecodeASN1Length
+  case InvalidASN1Value
+  case ResponseError(Swift.String, Swift.UInt8, Swift.UInt8)
+  case UserCanceled
+  case ProgrammaticallyCanceled
+  case AuthenticationFailed
+  case UnsupportedCipherAlgorithm
+  case ChipAuthenticationNotSupported
+  case ChipAuthenticationFailed
+  case InvalidDataPassed(Swift.String)
+  case PACEError(Swift.String, Swift.String)
+  case NoDataGroupsToRead
+  case DataGroupNotRead
+  case PaceNotSupportedByPassport
+  case LostConnection
+  case TagNotValid
+  case InvalidHashAlgorithmSpecified
+  case MissingCompositeMrz
+  case UnsupportedDataGroup
+  case InvalidAPDUFormat
+}
+@_inheritsConvenienceInitializers @objc public class IXNFCParameters : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc convenience public init(dictionary: [Swift.String : Swift.String])
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(parameter:) public func get(parameter: Swift.String) -> Any?
+  #endif
+  @objc(boolParameter:) public func getBool(parameter: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(stringParameter:) public func getByteArray(parameter: Swift.String) -> [Swift.UInt8]?
+  #endif
+  @objc(set:string:) public func set(parameter: Swift.String, string: Swift.String)
+  @objc(set:byteArray:) public func set(parameter: Swift.String, byteArray: [Swift.UInt8])
+  @objc(set:date:) public func set(parameter: Swift.String, date: Foundation.Date)
+  @objc(set:boolean:) public func set(parameter: Swift.String, enable: Swift.Bool)
+  @objc(set:int:) public func set(parameter: Swift.String, value: Swift.Int)
+  @objc public func set(parameters: DaonNFCSDK.IXNFCParameters)
+  @objc public func set(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+extension DaonNFCSDK.PKCS7 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var signatures: [DaonNFCSDK.SignatureInfo]? {
+    get
+  }
+  #endif
+}
+public class SignatureInfo {
+  final public let version: DaonNFCSDK.ASN1Object?
+  final public let signerIdentifier: DaonNFCSDK.ASN1Object?
+  final public let digestAlgorithmIdentifier: DaonNFCSDK.ASN1Object?
+  final public let signedAttributes: DaonNFCSDK.ASN1Object?
+  final public let signatureAlgorithm: DaonNFCSDK.ASN1Object?
+  final public let signature: DaonNFCSDK.ASN1Object?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var signatureData: Foundation.Data? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var digestAlgorithmName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var digestAlgorithmOID: DaonNFCSDK.OID? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var signatureAlgorithmName: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var signatureAlgorithmOID: DaonNFCSDK.OID? {
+    get
+  }
+  #endif
+  public init(asn1: DaonNFCSDK.ASN1Object)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class IXNFCDefaultTagReaderProvider : ObjectiveC.NSObject, DaonNFCSDK.IXNFCTagReaderProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  open func readerWithTag(tag: CoreNFC.NFCTag) -> (any DaonNFCSDK.IXNFCTagReader)?
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class X509Extension {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var oid: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var name: Swift.String? {
+    get
+  }
+  #endif
+  public var isCritical: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var value: Any? {
+    get
+  }
+  #endif
+  @objc deinit
+}
+public protocol IXNFCTagReaderProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func readerWithTag(tag: CoreNFC.NFCTag) -> (any DaonNFCSDK.IXNFCTagReader)?
+  #endif
+}
+@_Concurrency.MainActor @objc public class IXNFCReader : ObjectiveC.NSObject {
+  @objc @_Concurrency.MainActor public var nfcDialogueErrorMessageText: Swift.String?
+  @objc @_Concurrency.MainActor weak public var delegate: (any DaonNFCSDK.IXNFCReaderDelegate)?
+  @objc @_Concurrency.MainActor public func version() -> Swift.String
+  @objc @_Concurrency.MainActor public init(license: Swift.String = "license")
+  @objc @_Concurrency.MainActor public static func isSupported() -> Swift.Bool
+  @objc @_Concurrency.MainActor public static func sdkVersion() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor public func read(parameters: DaonNFCSDK.IXNFCParameters?, completion: @escaping (_ data: DaonNFCSDK.IXNFCTagData?, _ error: (any Swift.Error)?) -> ())
+  #endif
+  @objc @_Concurrency.MainActor public func stop(withErrorMessage message: Swift.String = "")
+  @objc deinit
+}
+extension DaonNFCSDK.IXNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
+  nonisolated public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
+  nonisolated public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
+  nonisolated public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
+}
+@_Concurrency.MainActor extension DaonNFCSDK.IXNFCReader : @preconcurrency DaonNFCSDK.IXNFCTagReaderDelegate {
+  @_Concurrency.MainActor @objc dynamic public func tagReaderDidFinish(data: DaonNFCSDK.IXNFCTagData)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @objc dynamic public func tagReaderFailed(error: (any Swift.Error)?)
+  #endif
+  @_Concurrency.MainActor @objc dynamic public func tagReaderInformation(info: DaonNFCSDK.IXNFCTagReaderInfo)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @objc dynamic public func onAnalyticsDataReady(_ code: Swift.String, _ data: Swift.String?)
+  #endif
+}
+extension CoreNFC.NFCTag : @unchecked @retroactive Swift.Sendable {
+}
+@_hasMissingDesignatedInitializers public class ASN1DERDecoder {
+  public static func decode(data: Foundation.Data) throws -> [DaonNFCSDK.ASN1Object]
+  @objc deinit
+}
+public func generateRandomUInt8Array(_ size: Swift.Int) -> [Swift.UInt8]
+public struct IXNFCAnalyticsDeviceInfo : Swift.Codable {
+  public let platform: Swift.String
+  public let make: Swift.String
+  public let model: Swift.String
+  public let os: Swift.String
+  public let osVersion: Swift.String
+  public init(platform: Swift.String, make: Swift.String, model: Swift.String, os: Swift.String, osVersion: Swift.String)
+  public struct Builder {
+    public init()
+    public mutating func setPlatform(_ platform: Swift.String) -> DaonNFCSDK.IXNFCAnalyticsDeviceInfo.Builder
+    public mutating func setMake(_ make: Swift.String) -> DaonNFCSDK.IXNFCAnalyticsDeviceInfo.Builder
+    public mutating func setModel(_ model: Swift.String) -> DaonNFCSDK.IXNFCAnalyticsDeviceInfo.Builder
+    public mutating func setOs(_ os: Swift.String) -> DaonNFCSDK.IXNFCAnalyticsDeviceInfo.Builder
+    public mutating func setOsVersion(_ osVersion: Swift.String) -> DaonNFCSDK.IXNFCAnalyticsDeviceInfo.Builder
+    public func build() -> DaonNFCSDK.IXNFCAnalyticsDeviceInfo
+  }
+  public func toJson() -> Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct IXNFCReaderConfigurationInfo {
+  public let photoExtractionEnabled: Swift.Bool
+  public let rawDataExtractionEnabled: Swift.Bool
+  public let paceAuthenticationEnabled: Swift.Bool
+  public let formatCountryCodeEnabled: Swift.Bool
+  public let customSignatureAlgorithm: Swift.String?
+  public let customDigestAlgorithm: Swift.String?
+  public let authenticationType: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(photoExtractionEnabled: Swift.Bool = false, rawDataExtractionEnabled: Swift.Bool = false, paceAuthenticationEnabled: Swift.Bool = false, formatCountryCodeEnabled: Swift.Bool = false, customSignatureAlgorithm: Swift.String? = nil, customDigestAlgorithm: Swift.String? = nil, authenticationType: Swift.String = "PACE_THEN_BAC")
+  #endif
+  public class Builder {
+    public init()
+    @discardableResult
+    public func setPhotoExtractionEnabled(_ enabled: Swift.Bool) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    @discardableResult
+    public func setRawDataExtractionEnabled(_ enabled: Swift.Bool) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    @discardableResult
+    public func setPACEAuthenticationEnabled(_ enabled: Swift.Bool) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    @discardableResult
+    public func setFormatCountryCodeEnabled(_ enabled: Swift.Bool) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public func setCustomSignatureAlgorithm(_ algorithm: Swift.String?) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public func setCustomDigestAlgorithm(_ algorithm: Swift.String?) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    #endif
+    @discardableResult
+    public func setAuthenticationType(_ authType: Swift.String) -> DaonNFCSDK.IXNFCReaderConfigurationInfo.Builder
+    public func build() -> DaonNFCSDK.IXNFCReaderConfigurationInfo
+    @objc deinit
+  }
+}
+extension DaonNFCSDK.IXNFCReaderConfigurationInfo {
+  public func toJson() -> Swift.String
+}
+@available(iOS 13, macOS 10.15, *)
+public class SimpleASN1DumpParser {
+  public init()
+  @objc deinit
+}
+@objc public protocol IXNFCReaderDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func readerDidUpdate(info: DaonNFCSDK.IXNFCTagReaderInfo) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc optional func onAnalyticsDataReady(_ name: Swift.String, _ analyticsData: Swift.String?)
+  #endif
+}
+@objc public protocol IXNFCTagDataProtocol : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func json() -> Swift.String?
+  #endif
+  @objc func isEmpty() -> Swift.Bool
+  @objc func all() -> Foundation.NSDictionary
+  @objc func issues() -> [DaonNFCSDK.IXNFCIssue]
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class IXNFCTagData : ObjectiveC.NSObject, DaonNFCSDK.IXNFCTagDataProtocol {
+  @objc public static let tagDataInfoInit: Swift.Int
+  @objc public static let tagDataInfoScan: Swift.Int
+  @objc public static let tagDataInfoDone: Swift.Int
+  @objc public static let tagDataInfoReadStarted: Swift.Int
+  @objc public static let tagDataInfoDisconnect: Swift.Int
+  @objc public static let tagDataInfoReconnect: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func json() -> Swift.String?
+  #endif
+  @objc public func isEmpty() -> Swift.Bool
+  @objc public func all() -> Foundation.NSDictionary
+  @objc public func issues() -> [DaonNFCSDK.IXNFCIssue]
+  @objc deinit
+}
+extension DaonNFCSDK.IXNFCTagData : Foundation.NSCopying {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
+}
+@_inheritsConvenienceInitializers @objc public class IXMRZRecognizer : ObjectiveC.NSObject, @unchecked Swift.Sendable {
+  public enum Accuracy : Swift.Int {
+    case HIGH
+    case LOW
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func process(line: Swift.String?, accuracy: DaonNFCSDK.IXMRZRecognizer.Accuracy = Accuracy.HIGH) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func processBAC(lines: [Swift.String]) -> Swift.String?
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ASN1Identifier : Swift.CustomStringConvertible {
+  public enum Class : Swift.UInt8 {
+    case universal
+    case application
+    case contextSpecific
+    case `private`
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.UInt8)
+    #endif
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public enum TagNumber : Swift.UInt8 {
+    case endOfContent
+    case boolean
+    case integer
+    case bitString
+    case octetString
+    case null
+    case objectIdentifier
+    case objectDescriptor
+    case external
+    case read
+    case enumerated
+    case embeddedPdv
+    case utf8String
+    case relativeOid
+    case sequence
+    case set
+    case numericString
+    case printableString
+    case t61String
+    case videotexString
+    case ia5String
+    case utcTime
+    case generalizedTime
+    case graphicString
+    case visibleString
+    case generalString
+    case universalString
+    case characterString
+    case bmpString
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.UInt8)
+    #endif
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public func typeClass() -> DaonNFCSDK.ASN1Identifier.Class
+  public func isPrimitive() -> Swift.Bool
+  public func isConstructed() -> Swift.Bool
+  public func tagNumber() -> DaonNFCSDK.ASN1Identifier.TagNumber
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension DaonNFCSDK.BigUInt {
+  public static var zero: DaonNFCSDK.BigUInt {
+    get
+  }
+}
+extension DaonNFCSDK.BigInt {
+  public static var zero: DaonNFCSDK.BigInt {
+    get
+  }
+  public static var one: DaonNFCSDK.BigInt {
+    get
+  }
+}
+@objc public class IXMRZ : ObjectiveC.NSObject {
+  @objc public enum DocumentType : Swift.Int {
+    case Unknown = 0
+    case ID1 = 1
+    case ID2 = 2
+    case ID3 = 3
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum ParseError : Swift.Error {
+    case NoData
+    case InvalidDocumentNumber
+    case InvalidDate
+    case InvalidCRC
+    public static func == (a: DaonNFCSDK.IXMRZ.ParseError, b: DaonNFCSDK.IXMRZ.ParseError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var firstName: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var lastName: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var gender: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var state: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var nationality: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var personalNumber: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var documentCode: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var expired: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var dateOfBirth: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var dateOfExpiry: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var documentNumber: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public init(mrz: Swift.String) throws
+  @objc public func dictionary() -> [Swift.String : Swift.String]
+  public func keys() -> Swift.Dictionary<Swift.String, Swift.String>.Keys
+  @objc public func count() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func get(string: Swift.String) -> Swift.String?
+  #endif
+  @objc deinit
+}
+extension DaonNFCSDK.IXNFCPassportParameters.ParametersError : Swift.Equatable {}
+extension DaonNFCSDK.IXNFCPassportParameters.ParametersError : Swift.Hashable {}
+extension DaonNFCSDK.OID : Swift.Equatable {}
+extension DaonNFCSDK.OID : Swift.Hashable {}
+extension DaonNFCSDK.OID : Swift.RawRepresentable {}
+extension DaonNFCSDK.BigInt.Sign : Swift.Equatable {}
+extension DaonNFCSDK.BigInt.Sign : Swift.Hashable {}
+extension DaonNFCSDK.IXNFCAuthenticationType : Swift.Equatable {}
+extension DaonNFCSDK.IXNFCAuthenticationType : Swift.Hashable {}
+extension DaonNFCSDK.IXNFCAuthenticationType : Swift.RawRepresentable {}
+extension DaonNFCSDK.IXNFCReader : Swift.Sendable {}
+extension DaonNFCSDK.IXMRZRecognizer.Accuracy : Swift.Equatable {}
+extension DaonNFCSDK.IXMRZRecognizer.Accuracy : Swift.Hashable {}
+extension DaonNFCSDK.IXMRZRecognizer.Accuracy : Swift.RawRepresentable {}
+extension DaonNFCSDK.ASN1Identifier.Class : Swift.Equatable {}
+extension DaonNFCSDK.ASN1Identifier.Class : Swift.Hashable {}
+extension DaonNFCSDK.ASN1Identifier.Class : Swift.RawRepresentable {}
+extension DaonNFCSDK.ASN1Identifier.TagNumber : Swift.Equatable {}
+extension DaonNFCSDK.ASN1Identifier.TagNumber : Swift.Hashable {}
+extension DaonNFCSDK.ASN1Identifier.TagNumber : Swift.RawRepresentable {}
+extension DaonNFCSDK.IXMRZ.DocumentType : Swift.Equatable {}
+extension DaonNFCSDK.IXMRZ.DocumentType : Swift.Hashable {}
+extension DaonNFCSDK.IXMRZ.DocumentType : Swift.RawRepresentable {}
+extension DaonNFCSDK.IXMRZ.ParseError : Swift.Equatable {}
+extension DaonNFCSDK.IXMRZ.ParseError : Swift.Hashable {}

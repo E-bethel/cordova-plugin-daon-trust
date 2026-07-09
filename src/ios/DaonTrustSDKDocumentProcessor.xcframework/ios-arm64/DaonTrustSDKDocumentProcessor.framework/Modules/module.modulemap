@@ -1,0 +1,4 @@
+framework module DaonTrustSDKDocumentProcessor {
+  header "DaonTrustSDKDocumentProcessor-Swift.h"
+  requires objc
+}

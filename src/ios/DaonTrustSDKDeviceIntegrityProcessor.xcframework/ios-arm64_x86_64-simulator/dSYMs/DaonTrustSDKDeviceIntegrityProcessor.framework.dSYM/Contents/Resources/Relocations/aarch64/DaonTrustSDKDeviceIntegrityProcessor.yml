@@ -1,0 +1,65 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/runner/Library/Developer/Xcode/DerivedData/TrustSDK-emdvpmusiufgwchbkxzqjbizjzxj/Build/Intermediates.noindex/ArchiveIntermediates/DeviceIntegrityProcessor/InstallationBuildProductsLocation/Library/Frameworks/DaonTrustSDKDeviceIntegrityProcessor.framework/DaonTrustSDKDeviceIntegrityProcessor'
+relocations:
+  - { offset: 0x29932, size: 0x8, addend: 0x0, symName: _DaonTrustSDKDeviceIntegrityProcessorVersionString, symObjAddr: 0x0, symBinAddr: 0x45A0, symSize: 0x0 }
+  - { offset: 0x29969, size: 0x8, addend: 0x0, symName: _DaonTrustSDKDeviceIntegrityProcessorVersionNumber, symObjAddr: 0x60, symBinAddr: 0x4600, symSize: 0x0 }
+  - { offset: 0x29A95, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0xF10, symBinAddr: 0x2448, symSize: 0x40 }
+  - { offset: 0x29B1C, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOs0G0AAsADP7_domainSSvgTW', symObjAddr: 0xF50, symBinAddr: 0x2488, symSize: 0x4 }
+  - { offset: 0x29B38, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOs0G0AAsADP5_codeSivgTW', symObjAddr: 0xF54, symBinAddr: 0x248C, symSize: 0x4 }
+  - { offset: 0x29B54, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOs0G0AAsADP9_userInfoyXlSgvgTW', symObjAddr: 0xF58, symBinAddr: 0x2490, symSize: 0x4 }
+  - { offset: 0x29B70, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOs0G0AAsADP19_getEmbeddedNSErroryXlSgyFTW', symObjAddr: 0xF5C, symBinAddr: 0x2494, symSize: 0x4 }
+  - { offset: 0x29E62, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x50, symBinAddr: 0x1588, symSize: 0x44 }
+  - { offset: 0x29E88, size: 0x8, addend: 0x0, symName: '_$sSo8NSStringCSgSo7NSErrorCSgIeyByy_SSSgs5Error_pSgIeggg_TR', symObjAddr: 0xB78, symBinAddr: 0x20B0, symSize: 0x70 }
+  - { offset: 0x29F64, size: 0x8, addend: 0x0, symName: '_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5', symObjAddr: 0xF60, symBinAddr: 0x2498, symSize: 0x6C }
+  - { offset: 0x29F83, size: 0x8, addend: 0x0, symName: '_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TQ0_', symObjAddr: 0xFCC, symBinAddr: 0x2504, symSize: 0x4C }
+  - { offset: 0x29FB8, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiFSo8NSBundleC_Tg5', symObjAddr: 0x1018, symBinAddr: 0x2550, symSize: 0x1B4 }
+  - { offset: 0x2A136, size: 0x8, addend: 0x0, symName: '_$sSSWOh', symObjAddr: 0x1434, symBinAddr: 0x296C, symSize: 0x34 }
+  - { offset: 0x2A14A, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TA', symObjAddr: 0x146C, symBinAddr: 0x29A4, symSize: 0x6C }
+  - { offset: 0x2A15E, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0CMa', symObjAddr: 0x14D8, symBinAddr: 0x2A10, symSize: 0x20 }
+  - { offset: 0x2A172, size: 0x8, addend: 0x0, symName: '_$sSo8NSStringCSgSo7NSErrorCSgIeyByy_SSSgs5Error_pSgIeggg_TRTA', symObjAddr: 0x15B4, symBinAddr: 0x2AEC, symSize: 0x8 }
+  - { offset: 0x2A186, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TA.9', symObjAddr: 0x15F8, symBinAddr: 0x2B30, symSize: 0x6C }
+  - { offset: 0x2A19A, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TA.9TQ0_', symObjAddr: 0x1664, symBinAddr: 0x2B9C, symSize: 0x48 }
+  - { offset: 0x2A1AE, size: 0x8, addend: 0x0, symName: '_$sScPSgWOc', symObjAddr: 0x16AC, symBinAddr: 0x2BE4, symSize: 0x50 }
+  - { offset: 0x2A1C2, size: 0x8, addend: 0x0, symName: '_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA', symObjAddr: 0x1720, symBinAddr: 0x2C58, symSize: 0x78 }
+  - { offset: 0x2A1D6, size: 0x8, addend: 0x0, symName: '_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA.18', symObjAddr: 0x1798, symBinAddr: 0x2CD0, symSize: 0x78 }
+  - { offset: 0x2A1EA, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOACs0G0AAWl', symObjAddr: 0x1898, symBinAddr: 0x2D88, symSize: 0x40 }
+  - { offset: 0x2A1FE, size: 0x8, addend: 0x0, symName: '_$sS2SSysWl', symObjAddr: 0x18D8, symBinAddr: 0x2DC8, symSize: 0x40 }
+  - { offset: 0x2A212, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgWOe', symObjAddr: 0x1918, symBinAddr: 0x2E08, symSize: 0x14 }
+  - { offset: 0x2A226, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOWOe', symObjAddr: 0x192C, symBinAddr: 0x2E1C, symSize: 0x40 }
+  - { offset: 0x2A23A, size: 0x8, addend: 0x0, symName: '_$sSo8NSBundleCMa', symObjAddr: 0x196C, symBinAddr: 0x2E5C, symSize: 0x44 }
+  - { offset: 0x2A24E, size: 0x8, addend: 0x0, symName: ___swift_memcpy1_1, symObjAddr: 0x19B0, symBinAddr: 0x2EA0, symSize: 0xC }
+  - { offset: 0x2A262, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x19BC, symBinAddr: 0x2EAC, symSize: 0x4 }
+  - { offset: 0x2A276, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOwet', symObjAddr: 0x19C0, symBinAddr: 0x2EB0, symSize: 0x90 }
+  - { offset: 0x2A28A, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOwst', symObjAddr: 0x1A50, symBinAddr: 0x2F40, symSize: 0xB0 }
+  - { offset: 0x2A29E, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOwug', symObjAddr: 0x1B00, symBinAddr: 0x2FF0, symSize: 0x8 }
+  - { offset: 0x2A2B2, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOwui', symObjAddr: 0x1B0C, symBinAddr: 0x2FF8, symSize: 0x8 }
+  - { offset: 0x2A2C6, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOMa', symObjAddr: 0x1B14, symBinAddr: 0x3000, symSize: 0x10 }
+  - { offset: 0x2A2DA, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOSHAASQWb', symObjAddr: 0x1B24, symBinAddr: 0x3010, symSize: 0x4 }
+  - { offset: 0x2A2EE, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOACSQAAWl', symObjAddr: 0x1B28, symBinAddr: 0x3014, symSize: 0x40 }
+  - { offset: 0x2A31F, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C11isAvailableSbyF', symObjAddr: 0x0, symBinAddr: 0x1538, symSize: 0x50 }
+  - { offset: 0x2A3E1, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C11isAvailableSbyFTo', symObjAddr: 0x94, symBinAddr: 0x15CC, symSize: 0x50 }
+  - { offset: 0x2A4AB, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctF', symObjAddr: 0xE4, symBinAddr: 0x161C, symSize: 0xE8 }
+  - { offset: 0x2A4DD, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_', symObjAddr: 0x1CC, symBinAddr: 0x1704, symSize: 0x11C }
+  - { offset: 0x2A5AB, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TY0_', symObjAddr: 0x2E8, symBinAddr: 0x1820, symSize: 0x164 }
+  - { offset: 0x2A65A, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TQ1_', symObjAddr: 0x44C, symBinAddr: 0x1984, symSize: 0x84 }
+  - { offset: 0x2A709, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TY2_', symObjAddr: 0x4D0, symBinAddr: 0x1A08, symSize: 0x22C }
+  - { offset: 0x2A833, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFyyYacfU_TY3_', symObjAddr: 0x6FC, symBinAddr: 0x1C34, symSize: 0xF0 }
+  - { offset: 0x2A953, size: 0x8, addend: 0x0, symName: '_$sScTss5NeverORs_rlE4name8priority9operationScTyxABGSSSg_ScPSgxyYaYAcntcfCyt_Tt2g5', symObjAddr: 0x7EC, symBinAddr: 0x1D24, symSize: 0x280 }
+  - { offset: 0x2A9C1, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctFTo', symObjAddr: 0xA6C, symBinAddr: 0x1FA4, symSize: 0x10C }
+  - { offset: 0x2A9FE, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C10getVersionSSyF', symObjAddr: 0xBE8, symBinAddr: 0x2120, symSize: 0x14 }
+  - { offset: 0x2AA55, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C10getVersionSSyFTo', symObjAddr: 0xBFC, symBinAddr: 0x2134, symSize: 0x24 }
+  - { offset: 0x2AA69, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C15getCapabilitiesSaySSGyF', symObjAddr: 0xC20, symBinAddr: 0x2158, symSize: 0x2C }
+  - { offset: 0x2AAAD, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C15getCapabilitiesSaySSGyFTo', symObjAddr: 0xC4C, symBinAddr: 0x2184, symSize: 0x3C }
+  - { offset: 0x2AAED, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C5closeyyF', symObjAddr: 0xC88, symBinAddr: 0x21C0, symSize: 0x4 }
+  - { offset: 0x2AB0E, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C5closeyyFTo', symObjAddr: 0xC8C, symBinAddr: 0x21C4, symSize: 0x4 }
+  - { offset: 0x2AB4E, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C13convertRegion33_25909C9030AA4C58FC4FC43B933F2328LL12regionString8endpoint14FingerprintPro0H0OSSSg_AKtF', symObjAddr: 0xC90, symBinAddr: 0x21C8, symSize: 0x144 }
+  - { offset: 0x2AC1E, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0CACycfC', symObjAddr: 0xDD4, symBinAddr: 0x230C, symSize: 0x20 }
+  - { offset: 0x2AC32, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0CACycfc', symObjAddr: 0xDF4, symBinAddr: 0x232C, symSize: 0x30 }
+  - { offset: 0x2AC65, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0CACycfcTo', symObjAddr: 0xE24, symBinAddr: 0x235C, symSize: 0x3C }
+  - { offset: 0x2AC9A, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0CfD', symObjAddr: 0xE60, symBinAddr: 0x2398, symSize: 0x30 }
+  - { offset: 0x2ACEC, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0xE90, symBinAddr: 0x23C8, symSize: 0x14 }
+  - { offset: 0x2AD62, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOSHAASH9hashValueSivgTW', symObjAddr: 0xEA4, symBinAddr: 0x23DC, symSize: 0x44 }
+  - { offset: 0x2AE28, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE5ErrorOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0xEE8, symBinAddr: 0x2420, symSize: 0x28 }
+  - { offset: 0x2AE9A, size: 0x8, addend: 0x0, symName: '_$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C13hasFrameworks33_25909C9030AA4C58FC4FC43B933F2328LL5namesSbSaySSG_tFTf4nd_n', symObjAddr: 0x11CC, symBinAddr: 0x2704, symSize: 0x268 }
+...

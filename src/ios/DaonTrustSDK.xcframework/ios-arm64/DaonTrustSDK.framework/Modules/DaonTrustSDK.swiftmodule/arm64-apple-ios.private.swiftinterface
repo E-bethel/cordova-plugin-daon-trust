@@ -1,0 +1,277 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DaonTrustSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
+import CoreFoundation
+import Foundation
+import Swift
+import UIKit
+import UIKit.UIViewController
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public enum DaonDocumentProcessorError : Swift.Error {
+  case notConfigured
+  case noLicenseProvided
+  case mrzIsEmpty
+  case invalidBACFields
+  public static func == (a: DaonTrustSDK.DaonDocumentProcessorError, b: DaonTrustSDK.DaonDocumentProcessorError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol DaonTrustSDKLogger : AnyObject, Swift.Equatable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func logEvent(_ event: any DaonTrustSDK.AnalyticsEvent, metadata: (any Swift.Encodable)?)
+  #endif
+}
+extension DaonTrustSDK.DaonTrustSDKLogger {
+  public static func == (lhs: Self, rhs: Self) -> Swift.Bool
+}
+public struct TagReaderFailed : Swift.Encodable {
+  public var code: Swift.String
+  public var message: Swift.String
+  public var isCancelCalled: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class DaonDocumentProcessorResult : ObjectiveC.NSObject {
+  public init(resultJson: Swift.String, dataIncomplete: Swift.Bool, issues: [Swift.String])
+  @objc deinit
+}
+@objc public protocol DaonAppkeysProcessorModule {
+  @objc func appId() -> Swift.String
+  @objc func isAvailable() -> Swift.Bool
+  @objc func isBiometricsSupported() -> Swift.Bool
+  @objc func version() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func credentials(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func register(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func authenticate(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func deregister(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func notify(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func cancel(message: Swift.String?)
+  #endif
+  @objc func close()
+}
+@objc public class Credential : ObjectiveC.NSObject, Swift.Codable {
+  public init(name: Swift.String, aaid: Swift.String, keyid: Swift.String, created: Swift.Int64, username: Swift.String)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class Parameters : ObjectiveC.NSObject, Swift.Codable {
+  final public let message: Swift.String
+  final public let username: Swift.String?
+  final public let language: Swift.String?
+  final public let extensions: [Swift.String : Swift.String]?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public protocol DaonDeviceIntegrityProcessorModule {
+  @objc func isAvailable() -> Swift.Bool
+  @objc func getVersion() -> Swift.String
+  @objc func getCapabilities() -> [Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func processOperation(parameters: DaonTrustSDK.DIParameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  @objc func close()
+}
+@_hasMissingDesignatedInitializers @objc public class DIParameters : ObjectiveC.NSObject, Swift.Codable {
+  final public let apiKey: Swift.String
+  final public let region: Swift.String?
+  final public let endpoint: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class Stopwatch {
+  public init()
+  public func start()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stop() -> CoreFoundation.CFAbsoluteTime?
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DaonLogger {
+  public static var shared: DaonTrustSDK.DaonLogger {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func logEvent(_ type: any DaonTrustSDK.AnalyticsEvent, metadata: (any Swift.Encodable)? = nil)
+  #endif
+  public static func cleanup()
+  @objc deinit
+}
+public protocol AnalyticsEvent : Swift.Decodable, Swift.Encodable {
+  var name: Swift.String { get }
+}
+public struct TagReaderInterrupted : Swift.Encodable {
+  public var isCancelCalled: Swift.Bool
+  public var isAppInBackground: Swift.Bool
+  public var nfcState: Swift.String
+  public var issues: [Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class DaonEvent : ObjectiveC.NSObject {
+  @objc public var code: DaonTrustSDK.DaonEventCode {
+    get
+  }
+  @objc public var localizedDescription: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+@objc public enum DaonEventCode : Swift.Int {
+  case qrScanInvalidQRCode = 200103
+  case webSessionExpired = 200401
+  case webAppTerminated = 200402
+  case webSessionCompleted = 100403
+  case webAppTimeout = 200403
+  case cameraPermissionDenied = 200501
+  case noInternetConnection = 200502
+  case notSupportediOS = 200503
+  case versionNotCompatible = 200505
+  case urlNotWhitelisted = 200508
+  case webLoadingTimeout = 200509
+  case sdkProgrammaticallyStopped = 200510
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class TrustSDKStrings {
+  public static var shared: DaonTrustSDK.TrustSDKStrings {
+    get
+  }
+  public var nfcReadingInfoStatus: Swift.String {
+    get
+  }
+  public func readingAttribute(subject: Swift.String) -> Swift.String
+  public var connecting: Swift.String {
+    get
+  }
+  public func dataGroup(dg: Swift.String) -> Swift.String
+  public var nfcSuccess: Swift.String {
+    get
+  }
+  public var nfcFail: Swift.String {
+    get
+  }
+  public static func cleanup()
+  @objc deinit
+}
+extension os.Logger {
+  public static let docScanBenchmark: os.Logger
+  public static let devLogs: os.Logger
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class DaonOptions : ObjectiveC.NSObject {
+  @objc public var serverUrl: Swift.String
+  @objc public var initializationTimeout: Foundation.TimeInterval
+  @objc public var qrInstructionLabel: Swift.String
+  @objc public var spinnerLabel: Swift.String
+  @objc public var isWebLoadedEnabled: Swift.Bool
+  @objc public var isWhitelistingEnabled: Swift.Bool
+  @objc public var isWebToolbarEnabled: Swift.Bool
+  @objc public var isAnalyticsEnabled: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct TagReaderIssues : Swift.Encodable {
+  public var issues: [Swift.String]
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public protocol DaonEventDelegate {
+  @objc func didReceive(successResponse daonEvent: DaonTrustSDK.DaonEvent)
+  @objc func didReceive(failedResponse daonEvent: DaonTrustSDK.DaonEvent)
+  @objc @available(*, deprecated, message: "To be removed in the next release")
+  func didReceive(infoResponse daonEvent: DaonTrustSDK.DaonEvent)
+}
+@objc public protocol DaonDocumentProcessorModule {
+  @objc func isNfcSupported() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func performMrzOcr(image base64String: Swift.String, onCompletion: @escaping (_ isValid: Swift.Bool, _ mrz: Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func performNfcScan(mrzString: Swift.String, challenge: [Swift.UInt8]?, authenticationType: Swift.String?, onCompletion: @escaping ((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func performNfcScan(documentNumber: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String, challenge: [Swift.UInt8]?, authenticationType: Swift.String?, onCompletion: @escaping ((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func cancel(withMessage: Swift.String?)
+  #endif
+  @objc func close()
+}
+@objc @objcMembers public class TrustSDK : ObjectiveC.NSObject {
+  @objc public init(withViewController vc: UIKit.UIViewController, delegate: any DaonTrustSDK.DaonEventDelegate)
+  @objc public func addDocumentProcessor(_ processor: any DaonTrustSDK.DaonDocumentProcessorModule)
+  @objc public func addAppkeysProcessor(_ processor: any DaonTrustSDK.DaonAppkeysProcessorModule)
+  @objc public func addDeviceIntegrityProcessor(_ processor: any DaonTrustSDK.DaonDeviceIntegrityProcessorModule)
+  @objc public func start(withDaonOptions options: DaonTrustSDK.DaonOptions)
+  @objc public func stop()
+  public func addLogger(_ logger: any DaonTrustSDK.DaonTrustSDKLogger)
+  public func removeLogger(_ logger: any DaonTrustSDK.DaonTrustSDKLogger)
+  @objc deinit
+}
+extension DaonTrustSDK.TrustSDK : DaonTrustSDK.DaonEventDelegate {
+  @objc dynamic public func didReceive(successResponse daonEvent: DaonTrustSDK.DaonEvent)
+  @objc dynamic public func didReceive(failedResponse daonEvent: DaonTrustSDK.DaonEvent)
+  @objc dynamic public func didReceive(infoResponse daonEvent: DaonTrustSDK.DaonEvent)
+}
+extension Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toJson() -> Swift.String?
+  #endif
+}
+public enum TrustAnalyticsEvent : Swift.String, DaonTrustSDK.AnalyticsEvent {
+  case trustAnalyticsEvent
+  case nfcNotSupported
+  case nfcInputParsingError
+  case nfcSessionInitiated
+  case nfcSessionStarted
+  case nfcSessionCancelledByUser
+  case nfcSessionCancelledProgrammatically
+  case nfcSessionSuccessful
+  case nfcReadingDisconnected
+  case nfcReadingReconnected
+  case nfcReadingIssue
+  case nfcReadingInterrupted
+  case nfcDecodingIncomplete
+  public var name: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension DaonTrustSDK.DaonDocumentProcessorError : Swift.Equatable {}
+extension DaonTrustSDK.DaonDocumentProcessorError : Swift.Hashable {}
+extension DaonTrustSDK.DaonEventCode : Swift.Equatable {}
+extension DaonTrustSDK.DaonEventCode : Swift.Hashable {}
+extension DaonTrustSDK.DaonEventCode : Swift.RawRepresentable {}
+extension DaonTrustSDK.TrustAnalyticsEvent : Swift.Equatable {}
+extension DaonTrustSDK.TrustAnalyticsEvent : Swift.Hashable {}
+extension DaonTrustSDK.TrustAnalyticsEvent : Swift.RawRepresentable {}

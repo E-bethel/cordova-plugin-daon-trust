@@ -1,0 +1,11 @@
+framework module DaonNFCSDK {
+  umbrella header "DaonNFCSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module DaonNFCSDK.Swift {
+  header "DaonNFCSDK-Swift.h"
+  requires objc
+}

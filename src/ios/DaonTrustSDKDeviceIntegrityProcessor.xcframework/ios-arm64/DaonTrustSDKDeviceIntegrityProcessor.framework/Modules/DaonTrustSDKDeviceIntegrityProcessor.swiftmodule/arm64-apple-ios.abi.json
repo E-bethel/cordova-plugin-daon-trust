@@ -1,0 +1,334 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DaonTrustSDKDeviceIntegrityProcessor",
+    "printedName": "DaonTrustSDKDeviceIntegrityProcessor",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DaonTrustSDK",
+        "printedName": "DaonTrustSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDeviceIntegrityProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "FingerprintPro",
+        "printedName": "FingerprintPro",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDeviceIntegrityProcessor"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceIntegrityProcessor",
+        "printedName": "DeviceIntegrityProcessor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isAvailable",
+            "printedName": "isAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor(im)isAvailable",
+            "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C11isAvailableSbyF",
+            "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+            "objc_name": "isAvailable",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processOperation",
+            "printedName": "processOperation(parameters:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DIParameters",
+                "printedName": "DaonTrustSDK.DIParameters",
+                "usr": "c:@M@DaonTrustSDK@objc(cs)DIParameters"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor(im)processOperationWithParameters:completion:",
+            "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C16processOperation10parameters10completiony0aB3SDK12DIParametersC_ySSSg_s5Error_pSgtctF",
+            "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+            "objc_name": "processOperationWithParameters:completion:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVersion",
+            "printedName": "getVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor(im)getVersion",
+            "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C10getVersionSSyF",
+            "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+            "objc_name": "getVersion",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCapabilities",
+            "printedName": "getCapabilities()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor(im)getCapabilities",
+            "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C15getCapabilitiesSaySSGyF",
+            "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+            "objc_name": "getCapabilities",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor(im)close",
+            "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C5closeyyF",
+            "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+            "objc_name": "close",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceIntegrityProcessor",
+                "printedName": "DaonTrustSDKDeviceIntegrityProcessor.DeviceIntegrityProcessor",
+                "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor(im)init",
+            "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0CACycfc",
+            "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DaonTrustSDKDeviceIntegrityProcessor@objc(cs)DeviceIntegrityProcessor",
+        "mangledName": "$s36DaonTrustSDKDeviceIntegrityProcessor06DevicedE0C",
+        "moduleName": "DaonTrustSDKDeviceIntegrityProcessor",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "DaonDeviceIntegrityProcessorModule",
+            "printedName": "DaonDeviceIntegrityProcessorModule",
+            "usr": "c:@M@DaonTrustSDK@objc(pl)DaonDeviceIntegrityProcessorModule",
+            "mangledName": "$s12DaonTrustSDK0A30DeviceIntegrityProcessorModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

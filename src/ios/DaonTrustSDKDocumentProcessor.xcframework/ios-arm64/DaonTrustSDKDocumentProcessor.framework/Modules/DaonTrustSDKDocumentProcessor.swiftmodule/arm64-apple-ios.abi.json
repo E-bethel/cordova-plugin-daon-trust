@@ -1,0 +1,1398 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DaonTrustSDKDocumentProcessor",
+    "printedName": "DaonTrustSDKDocumentProcessor",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "DaonTrustSDK",
+        "printedName": "DaonTrustSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NFCAnalyticsEvent",
+        "printedName": "NFCAnalyticsEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "eventName",
+            "printedName": "eventName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC9eventNameSSvp",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC9eventNameSSvp",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC9eventNameSSvg",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC9eventNameSSvg",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(eventName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NFCAnalyticsEvent",
+                "printedName": "DaonTrustSDKDocumentProcessor.NFCAnalyticsEvent",
+                "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC9eventNameACSS_tcfc",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC9eventNameACSS_tcfc",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC4nameSSvp",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC4nameSSvp",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC4nameSSvg",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC4nameSSvg",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NFCAnalyticsEvent",
+                "printedName": "DaonTrustSDKDocumentProcessor.NFCAnalyticsEvent",
+                "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC6encode2toys7Encoder_p_tKF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC",
+        "mangledName": "$s29DaonTrustSDKDocumentProcessor17NFCAnalyticsEventC",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnalyticsEvent",
+            "printedName": "AnalyticsEvent",
+            "usr": "s:12DaonTrustSDK14AnalyticsEventP",
+            "mangledName": "$s12DaonTrustSDK14AnalyticsEventP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "DaonNFCSDK",
+        "printedName": "DaonNFCSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "DaonTrustSDK",
+        "printedName": "DaonTrustSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DaonTrustSDK",
+        "printedName": "DaonTrustSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DocumentAuthenticationType",
+        "printedName": "DocumentAuthenticationType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bacThenPace",
+            "printedName": "bacThenPace",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type) -> DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentAuthenticationType",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentAuthenticationType",
+                        "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                        "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO11bacThenPaceyA2CmF",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO11bacThenPaceyA2CmF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paceThenBac",
+            "printedName": "paceThenBac",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type) -> DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentAuthenticationType",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentAuthenticationType",
+                        "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                        "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO11paceThenBacyA2CmF",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO11paceThenBacyA2CmF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bacOnly",
+            "printedName": "bacOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type) -> DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentAuthenticationType",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentAuthenticationType",
+                        "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                        "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO7bacOnlyyA2CmF",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO7bacOnlyyA2CmF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paceOnly",
+            "printedName": "paceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type) -> DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentAuthenticationType",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DocumentAuthenticationType",
+                        "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                        "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8paceOnlyyA2CmF",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8paceOnlyyA2CmF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentAuthenticationType",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentAuthenticationType",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8rawValueSSvp",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8rawValueSSvp",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8rawValueSSvg",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO8rawValueSSvg",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO",
+        "mangledName": "$s29DaonTrustSDKDocumentProcessor26DocumentAuthenticationTypeO",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "DaonTrustSDK",
+        "printedName": "DaonTrustSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "Import",
+        "name": "DaonNFCSDK",
+        "printedName": "DaonNFCSDK",
+        "declKind": "Import",
+        "moduleName": "DaonTrustSDKDocumentProcessor"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DocumentProcessor",
+        "printedName": "DocumentProcessor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentProcessor",
+                "printedName": "DaonTrustSDKDocumentProcessor.DocumentProcessor",
+                "usr": "c:@M@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)init",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0CACycfc",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isNfcSupported",
+            "printedName": "isNfcSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)isNfcSupported",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C14isNfcSupportedSbyF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "isNfcSupported",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "performMrzOcr",
+            "printedName": "performMrzOcr(image:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)performMrzOcrWithImage:onCompletion:",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C13performMrzOcr5image12onCompletionySS_ySb_SSSgtctF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "performMrzOcrWithImage:onCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "performNfcScan",
+            "printedName": "performNfcScan(mrzString:challenge:authenticationType:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.UInt8]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.UInt8]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt8",
+                        "printedName": "Swift.UInt8",
+                        "usr": "s:s5UInt8V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "DaonTrustSDK.DaonDocumentProcessorResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DaonDocumentProcessorResult",
+                            "printedName": "DaonTrustSDK.DaonDocumentProcessorResult",
+                            "usr": "c:@M@DaonTrustSDK@objc(cs)DaonDocumentProcessorResult"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)performNfcScanWithMrzString:challenge:authenticationType:onCompletion:",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C14performNfcScan9mrzString9challenge18authenticationType12onCompletionySS_Says5UInt8VGSgSSSgys5Error_pSg_0aB3SDK0aeD6ResultCSgtctF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "performNfcScanWithMrzString:challenge:authenticationType:onCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "performNfcScan",
+            "printedName": "performNfcScan(documentNumber:dateOfBirth:dateOfExpiry:challenge:authenticationType:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.UInt8]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.UInt8]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt8",
+                        "printedName": "Swift.UInt8",
+                        "usr": "s:s5UInt8V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "((any Swift.Error)?, DaonTrustSDK.DaonDocumentProcessorResult?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "DaonTrustSDK.DaonDocumentProcessorResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DaonDocumentProcessorResult",
+                            "printedName": "DaonTrustSDK.DaonDocumentProcessorResult",
+                            "usr": "c:@M@DaonTrustSDK@objc(cs)DaonDocumentProcessorResult"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)performNfcScanWithDocumentNumber:dateOfBirth:dateOfExpiry:challenge:authenticationType:onCompletion:",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C14performNfcScan14documentNumber11dateOfBirth0kL6Expiry9challenge18authenticationType12onCompletionySS_S2SSays5UInt8VGSgSSSgys5Error_pSg_0aB3SDK0aeD6ResultCSgtctF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "performNfcScanWithDocumentNumber:dateOfBirth:dateOfExpiry:challenge:authenticationType:onCompletion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(withMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)cancelWithMessage:",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C6cancel11withMessageySSSg_tF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "cancelWithMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor(im)close",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C5closeyyF",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "close",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "setLicense",
+                "printedName": "setLicense(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentProcessor.Builder",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC10setLicenseyAESSF",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC10setLicenseyAESSF",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "declAttributes": [
+                  "AccessControl",
+                  "ObjC",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "setErrorDialogMessage",
+                "printedName": "setErrorDialogMessage(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentProcessor.Builder",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC21setErrorDialogMessageyAESSF",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC21setErrorDialogMessageyAESSF",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "declAttributes": [
+                  "AccessControl",
+                  "ObjC",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DocumentProcessor",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentProcessor",
+                    "usr": "c:@M@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC5buildACyKF",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC5buildACyKF",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "objc_name": "buildAndReturnError:",
+                "declAttributes": [
+                  "AccessControl",
+                  "ObjC",
+                  "RawDocComment"
+                ],
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "DaonTrustSDKDocumentProcessor.DocumentProcessor.Builder",
+                    "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderCAEycfc",
+                "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderCAEycfc",
+                "moduleName": "DaonTrustSDKDocumentProcessor",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC",
+            "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C7BuilderC",
+            "moduleName": "DaonTrustSDKDocumentProcessor",
+            "objc_name": "DocumentProcessorBuilder",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "c:objc(cs)NSObject",
+            "inheritsConvenienceInitializers": true,
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DaonTrustSDKDocumentProcessor@objc(cs)DocumentProcessor",
+        "mangledName": "$s29DaonTrustSDKDocumentProcessor08DocumentD0C",
+        "moduleName": "DaonTrustSDKDocumentProcessor",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DaonDocumentProcessorModule",
+            "printedName": "DaonDocumentProcessorModule",
+            "usr": "c:@M@DaonTrustSDK@objc(pl)DaonDocumentProcessorModule",
+            "mangledName": "$s12DaonTrustSDK0A23DocumentProcessorModuleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/NFC\/NFCProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 8252,
+      "length": 9,
+      "value": "\"license\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/DocumentAuthenticationType.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 35,
+      "value": "\"AUTHENTICATION_TYPE_BAC_THEN_PACE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/DocumentAuthenticationType.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 35,
+      "value": "\"AUTHENTICATION_TYPE_PACE_THEN_BAC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/DocumentAuthenticationType.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 30,
+      "value": "\"AUTHENTICATION_TYPE_BAC_ONLY\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/DocumentAuthenticationType.swift",
+      "kind": "StringLiteral",
+      "offset": 656,
+      "length": 31,
+      "value": "\"AUTHENTICATION_TYPE_PACE_ONLY\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/DocumentProcessor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 657,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/identityx-onboarding-ios-trust-sdk\/identityx-onboarding-ios-trust-sdk\/Processors\/DocumentProcessor\/Code\/DocumentProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 12754,
+      "length": 9,
+      "value": "\"license\""
+    }
+  ]
+}

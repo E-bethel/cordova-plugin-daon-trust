@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios14-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DaonTrustSDKAppkeysProcessor
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import DaonAuthenticatorSDK
+import DaonFIDOSDK
+import DaonTrustSDK
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @objcMembers public class AppkeysProcessor : ObjectiveC.NSObject, DaonTrustSDK.DaonAppkeysProcessorModule {
+  @objc public func appId() -> Swift.String
+  @objc public func isAvailable() -> Swift.Bool
+  @objc public func isBiometricsSupported() -> Swift.Bool
+  @objc public func version() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func credentials(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func register(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func authenticate(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func deregister(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func notify(parameters: DaonTrustSDK.Parameters, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func cancel(message: Swift.String?)
+  #endif
+  @objc public func close()
+  @objc deinit
+}
+extension DaonTrustSDKAppkeysProcessor.AppkeysProcessor : DaonFIDOSDK.IXUAFDelegate {
+  @objc dynamic public func operation(_ operation: any DaonFIDOSDK.IXUAFOperation, authenticationAttemptFailedWithInfo info: [Swift.String : Any])
+  @objc dynamic public func operation(_ operation: any DaonFIDOSDK.IXUAFOperation, shouldDisplay transaction: DaonFIDOSDK.IXUAFTransaction)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func operation(_ operation: any DaonFIDOSDK.IXUAFOperation, shouldUseCaptureControllerFor type: DaonAuthenticatorSDK.DASAuthenticatorPolicyType, context: any DaonAuthenticatorSDK.DASMultiAuthenticatorContext) -> (any DaonAuthenticatorSDK.DASCaptureControllerProtocol)?
+  #endif
+}
+extension DaonTrustSDKAppkeysProcessor.AppkeysProcessor {
+  @_inheritsConvenienceInitializers @objc(AppkeysProcessorBuilder) public class Builder : ObjectiveC.NSObject {
+    @objc public func setLicense(_ license: Swift.String) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    @objc public func enableDebugLogs(_ enable: Swift.Bool) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    @objc public func enableLocationUsage(_ enable: Swift.Bool) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    @objc public func enableSilentBiometricRegistration(_ enable: Swift.Bool) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    @objc public func setBiometricRegistrationReason(_ reason: Swift.String) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    @objc public func setBiometricAuthenticationReason(_ reason: Swift.String) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    @objc public func setExtensions(_ extensions: [Swift.String : Swift.String]) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    @objc public func setPushToken(_ token: Foundation.Data?) -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor.Builder
+    #endif
+    @objc public func build() throws -> DaonTrustSDKAppkeysProcessor.AppkeysProcessor
+    @objc override dynamic public init()
+    @objc deinit
+  }
+}
