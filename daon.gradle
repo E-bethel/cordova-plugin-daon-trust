@@ -6,6 +6,7 @@ repositories {
 
 dependencies {
     implementation 'com.google.android.material:material:1.10.0'
+    implementation('com.journeyapps:zxing-android-embedded:4.3.0') { transitive = false }
     implementation(name: 'com.daon.sdk.trust-1.8.18', ext: 'aar')
     implementation(name: 'com.daon.sdk.nfc-1.4.5', ext: 'aar')
     implementation(name: 'com.daon.sdk.trust.nfcmanager-1.8.18', ext: 'aar')
