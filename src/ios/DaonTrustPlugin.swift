@@ -10,27 +10,18 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
     private var sdk: TrustSDK?
 
     @objc(startOnboarding:)
-func startOnboarding(command: CDVInvokedUrlCommand) {
-    callbackId = command.callbackId
+    func startOnboarding(command: CDVInvokedUrlCommand) {
+        callbackId = command.callbackId
 
-    let options = command.argument(at: 0) as? [String: Any]
-    let serverUrl = "" // TEMP DEBUG: force QR flow to test bare presentation
+        let options = command.argument(at: 0) as? [String: Any]
+        let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        NSLog("DAON DEBUG: serverUrl received = %@", serverUrl)
 
-    guard let hostViewController = self.viewController else { return }
+        guard let viewController = self.viewController else { return }
 
-let daonHostVC = UIViewController()
-daonHostVC.view.backgroundColor = .white
-let daonNavController = UINavigationController(rootViewController: daonHostVC)
-daonNavController.modalPresentationStyle = .fullScreen
-daonNavController.setNavigationBarHidden(true, animated: false)
+        let sdkInstance = TrustSDK(withViewController: viewController, delegate: self)
+        self.sdk = sdkInstance
 
-hostViewController.present(daonNavController, animated: false) { [weak self] in
-    guard let self = self else { return }
-    NSLog("DAON DEBUG: presenting Daon SDK from fresh daonHostVC inside UINavigationController")
-
-    let sdkInstance = TrustSDK(withViewController: daonHostVC, delegate: self)
-    self.sdk = sdkInstance
-    // ... rest unchanged (documentProcessor, appkeysProcessor, deviceIntegrityProcessor, daonOptions, sdkInstance.start)
         do {
             let documentProcessor = try DocumentProcessor.Builder().build()
             NSLog("DAON DEBUG: documentProcessor built OK")
@@ -54,30 +45,29 @@ hostViewController.present(daonNavController, animated: false) { [weak self] in
                 daonOptions.serverUrl = serverUrl
             }
 
-            NSLog("DAON DEBUG: about to call sdk.start on daonHostVC")
+            NSLog("DAON DEBUG: about to call sdk.start, serverUrl empty = %@", "\(serverUrl.isEmpty)")
             sdkInstance.start(withDaonOptions: daonOptions)
             NSLog("DAON DEBUG: sdk.start returned")
         } catch {
             NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
-            self.sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
+            sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
         }
     }
-}
 
     func didReceive(successResponse daonEvent: DaonEvent) {
-    NSLog("DAON DEBUG: successResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
-    sendEvent(type: "success", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
-}
+        NSLog("DAON DEBUG: successResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
+        sendEvent(type: "success", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
+    }
 
-func didReceive(failedResponse daonEvent: DaonEvent) {
-    NSLog("DAON DEBUG: failedResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
-    sendEvent(type: "failure", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: false)
-}
+    func didReceive(failedResponse daonEvent: DaonEvent) {
+        NSLog("DAON DEBUG: failedResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
+        sendEvent(type: "failure", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: false)
+    }
 
-func didReceive(infoResponse daonEvent: DaonEvent) {
-    NSLog("DAON DEBUG: infoResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
-    sendEvent(type: "info", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
-}
+    func didReceive(infoResponse daonEvent: DaonEvent) {
+        NSLog("DAON DEBUG: infoResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
+        sendEvent(type: "info", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
+    }
 
     private func sendEvent(type: String, message: String, keepCallback: Bool) {
         guard let callbackId else { return }
