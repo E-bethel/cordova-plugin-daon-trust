@@ -25,12 +25,12 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
             sdkInstance.addDocumentProcessor(documentProcessor)
 
             let appkeysProcessor = try AppkeysProcessor.Builder()
-                .enableDebugLogs(false)
-                .enableLocationUsage(false)
-                .enableSilentBiometricRegistration(false)
-                .setBiometricRegistrationReason("Secure your account with biometrics")
-                .setBiometricAuthenticationReason("Verify your identity")
-                .build()
+    .enableDebugLogs(true)  // was false
+    .enableLocationUsage(false)
+    .enableSilentBiometricRegistration(false)
+    .setBiometricRegistrationReason("Secure your account with biometrics")
+    .setBiometricAuthenticationReason("Verify your identity")
+    .build()
             sdkInstance.addAppkeysProcessor(appkeysProcessor)
 
             let deviceIntegrityProcessor = DeviceIntegrityProcessor()
