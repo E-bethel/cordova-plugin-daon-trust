@@ -55,5 +55,6 @@
     <framework src="src/ios/FingerprintPro.xcframework" custom="true" />
     <framework src="src/ios/DaonAuthenticatorSDK.xcframework" custom="true" />
     <framework src="src/ios/DaonFIDOSDK.xcframework" custom="true" />
+    <framework src="src/ios/DaonCryptoSDK.xcframework" custom="true" />
   </platform>
 </plugin>
