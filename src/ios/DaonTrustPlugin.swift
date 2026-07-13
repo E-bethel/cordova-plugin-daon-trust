@@ -49,16 +49,19 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
     }
 
     func didReceive(successResponse daonEvent: DaonEvent) {
-        sendEvent(type: "success", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
-    }
+    NSLog("DAON DEBUG: successResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
+    sendEvent(type: "success", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
+}
 
-    func didReceive(failedResponse daonEvent: DaonEvent) {
-        sendEvent(type: "failure", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: false)
-    }
+func didReceive(failedResponse daonEvent: DaonEvent) {
+    NSLog("DAON DEBUG: failedResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
+    sendEvent(type: "failure", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: false)
+}
 
-    func didReceive(infoResponse daonEvent: DaonEvent) {
-        sendEvent(type: "info", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
-    }
+func didReceive(infoResponse daonEvent: DaonEvent) {
+    NSLog("DAON DEBUG: infoResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
+    sendEvent(type: "info", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
+}
 
     private func sendEvent(type: String, message: String, keepCallback: Bool) {
         guard let callbackId else { return }
