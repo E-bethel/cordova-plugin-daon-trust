@@ -36,6 +36,11 @@
   </platform>
 
   <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="DaonTrustPlugin">
+        <param name="ios-package" value="DaonTrustPlugin" />
+      </feature>
+    </config-file>
     <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
       <string>Camera access is required for onboarding.</string>
     </config-file>
