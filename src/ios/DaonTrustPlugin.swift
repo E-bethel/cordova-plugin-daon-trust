@@ -18,19 +18,19 @@ func startOnboarding(command: CDVInvokedUrlCommand) {
 
     guard let hostViewController = self.viewController else { return }
 
-    // Present a fresh, plain UIViewController on top of Cordova's host,
-    // and hand THAT to Daon instead of the Ionic-hosted controller directly.
-    let daonHostVC = UIViewController()
-    daonHostVC.view.backgroundColor = .white
-    daonHostVC.modalPresentationStyle = .fullScreen
+let daonHostVC = UIViewController()
+daonHostVC.view.backgroundColor = .white
+let daonNavController = UINavigationController(rootViewController: daonHostVC)
+daonNavController.modalPresentationStyle = .fullScreen
+daonNavController.setNavigationBarHidden(true, animated: false)
 
-    hostViewController.present(daonHostVC, animated: false) { [weak self] in
-        guard let self = self else { return }
-        NSLog("DAON DEBUG: presenting Daon SDK from fresh daonHostVC")
+hostViewController.present(daonNavController, animated: false) { [weak self] in
+    guard let self = self else { return }
+    NSLog("DAON DEBUG: presenting Daon SDK from fresh daonHostVC inside UINavigationController")
 
-        let sdkInstance = TrustSDK(withViewController: daonHostVC, delegate: self)
-        self.sdk = sdkInstance
-
+    let sdkInstance = TrustSDK(withViewController: daonHostVC, delegate: self)
+    self.sdk = sdkInstance
+    // ... rest unchanged (documentProcessor, appkeysProcessor, deviceIntegrityProcessor, daonOptions, sdkInstance.start)
         do {
             let documentProcessor = try DocumentProcessor.Builder().build()
             NSLog("DAON DEBUG: documentProcessor built OK")
