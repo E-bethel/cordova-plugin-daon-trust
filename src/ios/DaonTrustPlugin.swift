@@ -21,30 +21,39 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
         self.sdk = sdkInstance
 
         do {
-            let documentProcessor = try DocumentProcessor.Builder().build()
-            sdkInstance.addDocumentProcessor(documentProcessor)
+    let documentProcessor = try DocumentProcessor.Builder().build()
+    NSLog("DAON DEBUG: documentProcessor built OK")
+    sdkInstance.addDocumentProcessor(documentProcessor)
+    NSLog("DAON DEBUG: documentProcessor added OK")
 
-            let appkeysProcessor = try AppkeysProcessor.Builder()
-    .enableDebugLogs(true)  // was false
-    .enableLocationUsage(false)
-    .enableSilentBiometricRegistration(false)
-    .setBiometricRegistrationReason("Secure your account with biometrics")
-    .setBiometricAuthenticationReason("Verify your identity")
-    .build()
-            sdkInstance.addAppkeysProcessor(appkeysProcessor)
+    let appkeysProcessor = try AppkeysProcessor.Builder()
+        .enableDebugLogs(true)
+        .enableLocationUsage(false)
+        .enableSilentBiometricRegistration(false)
+        .setBiometricRegistrationReason("Secure your account with biometrics")
+        .setBiometricAuthenticationReason("Verify your identity")
+        .build()
+    NSLog("DAON DEBUG: appkeysProcessor built OK")
+    sdkInstance.addAppkeysProcessor(appkeysProcessor)
+    NSLog("DAON DEBUG: appkeysProcessor added OK")
 
-            let deviceIntegrityProcessor = DeviceIntegrityProcessor()
-            sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
+    let deviceIntegrityProcessor = DeviceIntegrityProcessor()
+    NSLog("DAON DEBUG: deviceIntegrityProcessor created OK")
+    sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
+    NSLog("DAON DEBUG: deviceIntegrityProcessor added OK")
 
-            let daonOptions = DaonOptions()
-            if !serverUrl.isEmpty {
-                daonOptions.serverUrl = serverUrl
-            }
+    let daonOptions = DaonOptions()
+    if !serverUrl.isEmpty {
+        daonOptions.serverUrl = serverUrl
+    }
+    NSLog("DAON DEBUG: about to call sdk.start, serverUrl empty = %@", "\(serverUrl.isEmpty)")
 
-            sdkInstance.start(withDaonOptions: daonOptions)
-        } catch {
-            sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
-        }
+    sdkInstance.start(withDaonOptions: daonOptions)
+    NSLog("DAON DEBUG: sdk.start returned (call completed, not necessarily flow completed)")
+} catch {
+    NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
+    sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
+}
     }
 
     func didReceive(successResponse daonEvent: DaonEvent) {
