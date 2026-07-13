@@ -1,0 +1,6 @@
+framework module DaonFIDOSDK {
+  umbrella header "DaonFIDOSDK.h"
+  export *
+
+  module * { export * }
+}
