@@ -10,55 +10,59 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
     private var sdk: TrustSDK?
 
     @objc(startOnboarding:)
-    func startOnboarding(command: CDVInvokedUrlCommand) {
-        callbackId = command.callbackId
+func startOnboarding(command: CDVInvokedUrlCommand) {
+    callbackId = command.callbackId
 
-        let options = command.argument(at: 0) as? [String: Any]
-        let serverUrl = "" // TEMP DEBUG: force QR flow to test bare presentation
-        guard let viewController = self.viewController else { return }
-        NSLog("DAON DEBUG: viewController = %@, isViewLoaded = %@, window = %@", viewController, "\(viewController.isViewLoaded)", String(describing: viewController.view.window))
-        NSLog("DAON DEBUG: presentedViewController = %@", String(describing: viewController.presentedViewController))
-        NSLog("DAON DEBUG: viewController.view.window = %@", String(describing: viewController.view.window))
-        NSLog("DAON DEBUG: viewController class = %@", String(describing: type(of: viewController)))
+    let options = command.argument(at: 0) as? [String: Any]
+    let serverUrl = "" // TEMP DEBUG: force QR flow to test bare presentation
 
-        let sdkInstance = TrustSDK(withViewController: viewController, delegate: self)
+    guard let hostViewController = self.viewController else { return }
+
+    // Present a fresh, plain UIViewController on top of Cordova's host,
+    // and hand THAT to Daon instead of the Ionic-hosted controller directly.
+    let daonHostVC = UIViewController()
+    daonHostVC.view.backgroundColor = .white
+    daonHostVC.modalPresentationStyle = .fullScreen
+
+    hostViewController.present(daonHostVC, animated: false) { [weak self] in
+        guard let self = self else { return }
+        NSLog("DAON DEBUG: presenting Daon SDK from fresh daonHostVC")
+
+        let sdkInstance = TrustSDK(withViewController: daonHostVC, delegate: self)
         self.sdk = sdkInstance
 
         do {
-    let documentProcessor = try DocumentProcessor.Builder().build()
-    NSLog("DAON DEBUG: documentProcessor built OK")
-    sdkInstance.addDocumentProcessor(documentProcessor)
-    NSLog("DAON DEBUG: documentProcessor added OK")
+            let documentProcessor = try DocumentProcessor.Builder().build()
+            NSLog("DAON DEBUG: documentProcessor built OK")
+            sdkInstance.addDocumentProcessor(documentProcessor)
 
-    let appkeysProcessor = try AppkeysProcessor.Builder()
-        .enableDebugLogs(true)
-        .enableLocationUsage(false)
-        .enableSilentBiometricRegistration(false)
-        .setBiometricRegistrationReason("Secure your account with biometrics")
-        .setBiometricAuthenticationReason("Verify your identity")
-        .build()
-    NSLog("DAON DEBUG: appkeysProcessor built OK")
-    sdkInstance.addAppkeysProcessor(appkeysProcessor)
-    NSLog("DAON DEBUG: appkeysProcessor added OK")
+            let appkeysProcessor = try AppkeysProcessor.Builder()
+                .enableDebugLogs(true)
+                .enableLocationUsage(false)
+                .enableSilentBiometricRegistration(false)
+                .setBiometricRegistrationReason("Secure your account with biometrics")
+                .setBiometricAuthenticationReason("Verify your identity")
+                .build()
+            NSLog("DAON DEBUG: appkeysProcessor built OK")
+            sdkInstance.addAppkeysProcessor(appkeysProcessor)
 
-    let deviceIntegrityProcessor = DeviceIntegrityProcessor()
-    NSLog("DAON DEBUG: deviceIntegrityProcessor created OK")
-    sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
-    NSLog("DAON DEBUG: deviceIntegrityProcessor added OK")
+            let deviceIntegrityProcessor = DeviceIntegrityProcessor()
+            sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
 
-    let daonOptions = DaonOptions()
-    if !serverUrl.isEmpty {
-        daonOptions.serverUrl = serverUrl
+            let daonOptions = DaonOptions()
+            if !serverUrl.isEmpty {
+                daonOptions.serverUrl = serverUrl
+            }
+
+            NSLog("DAON DEBUG: about to call sdk.start on daonHostVC")
+            sdkInstance.start(withDaonOptions: daonOptions)
+            NSLog("DAON DEBUG: sdk.start returned")
+        } catch {
+            NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
+            self.sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
+        }
     }
-    NSLog("DAON DEBUG: about to call sdk.start, serverUrl empty = %@", "\(serverUrl.isEmpty)")
-
-    sdkInstance.start(withDaonOptions: daonOptions)
-    NSLog("DAON DEBUG: sdk.start returned (call completed, not necessarily flow completed)")
-} catch {
-    NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
-    sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
 }
-    }
 
     func didReceive(successResponse daonEvent: DaonEvent) {
     NSLog("DAON DEBUG: successResponse code=%d desc=%@", daonEvent.code.rawValue, daonEvent.localizedDescription ?? "nil")
