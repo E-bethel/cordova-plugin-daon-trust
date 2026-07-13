@@ -16,39 +16,42 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
         NSLog("DAON DEBUG: pluginInitialize called — SDK will be created on demand")
     }
 
-    @objc(startOnboarding:)
-    func startOnboarding(command: CDVInvokedUrlCommand) {
-        callbackId = command.callbackId
+   @objc(startOnboarding:)
+func startOnboarding(command: CDVInvokedUrlCommand) {
+    callbackId = command.callbackId
 
-        let options = command.argument(at: 0) as? [String: Any]
-        let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-        NSLog("DAON DEBUG: serverUrl received = %@", serverUrl)
+    let options = command.argument(at: 0) as? [String: Any]
+    let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+    NSLog("DAON DEBUG: serverUrl received = %@", serverUrl)
 
-        // 1. Create a new UIWindow that will float above the Cordova webview
-        let windowScene = viewController.view.window?.windowScene
-        let newWindow = UIWindow(windowScene: windowScene!)
-        newWindow.windowLevel = .normal + 1
-        newWindow.backgroundColor = .clear
+    // 1. Create the overlay window on main thread (fast)
+    guard let windowScene = viewController.view.window?.windowScene else {
+        NSLog("DAON DEBUG: No windowScene available — aborting")
+        sendEvent(type: "failure", message: "No window scene", keepCallback: false)
+        return
+    }
+    let newWindow = UIWindow(windowScene: windowScene)
+    newWindow.windowLevel = UIWindow.Level(0) + 1
+    newWindow.backgroundColor = .clear
 
-        // 2. Build a plain container view controller inside a navigation controller
-        let containerVC = UIViewController()
-        containerVC.view.backgroundColor = .white
-        let navController = UINavigationController(rootViewController: containerVC)
-        navController.setNavigationBarHidden(true, animated: false)
-        navController.modalPresentationStyle = .fullScreen
+    let containerVC = UIViewController()
+    containerVC.view.backgroundColor = .white
+    let navController = UINavigationController(rootViewController: containerVC)
+    navController.setNavigationBarHidden(true, animated: false)
+    navController.modalPresentationStyle = .fullScreen
 
-        newWindow.rootViewController = navController
-        newWindow.makeKeyAndVisible()
-        self.daonWindow = newWindow
+    newWindow.rootViewController = navController
+    newWindow.makeKeyAndVisible()
+    self.daonWindow = newWindow
 
-        // 3. Create the SDK with the container view controller (NOT Cordova's)
+    // 2. Build processors + SDK on a background thread
+    DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+        guard let self = self else { return }
+
         let sdkInstance = TrustSDK(withViewController: containerVC, delegate: self)
-        self.sdk = sdkInstance
-
         do {
             let documentProcessor = try DocumentProcessor.Builder().build()
             sdkInstance.addDocumentProcessor(documentProcessor)
-            NSLog("DAON DEBUG: documentProcessor built OK")
 
             let appkeysProcessor = try AppkeysProcessor.Builder()
                 .enableDebugLogs(true)
@@ -58,7 +61,6 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
                 .setBiometricAuthenticationReason("Verify your identity")
                 .build()
             sdkInstance.addAppkeysProcessor(appkeysProcessor)
-            NSLog("DAON DEBUG: appkeysProcessor built OK")
 
             let deviceIntegrityProcessor = DeviceIntegrityProcessor()
             sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
@@ -69,15 +71,22 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
                 daonOptions.serverUrl = serverUrl
             }
 
-            NSLog("DAON DEBUG: about to call sdk.start on dedicated UIWindow")
-            sdkInstance.start(withDaonOptions: daonOptions)
-            NSLog("DAON DEBUG: sdk.start returned")
+            // 3. Must call sdk.start on main thread (UIKit)
+            DispatchQueue.main.async {
+                self.sdk = sdkInstance
+                NSLog("DAON DEBUG: about to call sdk.start on dedicated UIWindow")
+                sdkInstance.start(withDaonOptions: daonOptions)
+                NSLog("DAON DEBUG: sdk.start returned")
+            }
         } catch {
-            NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
-            self.sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
-            self.dismissDaonWindow()
+            DispatchQueue.main.async {
+                NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
+                self.sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
+                self.dismissDaonWindow()
+            }
         }
     }
+}
 
     // MARK: - DaonEventDelegate
 
