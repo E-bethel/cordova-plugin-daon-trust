@@ -17,7 +17,7 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
         let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
         guard let viewController = self.viewController else { return }
-
+        print("DAON DEBUG: viewController = \(viewController), isViewLoaded = \(viewController.isViewLoaded), window = \(String(describing: viewController.view.window))")
         let sdkInstance = TrustSDK(withViewController: viewController, delegate: self)
         self.sdk = sdkInstance
 
