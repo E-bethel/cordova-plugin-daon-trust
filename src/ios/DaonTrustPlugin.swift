@@ -41,6 +41,7 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
             sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
 
             let daonOptions = DaonOptions()
+            daonOptions.initializationTimeout = 60
             if !serverUrl.isEmpty {
                 daonOptions.serverUrl = serverUrl
             }
