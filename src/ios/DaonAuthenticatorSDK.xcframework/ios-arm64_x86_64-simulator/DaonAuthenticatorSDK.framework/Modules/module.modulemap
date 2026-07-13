@@ -1,0 +1,6 @@
+framework module DaonAuthenticatorSDK {
+  umbrella header "DaonAuthenticatorSDK.h"
+  export *
+
+  module * { export * }
+}

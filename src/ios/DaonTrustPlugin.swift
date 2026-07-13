@@ -1,5 +1,4 @@
 import Foundation
-import Cordova
 import DaonTrustSDK
 import DaonTrustSDKDocumentProcessor
 import DaonTrustSDKAppkeysProcessor

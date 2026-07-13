@@ -1,0 +1,939 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/runner/Library/Developer/Xcode/DerivedData/DaonAuthenticatorSDK-akwpwjhxvnyzumcncemoiwvglvzk/Build/Intermediates.noindex/ArchiveIntermediates/Simulator/InstallationBuildProductsLocation/Library/Frameworks/DaonAuthenticatorSDK.framework/DaonAuthenticatorSDK'
+relocations:
+  - { offset: 0x76985, size: 0x8, addend: 0x0, symName: _DaonAuthenticatorSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x62F40, symSize: 0x0 }
+  - { offset: 0x769BA, size: 0x8, addend: 0x0, symName: _DaonAuthenticatorSDKVersionNumber, symObjAddr: 0x48, symBinAddr: 0x62F88, symSize: 0x0 }
+  - { offset: 0x769F7, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController initWithContext:reportErrorOnLACancel:sdkWillDetermineLockEvents:sdkWillHandleLockEvents:]', symObjAddr: 0x0, symBinAddr: 0x1010, symSize: 0x100 }
+  - { offset: 0x76B5E, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController initWithContext:reportErrorOnLACancel:sdkWillDetermineLockEvents:sdkWillHandleLockEvents:]', symObjAddr: 0x0, symBinAddr: 0x1010, symSize: 0x100 }
+  - { offset: 0x76BD5, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController performAuthenticationWithReason:completionHandler:]', symObjAddr: 0x100, symBinAddr: 0x1110, symSize: 0xC }
+  - { offset: 0x76C22, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController performAuthenticationWithReason:completionHandler:fallback:]', symObjAddr: 0x10C, symBinAddr: 0x111C, symSize: 0x8 }
+  - { offset: 0x76C7D, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController performAuthenticationWithReason:completionHandler:fallback:terminateOnFallback:]', symObjAddr: 0x114, symBinAddr: 0x1124, symSize: 0x3D4 }
+  - { offset: 0x76D2B, size: 0x8, addend: 0x0, symName: '___117-[DASDefaultAppleBiometricController performAuthenticationWithReason:completionHandler:fallback:terminateOnFallback:]_block_invoke', symObjAddr: 0x4E8, symBinAddr: 0x14F8, symSize: 0x120 }
+  - { offset: 0x76DA9, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x608, symBinAddr: 0x1618, symSize: 0x8 }
+  - { offset: 0x76DD0, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x610, symBinAddr: 0x1620, symSize: 0x8 }
+  - { offset: 0x76DEF, size: 0x8, addend: 0x0, symName: '___117-[DASDefaultAppleBiometricController performAuthenticationWithReason:completionHandler:fallback:terminateOnFallback:]_block_invoke.323', symObjAddr: 0x618, symBinAddr: 0x1628, symSize: 0x12C }
+  - { offset: 0x76E9D, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s, symObjAddr: 0x744, symBinAddr: 0x1754, symSize: 0x30 }
+  - { offset: 0x76EC6, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x774, symBinAddr: 0x1784, symSize: 0x30 }
+  - { offset: 0x76EE5, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController fixTouchIDFreeze]', symObjAddr: 0x7A4, symBinAddr: 0x17B4, symSize: 0x1AC }
+  - { offset: 0x76FB8, size: 0x8, addend: 0x0, symName: '___54-[DASDefaultAppleBiometricController fixTouchIDFreeze]_block_invoke', symObjAddr: 0x950, symBinAddr: 0x1960, symSize: 0x4 }
+  - { offset: 0x76FF7, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController reportBackErrorIfRequired:]', symObjAddr: 0x954, symBinAddr: 0x1964, symSize: 0xE4 }
+  - { offset: 0x7704E, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController cancel]', symObjAddr: 0xA38, symBinAddr: 0x1A48, symSize: 0x58 }
+  - { offset: 0x77081, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController handleCompletion]', symObjAddr: 0xA90, symBinAddr: 0x1AA0, symSize: 0x70 }
+  - { offset: 0x770DC, size: 0x8, addend: 0x0, symName: '___54-[DASDefaultAppleBiometricController handleCompletion]_block_invoke', symObjAddr: 0xB00, symBinAddr: 0x1B10, symSize: 0x48 }
+  - { offset: 0x7712A, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController handleError:]', symObjAddr: 0xB48, symBinAddr: 0x1B58, symSize: 0xDC }
+  - { offset: 0x7717D, size: 0x8, addend: 0x0, symName: '___50-[DASDefaultAppleBiometricController handleError:]_block_invoke', symObjAddr: 0xC24, symBinAddr: 0x1C34, symSize: 0x1C4 }
+  - { offset: 0x77220, size: 0x8, addend: 0x0, symName: '___50-[DASDefaultAppleBiometricController handleError:]_block_invoke_2', symObjAddr: 0xDE8, symBinAddr: 0x1DF8, symSize: 0x64 }
+  - { offset: 0x772BC, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0xE4C, symBinAddr: 0x1E5C, symSize: 0x28 }
+  - { offset: 0x772E5, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0xE74, symBinAddr: 0x1E84, symSize: 0x28 }
+  - { offset: 0x77304, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController checkForTooManyAttempts:]', symObjAddr: 0xE9C, symBinAddr: 0x1EAC, symSize: 0x12C }
+  - { offset: 0x7734D, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController shouldCancelOnBackgrounding]', symObjAddr: 0xFC8, symBinAddr: 0x1FD8, symSize: 0x44 }
+  - { offset: 0x77385, size: 0x8, addend: 0x0, symName: '-[DASDefaultAppleBiometricController .cxx_destruct]', symObjAddr: 0x100C, symBinAddr: 0x201C, symSize: 0x44 }
+  - { offset: 0x777BC, size: 0x8, addend: 0x0, symName: '-[DASLockInfo initWithCoder:]', symObjAddr: 0x0, symBinAddr: 0x2060, symSize: 0x180 }
+  - { offset: 0x778BE, size: 0x8, addend: 0x0, symName: '-[DASLockInfo initWithCoder:]', symObjAddr: 0x0, symBinAddr: 0x2060, symSize: 0x180 }
+  - { offset: 0x77930, size: 0x8, addend: 0x0, symName: '-[DASLockInfo encodeWithCoder:]', symObjAddr: 0x180, symBinAddr: 0x21E0, symSize: 0x114 }
+  - { offset: 0x77973, size: 0x8, addend: 0x0, symName: '+[DASLockInfo supportsSecureCoding]', symObjAddr: 0x294, symBinAddr: 0x22F4, symSize: 0x8 }
+  - { offset: 0x779A6, size: 0x8, addend: 0x0, symName: '-[DASLockInfo incrementAttempts]', symObjAddr: 0x29C, symBinAddr: 0x22FC, symSize: 0x28 }
+  - { offset: 0x779D9, size: 0x8, addend: 0x0, symName: '-[DASLockInfo suspendWithInterval:]', symObjAddr: 0x2C4, symBinAddr: 0x2324, symSize: 0x6C }
+  - { offset: 0x77A1C, size: 0x8, addend: 0x0, symName: '-[DASLockInfo hasSuspensionExpired]', symObjAddr: 0x330, symBinAddr: 0x2390, symSize: 0xA0 }
+  - { offset: 0x77A53, size: 0x8, addend: 0x0, symName: '-[DASLockInfo removeSuspension]', symObjAddr: 0x3D0, symBinAddr: 0x2430, symSize: 0x38 }
+  - { offset: 0x77A86, size: 0x8, addend: 0x0, symName: '-[DASLockInfo permanentlyLock]', symObjAddr: 0x408, symBinAddr: 0x2468, symSize: 0x58 }
+  - { offset: 0x77AB9, size: 0x8, addend: 0x0, symName: '-[DASLockInfo unlockWithId:]', symObjAddr: 0x460, symBinAddr: 0x24C0, symSize: 0x6C }
+  - { offset: 0x77AFC, size: 0x8, addend: 0x0, symName: '-[DASLockInfo reset]', symObjAddr: 0x4CC, symBinAddr: 0x252C, symSize: 0x34 }
+  - { offset: 0x77B2F, size: 0x8, addend: 0x0, symName: '-[DASLockInfo description]', symObjAddr: 0x500, symBinAddr: 0x2560, symSize: 0xD4 }
+  - { offset: 0x77B66, size: 0x8, addend: 0x0, symName: '-[DASLockInfo attempts]', symObjAddr: 0x5D4, symBinAddr: 0x2634, symSize: 0x8 }
+  - { offset: 0x77B9D, size: 0x8, addend: 0x0, symName: '-[DASLockInfo setAttempts:]', symObjAddr: 0x5DC, symBinAddr: 0x263C, symSize: 0x8 }
+  - { offset: 0x77BDA, size: 0x8, addend: 0x0, symName: '-[DASLockInfo suspensionCount]', symObjAddr: 0x5E4, symBinAddr: 0x2644, symSize: 0x8 }
+  - { offset: 0x77C11, size: 0x8, addend: 0x0, symName: '-[DASLockInfo setSuspensionCount:]', symObjAddr: 0x5EC, symBinAddr: 0x264C, symSize: 0x8 }
+  - { offset: 0x77C4E, size: 0x8, addend: 0x0, symName: '-[DASLockInfo lastLock]', symObjAddr: 0x5F4, symBinAddr: 0x2654, symSize: 0x8 }
+  - { offset: 0x77C85, size: 0x8, addend: 0x0, symName: '-[DASLockInfo setLastLock:]', symObjAddr: 0x5FC, symBinAddr: 0x265C, symSize: 0xC }
+  - { offset: 0x77CC6, size: 0x8, addend: 0x0, symName: '-[DASLockInfo lastLockInterval]', symObjAddr: 0x608, symBinAddr: 0x2668, symSize: 0x8 }
+  - { offset: 0x77CFD, size: 0x8, addend: 0x0, symName: '-[DASLockInfo setLastLockInterval:]', symObjAddr: 0x610, symBinAddr: 0x2670, symSize: 0x8 }
+  - { offset: 0x77D3A, size: 0x8, addend: 0x0, symName: '-[DASLockInfo unlockCount]', symObjAddr: 0x618, symBinAddr: 0x2678, symSize: 0x8 }
+  - { offset: 0x77D71, size: 0x8, addend: 0x0, symName: '-[DASLockInfo setUnlockCount:]', symObjAddr: 0x620, symBinAddr: 0x2680, symSize: 0x8 }
+  - { offset: 0x77DAE, size: 0x8, addend: 0x0, symName: '-[DASLockInfo lastUnlockRequestId]', symObjAddr: 0x628, symBinAddr: 0x2688, symSize: 0x8 }
+  - { offset: 0x77DE5, size: 0x8, addend: 0x0, symName: '-[DASLockInfo setLastUnlockRequestId:]', symObjAddr: 0x630, symBinAddr: 0x2690, symSize: 0xC }
+  - { offset: 0x77E26, size: 0x8, addend: 0x0, symName: '-[DASLockInfo .cxx_destruct]', symObjAddr: 0x63C, symBinAddr: 0x269C, symSize: 0x30 }
+  - { offset: 0x77EFC, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo initWithFactor:name:description:icon:lockState:lockedUntil:algorithm:id:version:extensions:invalidated:]', symObjAddr: 0x0, symBinAddr: 0x26CC, symSize: 0x170 }
+  - { offset: 0x78124, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo initWithFactor:name:description:icon:lockState:lockedUntil:algorithm:id:version:extensions:invalidated:]', symObjAddr: 0x0, symBinAddr: 0x26CC, symSize: 0x170 }
+  - { offset: 0x78203, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo description]', symObjAddr: 0x170, symBinAddr: 0x283C, symSize: 0xD0 }
+  - { offset: 0x7823A, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorFactor]', symObjAddr: 0x240, symBinAddr: 0x290C, symSize: 0x8 }
+  - { offset: 0x78271, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorName]', symObjAddr: 0x248, symBinAddr: 0x2914, symSize: 0x8 }
+  - { offset: 0x782A8, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorDescription]', symObjAddr: 0x250, symBinAddr: 0x291C, symSize: 0x8 }
+  - { offset: 0x782DF, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorIcon]', symObjAddr: 0x258, symBinAddr: 0x2924, symSize: 0x8 }
+  - { offset: 0x78316, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorLockState]', symObjAddr: 0x260, symBinAddr: 0x292C, symSize: 0x8 }
+  - { offset: 0x7834D, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorLockedUntil]', symObjAddr: 0x268, symBinAddr: 0x2934, symSize: 0x8 }
+  - { offset: 0x78384, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorSigningAlgorithm]', symObjAddr: 0x270, symBinAddr: 0x293C, symSize: 0x8 }
+  - { offset: 0x783BB, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorId]', symObjAddr: 0x278, symBinAddr: 0x2944, symSize: 0x8 }
+  - { offset: 0x783F2, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorVersion]', symObjAddr: 0x280, symBinAddr: 0x294C, symSize: 0x8 }
+  - { offset: 0x78429, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorExtensions]', symObjAddr: 0x288, symBinAddr: 0x2954, symSize: 0x8 }
+  - { offset: 0x78460, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo authenticatorInvalidated]', symObjAddr: 0x290, symBinAddr: 0x295C, symSize: 0x8 }
+  - { offset: 0x78497, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorInfo .cxx_destruct]', symObjAddr: 0x298, symBinAddr: 0x2964, symSize: 0x54 }
+  - { offset: 0x78554, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0x29B8, symSize: 0xC }
+  - { offset: 0x78759, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0x29B8, symSize: 0xC }
+  - { offset: 0x7878C, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getName]', symObjAddr: 0xC, symBinAddr: 0x29C4, symSize: 0xC }
+  - { offset: 0x787BF, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getDescription]', symObjAddr: 0x18, symBinAddr: 0x29D0, symSize: 0xC }
+  - { offset: 0x787F2, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getVersionCode]', symObjAddr: 0x24, symBinAddr: 0x29DC, symSize: 0x8 }
+  - { offset: 0x78825, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getVersionName]', symObjAddr: 0x2C, symBinAddr: 0x29E4, symSize: 0xC }
+  - { offset: 0x78858, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getIcon]', symObjAddr: 0x38, symBinAddr: 0x29F0, symSize: 0x44 }
+  - { offset: 0x7888F, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getFactorType]', symObjAddr: 0x7C, symBinAddr: 0x2A34, symSize: 0x8 }
+  - { offset: 0x788C2, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator getMatcherProtection]', symObjAddr: 0x84, symBinAddr: 0x2A3C, symSize: 0x8 }
+  - { offset: 0x788F5, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator isSupported]', symObjAddr: 0x8C, symBinAddr: 0x2A44, symSize: 0xC }
+  - { offset: 0x78928, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator reenroll:]', symObjAddr: 0x98, symBinAddr: 0x2A50, symSize: 0x80 }
+  - { offset: 0x7897B, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator reenrollingOnNextAuth]', symObjAddr: 0x118, symBinAddr: 0x2AD0, symSize: 0x88 }
+  - { offset: 0x789C2, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator weakSuperOnCollectionCompletion]', symObjAddr: 0x1A0, symBinAddr: 0x2B58, symSize: 0x34 }
+  - { offset: 0x789F5, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator weakSuperOnCollectionFailure:]', symObjAddr: 0x1D4, symBinAddr: 0x2B8C, symSize: 0x34 }
+  - { offset: 0x78A38, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator presentCollectionUIWithRegistration:extensions:keys:]', symObjAddr: 0x208, symBinAddr: 0x2BC0, symSize: 0x360 }
+  - { offset: 0x78B27, size: 0x8, addend: 0x0, symName: '___83-[DASFingerprintAuthenticator presentCollectionUIWithRegistration:extensions:keys:]_block_invoke', symObjAddr: 0x568, symBinAddr: 0x2F20, symSize: 0x54 }
+  - { offset: 0x78B9D, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32w, symObjAddr: 0x5BC, symBinAddr: 0x2F74, symSize: 0xC }
+  - { offset: 0x78BC6, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32w, symObjAddr: 0x5C8, symBinAddr: 0x2F80, symSize: 0x8 }
+  - { offset: 0x78BE5, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator presentLocalAuthenticationDirectlyWithReason:]', symObjAddr: 0x5D0, symBinAddr: 0x2F88, symSize: 0x1A8 }
+  - { offset: 0x78C48, size: 0x8, addend: 0x0, symName: '___76-[DASFingerprintAuthenticator presentLocalAuthenticationDirectlyWithReason:]_block_invoke', symObjAddr: 0x778, symBinAddr: 0x3130, symSize: 0x84 }
+  - { offset: 0x78CC6, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40w, symObjAddr: 0x7FC, symBinAddr: 0x31B4, symSize: 0x30 }
+  - { offset: 0x78CEF, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40w, symObjAddr: 0x82C, symBinAddr: 0x31E4, symSize: 0x28 }
+  - { offset: 0x78D0E, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator handleEnteredBackground:]', symObjAddr: 0x854, symBinAddr: 0x320C, symSize: 0x54 }
+  - { offset: 0x78D4D, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator performSilentRegistrationWithExtensions:isRegistration:]', symObjAddr: 0x8A8, symBinAddr: 0x3260, symSize: 0xF8 }
+  - { offset: 0x78DC0, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator defaultUIClassName]', symObjAddr: 0x9A0, symBinAddr: 0x3358, symSize: 0xC }
+  - { offset: 0x78DF3, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator createController]', symObjAddr: 0x9AC, symBinAddr: 0x3364, symSize: 0x18 }
+  - { offset: 0x78E2A, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator registrationReason]', symObjAddr: 0x9C4, symBinAddr: 0x337C, symSize: 0x1C }
+  - { offset: 0x78E62, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator authenticationReason]', symObjAddr: 0x9E0, symBinAddr: 0x3398, symSize: 0x1C }
+  - { offset: 0x78E9A, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator shouldCancelOnBackgrounding]', symObjAddr: 0x9FC, symBinAddr: 0x33B4, symSize: 0x20 }
+  - { offset: 0x78ED2, size: 0x8, addend: 0x0, symName: '-[DASFingerprintAuthenticator .cxx_destruct]', symObjAddr: 0xA1C, symBinAddr: 0x33D4, symSize: 0x14 }
+  - { offset: 0x79131, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator initWithFactor:completionHandler:failureHandler:]', symObjAddr: 0x0, symBinAddr: 0x33E8, symSize: 0xDC }
+  - { offset: 0x792CC, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator initWithFactor:completionHandler:failureHandler:]', symObjAddr: 0x0, symBinAddr: 0x33E8, symSize: 0xDC }
+  - { offset: 0x79333, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator onRegisterComplete:extensions:keys:]', symObjAddr: 0xDC, symBinAddr: 0x34C4, symSize: 0x88 }
+  - { offset: 0x793AA, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator onAuthenticateComplete:keys:]', symObjAddr: 0x164, symBinAddr: 0x354C, symSize: 0x88 }
+  - { offset: 0x79415, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator onFailed:code:message:]', symObjAddr: 0x1EC, symBinAddr: 0x35D4, symSize: 0x70 }
+  - { offset: 0x79490, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator onAttemptFailed:info:]', symObjAddr: 0x25C, symBinAddr: 0x3644, symSize: 0x8 }
+  - { offset: 0x794DB, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator onDataCollectionCompleteForFactor:collectedData:extensions:keys:onAnalysisComplete:]', symObjAddr: 0x264, symBinAddr: 0x364C, symSize: 0x4 }
+  - { offset: 0x79546, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorDelegateToBlockInator .cxx_destruct]', symObjAddr: 0x268, symBinAddr: 0x3650, symSize: 0x3C }
+  - { offset: 0x79684, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController initWithDelegate:previewView:metadataTypes:]', symObjAddr: 0x0, symBinAddr: 0x368C, symSize: 0xFC }
+  - { offset: 0x797C0, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController initWithDelegate:previewView:metadataTypes:]', symObjAddr: 0x0, symBinAddr: 0x368C, symSize: 0xFC }
+  - { offset: 0x79827, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController cancel]', symObjAddr: 0xFC, symBinAddr: 0x3788, symSize: 0x4 }
+  - { offset: 0x79858, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController start]', symObjAddr: 0x100, symBinAddr: 0x378C, symSize: 0xE0 }
+  - { offset: 0x7989B, size: 0x8, addend: 0x0, symName: '___37-[DASDefaultMetadataController start]_block_invoke', symObjAddr: 0x1E0, symBinAddr: 0x386C, symSize: 0x80 }
+  - { offset: 0x79917, size: 0x8, addend: 0x0, symName: '___37-[DASDefaultMetadataController start]_block_invoke_2', symObjAddr: 0x260, symBinAddr: 0x38EC, symSize: 0x90 }
+  - { offset: 0x7998F, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController startMetadataScanning]', symObjAddr: 0x304, symBinAddr: 0x397C, symSize: 0x5F8 }
+  - { offset: 0x79A37, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController stopMetadataScanning]', symObjAddr: 0x8FC, symBinAddr: 0x3F74, symSize: 0x50 }
+  - { offset: 0x79A6A, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController captureOutput:didOutputMetadataObjects:fromConnection:]', symObjAddr: 0x94C, symBinAddr: 0x3FC4, symSize: 0x298 }
+  - { offset: 0x79B1A, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController captureOutput:didFinishProcessingPhoto:error:]', symObjAddr: 0xBE4, symBinAddr: 0x425C, symSize: 0x10C }
+  - { offset: 0x79BC6, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController handleStarted]', symObjAddr: 0xCF0, symBinAddr: 0x4368, symSize: 0x88 }
+  - { offset: 0x79C16, size: 0x8, addend: 0x0, symName: '___45-[DASDefaultMetadataController handleStarted]_block_invoke', symObjAddr: 0xD78, symBinAddr: 0x43F0, symSize: 0x40 }
+  - { offset: 0x79C70, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController handleSuccessWithImage:contents:]', symObjAddr: 0xDB8, symBinAddr: 0x4430, symSize: 0x11C }
+  - { offset: 0x79CE0, size: 0x8, addend: 0x0, symName: '___64-[DASDefaultMetadataController handleSuccessWithImage:contents:]_block_invoke', symObjAddr: 0xED4, symBinAddr: 0x454C, symSize: 0x50 }
+  - { offset: 0x79D5D, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48w, symObjAddr: 0xF24, symBinAddr: 0x459C, symSize: 0x38 }
+  - { offset: 0x79D86, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48w, symObjAddr: 0xF5C, symBinAddr: 0x45D4, symSize: 0x30 }
+  - { offset: 0x79DA5, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController handleFailureWithError:]', symObjAddr: 0xF8C, symBinAddr: 0x4604, symSize: 0xC0 }
+  - { offset: 0x79E08, size: 0x8, addend: 0x0, symName: '___55-[DASDefaultMetadataController handleFailureWithError:]_block_invoke', symObjAddr: 0x104C, symBinAddr: 0x46C4, symSize: 0x50 }
+  - { offset: 0x79E77, size: 0x8, addend: 0x0, symName: '-[DASDefaultMetadataController .cxx_destruct]', symObjAddr: 0x10F4, symBinAddr: 0x4714, symSize: 0xA0 }
+  - { offset: 0x7A1FA, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0x47B4, symSize: 0xC }
+  - { offset: 0x7A410, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0x47B4, symSize: 0xC }
+  - { offset: 0x7A443, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getName]', symObjAddr: 0xC, symBinAddr: 0x47C0, symSize: 0xC }
+  - { offset: 0x7A476, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getDescription]', symObjAddr: 0x18, symBinAddr: 0x47CC, symSize: 0xC }
+  - { offset: 0x7A4A9, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getVersionCode]', symObjAddr: 0x24, symBinAddr: 0x47D8, symSize: 0x8 }
+  - { offset: 0x7A4DC, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getVersionName]', symObjAddr: 0x2C, symBinAddr: 0x47E0, symSize: 0xC }
+  - { offset: 0x7A50F, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getIcon]', symObjAddr: 0x38, symBinAddr: 0x47EC, symSize: 0x44 }
+  - { offset: 0x7A546, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getFactorType]', symObjAddr: 0x7C, symBinAddr: 0x4830, symSize: 0x8 }
+  - { offset: 0x7A579, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getMatcherProtection]', symObjAddr: 0x84, symBinAddr: 0x4838, symSize: 0x8 }
+  - { offset: 0x7A5AC, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator getDataStoreType]', symObjAddr: 0x8C, symBinAddr: 0x4840, symSize: 0x8 }
+  - { offset: 0x7A5DF, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator hasUICollection]', symObjAddr: 0x94, symBinAddr: 0x4848, symSize: 0x8 }
+  - { offset: 0x7A612, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator isSupported]', symObjAddr: 0x9C, symBinAddr: 0x4850, symSize: 0x8 }
+  - { offset: 0x7A645, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator defaultUIClassName]', symObjAddr: 0xA4, symBinAddr: 0x4858, symSize: 0xC }
+  - { offset: 0x7A678, size: 0x8, addend: 0x0, symName: '-[DASSilentAuthenticator presentCollectionUIWithRegistration:extensions:keys:]', symObjAddr: 0xB0, symBinAddr: 0x4864, symSize: 0x4 }
+  - { offset: 0x7A760, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo initWithViewController:clientWillPresent:]', symObjAddr: 0x0, symBinAddr: 0x4868, symSize: 0x84 }
+  - { offset: 0x7A7BF, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo initWithViewController:clientWillPresent:]', symObjAddr: 0x0, symBinAddr: 0x4868, symSize: 0x84 }
+  - { offset: 0x7A816, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo collectionViewController]', symObjAddr: 0x84, symBinAddr: 0x48EC, symSize: 0x8 }
+  - { offset: 0x7A84D, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo setCollectionViewController:]', symObjAddr: 0x8C, symBinAddr: 0x48F4, symSize: 0xC }
+  - { offset: 0x7A88E, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo clientIsResponsibleForPresentation]', symObjAddr: 0x98, symBinAddr: 0x4900, symSize: 0x8 }
+  - { offset: 0x7A8C5, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo setClientIsResponsibleForPresentation:]', symObjAddr: 0xA0, symBinAddr: 0x4908, symSize: 0x8 }
+  - { offset: 0x7A900, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorCollectorInfo .cxx_destruct]', symObjAddr: 0xA8, symBinAddr: 0x4910, symSize: 0xC }
+  - { offset: 0x7A9B5, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext init]', symObjAddr: 0x0, symBinAddr: 0x491C, symSize: 0x74 }
+  - { offset: 0x7B0C6, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext init]', symObjAddr: 0x0, symBinAddr: 0x491C, symSize: 0x74 }
+  - { offset: 0x7B0FD, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext initWithAuthenticator:isRegistration:isADoS:requestExtensions:requestKeys:dismissUIOnCompletion:completionHandler:]', symObjAddr: 0x74, symBinAddr: 0x4990, symSize: 0x244 }
+  - { offset: 0x7B1A4, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext tempDataDirectory]', symObjAddr: 0x2B8, symBinAddr: 0x4BD4, symSize: 0x8 }
+  - { offset: 0x7B1DB, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext isRegistration]', symObjAddr: 0x2C0, symBinAddr: 0x4BDC, symSize: 0x8 }
+  - { offset: 0x7B212, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext isADoSRequired]', symObjAddr: 0x2C8, symBinAddr: 0x4BE4, symSize: 0x8 }
+  - { offset: 0x7B249, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext isCaptureComplete]', symObjAddr: 0x2D0, symBinAddr: 0x4BEC, symSize: 0x8 }
+  - { offset: 0x7B280, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext setActiveViewController:]', symObjAddr: 0x2D8, symBinAddr: 0x4BF4, symSize: 0xC }
+  - { offset: 0x7B2C3, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext activeViewController]', symObjAddr: 0x2E4, symBinAddr: 0x4C00, symSize: 0x18 }
+  - { offset: 0x7B2FA, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext authenticatorInfo]', symObjAddr: 0x2FC, symBinAddr: 0x4C18, symSize: 0x1E0 }
+  - { offset: 0x7B331, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext dismissViewControllerOnCompletion]', symObjAddr: 0x4DC, symBinAddr: 0x4DF8, symSize: 0x8 }
+  - { offset: 0x7B368, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext setDismissViewControllerOnCompletion:]', symObjAddr: 0x4E4, symBinAddr: 0x4E00, symSize: 0x8 }
+  - { offset: 0x7B3A5, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext setupTempDataDirectory]', symObjAddr: 0x4EC, symBinAddr: 0x4E08, symSize: 0x90 }
+  - { offset: 0x7B3F2, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext removeTempDataDirectory]', symObjAddr: 0x57C, symBinAddr: 0x4E98, symSize: 0x88 }
+  - { offset: 0x7B425, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext cancelCapture]', symObjAddr: 0x604, symBinAddr: 0x4F20, symSize: 0xA0 }
+  - { offset: 0x7B458, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext completeCapture]', symObjAddr: 0x6A4, symBinAddr: 0x4FC0, symSize: 0x8 }
+  - { offset: 0x7B489, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext completeCaptureWithTemporaryData:]', symObjAddr: 0x6AC, symBinAddr: 0x4FC8, symSize: 0x314 }
+  - { offset: 0x7B506, size: 0x8, addend: 0x0, symName: '___54-[DASDefaultContext completeCaptureWithTemporaryData:]_block_invoke', symObjAddr: 0x9C0, symBinAddr: 0x52DC, symSize: 0x64 }
+  - { offset: 0x7B57C, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext completeCaptureWithError:]', symObjAddr: 0xA7C, symBinAddr: 0x5340, symSize: 0x44 }
+  - { offset: 0x7B5BF, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext completeCaptureWithErrorObject:]', symObjAddr: 0xAC0, symBinAddr: 0x5384, symSize: 0x288 }
+  - { offset: 0x7B626, size: 0x8, addend: 0x0, symName: '___52-[DASDefaultContext completeCaptureWithErrorObject:]_block_invoke', symObjAddr: 0xD48, symBinAddr: 0x560C, symSize: 0x64 }
+  - { offset: 0x7B6A0, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext reset]', symObjAddr: 0xDAC, symBinAddr: 0x5670, symSize: 0x94 }
+  - { offset: 0x7B6D4, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext incrementFailuresAndCheckForLockWithErrorCode:score:responseHandler:]', symObjAddr: 0xE40, symBinAddr: 0x5704, symSize: 0xD4 }
+  - { offset: 0x7B758, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext incrementFailuresAndCheckForLockWithErrorCode:score:]', symObjAddr: 0xF14, symBinAddr: 0x57D8, symSize: 0x78 }
+  - { offset: 0x7B7C3, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext internalIncrementFailuresAndCheckForLockWithErrorCode:score:]', symObjAddr: 0xF8C, symBinAddr: 0x5850, symSize: 0x4DC }
+  - { offset: 0x7B8A1, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext internalIncrementADoSFailuresWithErrorCode:score:]', symObjAddr: 0x1468, symBinAddr: 0x5D2C, symSize: 0x2D0 }
+  - { offset: 0x7B93B, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext incrementFailuresAndCheckForLockWithError:delegate:]', symObjAddr: 0x1738, symBinAddr: 0x5FFC, symSize: 0x378 }
+  - { offset: 0x7BA08, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext resetLock]', symObjAddr: 0x1AB0, symBinAddr: 0x6374, symSize: 0x48 }
+  - { offset: 0x7BA4D, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext showLockError:]', symObjAddr: 0x1AF8, symBinAddr: 0x63BC, symSize: 0x18C }
+  - { offset: 0x7BAB4, size: 0x8, addend: 0x0, symName: '___35-[DASDefaultContext showLockError:]_block_invoke', symObjAddr: 0x1C84, symBinAddr: 0x6548, symSize: 0xC }
+  - { offset: 0x7BB14, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext haveEnoughFailedAttemptsForWarning]', symObjAddr: 0x1CE0, symBinAddr: 0x6554, symSize: 0xA0 }
+  - { offset: 0x7BB5D, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext reportAttemptWithErrorCode:score:]', symObjAddr: 0x1D80, symBinAddr: 0x65F4, symSize: 0x8C }
+  - { offset: 0x7BBB7, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext reportAttemptWithErrorCode:score:delegate:]', symObjAddr: 0x1E0C, symBinAddr: 0x6680, symSize: 0x290 }
+  - { offset: 0x7BC7E, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext registerController:]', symObjAddr: 0x209C, symBinAddr: 0x6910, symSize: 0x8 }
+  - { offset: 0x7BCC1, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext isControllerRegistered:]', symObjAddr: 0x20A4, symBinAddr: 0x6918, symSize: 0x8 }
+  - { offset: 0x7BD08, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createStandardADoSController]', symObjAddr: 0x20AC, symBinAddr: 0x6920, symSize: 0x98 }
+  - { offset: 0x7BD51, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createSrpADoSController]', symObjAddr: 0x2144, symBinAddr: 0x69B8, symSize: 0x98 }
+  - { offset: 0x7BD9A, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createFingerprintController]', symObjAddr: 0x21DC, symBinAddr: 0x6A50, symSize: 0x6C }
+  - { offset: 0x7BDE3, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createFingerprintControllerWrapperWithSDKHandlingLockEvents:]', symObjAddr: 0x2248, symBinAddr: 0x6ABC, symSize: 0x70 }
+  - { offset: 0x7BE3D, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createFaceIdController]', symObjAddr: 0x22B8, symBinAddr: 0x6B2C, symSize: 0x8C }
+  - { offset: 0x7BE86, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createFaceIdControllerWrapperWithSDKHandlingLockEvents:]', symObjAddr: 0x2344, symBinAddr: 0x6BB8, symSize: 0x94 }
+  - { offset: 0x7BEE0, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext createMetadataControllerWithDelegate:previewView:metadataTypes:]', symObjAddr: 0x23D8, symBinAddr: 0x6C4C, symSize: 0xEC }
+  - { offset: 0x7BF5C, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext cancelControllers]', symObjAddr: 0x24C4, symBinAddr: 0x6D38, symSize: 0x140 }
+  - { offset: 0x7BFB0, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext maxAttemptsBeforeSuspension]', symObjAddr: 0x2604, symBinAddr: 0x6E78, symSize: 0x74 }
+  - { offset: 0x7BFF9, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext maxSuspensionsBeforeLock]', symObjAddr: 0x2678, symBinAddr: 0x6EEC, symSize: 0x10 }
+  - { offset: 0x7C02F, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext initialSuspensionMilliseconds]', symObjAddr: 0x2688, symBinAddr: 0x6EFC, symSize: 0x10 }
+  - { offset: 0x7C065, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext incrementalSuspensionMilliseconds]', symObjAddr: 0x2698, symBinAddr: 0x6F0C, symSize: 0x10 }
+  - { offset: 0x7C09B, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext extensionsFloatForKey:defaultValue:]', symObjAddr: 0x26A8, symBinAddr: 0x6F1C, symSize: 0x7C }
+  - { offset: 0x7C126, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext extensionsIntForKey:defaultValue:]', symObjAddr: 0x2724, symBinAddr: 0x6F98, symSize: 0x7C }
+  - { offset: 0x7C1B1, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext extensionsStringForKey:]', symObjAddr: 0x27A0, symBinAddr: 0x7014, symSize: 0x60 }
+  - { offset: 0x7C20B, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext extensionsBoolForKey:defaultValue:]', symObjAddr: 0x2800, symBinAddr: 0x7074, symSize: 0x84 }
+  - { offset: 0x7C292, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext responseExtensions]', symObjAddr: 0x2884, symBinAddr: 0x70F8, symSize: 0x40 }
+  - { offset: 0x7C2CA, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext setResponseExtensions:]', symObjAddr: 0x28C4, symBinAddr: 0x7138, symSize: 0x48 }
+  - { offset: 0x7C30F, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext errorForCode:]', symObjAddr: 0x290C, symBinAddr: 0x7180, symSize: 0xC }
+  - { offset: 0x7C352, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext localise:]', symObjAddr: 0x2918, symBinAddr: 0x718C, symSize: 0xC }
+  - { offset: 0x7C395, size: 0x8, addend: 0x0, symName: '-[DASDefaultContext .cxx_destruct]', symObjAddr: 0x2924, symBinAddr: 0x7198, symSize: 0x88 }
+  - { offset: 0x7C7BB, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider hasKey:]', symObjAddr: 0x0, symBinAddr: 0x7220, symSize: 0xC }
+  - { offset: 0x7C7DF, size: 0x8, addend: 0x0, symName: _KDASStorageKeyDaonExtensions, symObjAddr: 0x23F0, symBinAddr: 0x88388, symSize: 0x0 }
+  - { offset: 0x7C7F5, size: 0x8, addend: 0x0, symName: _KDASStorageKeyLocalDataKey, symObjAddr: 0x23F8, symBinAddr: 0x88390, symSize: 0x0 }
+  - { offset: 0x7C80B, size: 0x8, addend: 0x0, symName: _KDASStorageKeyLocalBackgroundDataKey, symObjAddr: 0x2400, symBinAddr: 0x88398, symSize: 0x0 }
+  - { offset: 0x7C821, size: 0x8, addend: 0x0, symName: _KDASAccessControlBiometry, symObjAddr: 0x2408, symBinAddr: 0x883A0, symSize: 0x0 }
+  - { offset: 0x7C837, size: 0x8, addend: 0x0, symName: _KDASCurrentEnrollmentOnly, symObjAddr: 0x2410, symBinAddr: 0x883A8, symSize: 0x0 }
+  - { offset: 0x7C8AD, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider hasKey:]', symObjAddr: 0x0, symBinAddr: 0x7220, symSize: 0xC }
+  - { offset: 0x7C8EE, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider createKeys:authenticator:]', symObjAddr: 0xC, symBinAddr: 0x722C, symSize: 0x74 }
+  - { offset: 0x7C945, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider createKeys:authenticator:algorithm:]', symObjAddr: 0x80, symBinAddr: 0x72A0, symSize: 0x21C }
+  - { offset: 0x7CA1A, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider factorWithKey:algorithm:]', symObjAddr: 0x29C, symBinAddr: 0x74BC, symSize: 0x6C }
+  - { offset: 0x7CA6D, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider removeKeys:algorithm:]', symObjAddr: 0x308, symBinAddr: 0x7528, symSize: 0x3C }
+  - { offset: 0x7CAC4, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider getPublicKey:algorithm:]', symObjAddr: 0x344, symBinAddr: 0x7564, symSize: 0x44 }
+  - { offset: 0x7CB1B, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider hasEnrollmentChangedForKey:algorithm:]', symObjAddr: 0x388, symBinAddr: 0x75A8, symSize: 0xB0 }
+  - { offset: 0x7CB82, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider setString:value:inKeychain:]', symObjAddr: 0x438, symBinAddr: 0x7658, symSize: 0xAC }
+  - { offset: 0x7CBE1, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider getString:inKeychain:]', symObjAddr: 0x4E4, symBinAddr: 0x7704, symSize: 0xA0 }
+  - { offset: 0x7CC34, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider hasString:inKeychain:]', symObjAddr: 0x584, symBinAddr: 0x77A4, symSize: 0xD0 }
+  - { offset: 0x7CC8B, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider removeString:inKeychain:]', symObjAddr: 0x654, symBinAddr: 0x7874, symSize: 0x78 }
+  - { offset: 0x7CCDA, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider setDictionary:value:]', symObjAddr: 0x6CC, symBinAddr: 0x78EC, symSize: 0x80 }
+  - { offset: 0x7CD39, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider getDictionary:]', symObjAddr: 0x74C, symBinAddr: 0x796C, symSize: 0x70 }
+  - { offset: 0x7CD9C, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider removeDictionary:]', symObjAddr: 0x7BC, symBinAddr: 0x79DC, symSize: 0x5C }
+  - { offset: 0x7CDEB, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider setData:value:]', symObjAddr: 0x818, symBinAddr: 0x7A38, symSize: 0xC }
+  - { offset: 0x7CE36, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider getData:]', symObjAddr: 0x824, symBinAddr: 0x7A44, symSize: 0xC }
+  - { offset: 0x7CE77, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider removeData:]', symObjAddr: 0x830, symBinAddr: 0x7A50, symSize: 0xC }
+  - { offset: 0x7CEB4, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider generateLockInfoKeyForAuthenticatorId:]', symObjAddr: 0x83C, symBinAddr: 0x7A5C, symSize: 0x38 }
+  - { offset: 0x7CEF7, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider legacyGenerateLockKeyForAuthenticatorId:]', symObjAddr: 0x874, symBinAddr: 0x7A94, symSize: 0x38 }
+  - { offset: 0x7CF3A, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider legacyIsLocked:]', symObjAddr: 0x8AC, symBinAddr: 0x7ACC, symSize: 0x80 }
+  - { offset: 0x7CFC3, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider lockInfoForAuthenticator:]', symObjAddr: 0x92C, symBinAddr: 0x7B4C, symSize: 0x168 }
+  - { offset: 0x7D04E, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider updateLockInfo:forAuthenticator:]', symObjAddr: 0xA94, symBinAddr: 0x7CB4, symSize: 0xDC }
+  - { offset: 0x7D0C6, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider unlock:randomId:]', symObjAddr: 0xB70, symBinAddr: 0x7D90, symSize: 0xF4 }
+  - { offset: 0x7D131, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider lockStateForAuthenticator:]', symObjAddr: 0xC64, symBinAddr: 0x7E84, symSize: 0xB8 }
+  - { offset: 0x7D19C, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider deleteLockInfoForAuthenticator:]', symObjAddr: 0xD1C, symBinAddr: 0x7F3C, symSize: 0x3C }
+  - { offset: 0x7D1F2, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider reenroll:randomId:]', symObjAddr: 0xD58, symBinAddr: 0x7F78, symSize: 0x18C }
+  - { offset: 0x7D2BD, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider getDataIdForAuthenticator:]', symObjAddr: 0xEE4, symBinAddr: 0x8104, symSize: 0x244 }
+  - { offset: 0x7D375, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider getLocalStorageKeyWithBackgroundApplicationOption:]', symObjAddr: 0x1128, symBinAddr: 0x8348, symSize: 0x1BC }
+  - { offset: 0x7D48D, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider pathForStoredDataWithId:]', symObjAddr: 0x12E4, symBinAddr: 0x8504, symSize: 0xC4 }
+  - { offset: 0x7D53B, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider addSkipBackupAttributeToItemAtPath:]', symObjAddr: 0x13A8, symBinAddr: 0x85C8, symSize: 0x180 }
+  - { offset: 0x7D5B2, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider isDataAvailable:]', symObjAddr: 0x1528, symBinAddr: 0x8748, symSize: 0x68 }
+  - { offset: 0x7D5BD, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider addSkipBackupAttributeToItemAtPath:].cold.1', symObjAddr: 0x1F70, symBinAddr: 0x5ACF4, symSize: 0x28 }
+  - { offset: 0x7D5D5, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider isDataAvailable:]', symObjAddr: 0x1528, symBinAddr: 0x8748, symSize: 0x68 }
+  - { offset: 0x7D62F, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider storeData:withId:withBackgroundOption:completionBlock:]', symObjAddr: 0x1590, symBinAddr: 0x87B0, symSize: 0x138 }
+  - { offset: 0x7D6E2, size: 0x8, addend: 0x0, symName: '___83-[DASDefaultStorageProvider storeData:withId:withBackgroundOption:completionBlock:]_block_invoke', symObjAddr: 0x16C8, symBinAddr: 0x88E8, symSize: 0x144 }
+  - { offset: 0x7D821, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64b, symObjAddr: 0x180C, symBinAddr: 0x8A2C, symSize: 0x4C }
+  - { offset: 0x7D84A, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s, symObjAddr: 0x1858, symBinAddr: 0x8A78, symSize: 0x40 }
+  - { offset: 0x7D869, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider retrieveDataWithId:withBackgroundOption:completionBlock:]', symObjAddr: 0x1898, symBinAddr: 0x8AB8, symSize: 0xC4 }
+  - { offset: 0x7D8DA, size: 0x8, addend: 0x0, symName: '___85-[DASDefaultStorageProvider retrieveDataWithId:withBackgroundOption:completionBlock:]_block_invoke', symObjAddr: 0x195C, symBinAddr: 0x8B7C, symSize: 0x80 }
+  - { offset: 0x7D98C, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48b, symObjAddr: 0x19DC, symBinAddr: 0x8BFC, symSize: 0x3C }
+  - { offset: 0x7D9B5, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider retrieveDataWithId:withBackgroundOption:error:]', symObjAddr: 0x1A48, symBinAddr: 0x8C38, symSize: 0x1A4 }
+  - { offset: 0x7DA72, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider deleteDataWithId:]', symObjAddr: 0x1BEC, symBinAddr: 0x8DDC, symSize: 0x8C }
+  - { offset: 0x7DAC8, size: 0x8, addend: 0x0, symName: '-[DASDefaultStorageProvider reset]', symObjAddr: 0x1C78, symBinAddr: 0x8E68, symSize: 0x2F8 }
+  - { offset: 0x7DF38, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0x9160, symSize: 0xC }
+  - { offset: 0x7E12D, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0x9160, symSize: 0xC }
+  - { offset: 0x7E160, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getName]', symObjAddr: 0xC, symBinAddr: 0x916C, symSize: 0xC }
+  - { offset: 0x7E193, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getDescription]', symObjAddr: 0x18, symBinAddr: 0x9178, symSize: 0xC }
+  - { offset: 0x7E1C6, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getVersionCode]', symObjAddr: 0x24, symBinAddr: 0x9184, symSize: 0x8 }
+  - { offset: 0x7E1F9, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getVersionName]', symObjAddr: 0x2C, symBinAddr: 0x918C, symSize: 0xC }
+  - { offset: 0x7E22C, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getIcon]', symObjAddr: 0x38, symBinAddr: 0x9198, symSize: 0x44 }
+  - { offset: 0x7E263, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator getFactorType]', symObjAddr: 0x7C, symBinAddr: 0x91DC, symSize: 0x8 }
+  - { offset: 0x7E296, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator isSupported]', symObjAddr: 0x84, symBinAddr: 0x91E4, symSize: 0xC }
+  - { offset: 0x7E2C9, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator defaultUIClassName]', symObjAddr: 0x90, symBinAddr: 0x91F0, symSize: 0xC }
+  - { offset: 0x7E2FC, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator createController]', symObjAddr: 0x9C, symBinAddr: 0x91FC, symSize: 0x18 }
+  - { offset: 0x7E333, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator registrationReason]', symObjAddr: 0xB4, symBinAddr: 0x9214, symSize: 0x1C }
+  - { offset: 0x7E36A, size: 0x8, addend: 0x0, symName: '-[DASFaceIdAuthenticator authenticationReason]', symObjAddr: 0xD0, symBinAddr: 0x9230, symSize: 0x1C }
+  - { offset: 0x7E429, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator init]', symObjAddr: 0x0, symBinAddr: 0x924C, symSize: 0x4C }
+  - { offset: 0x7E5FF, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator init]', symObjAddr: 0x0, symBinAddr: 0x924C, symSize: 0x4C }
+  - { offset: 0x7E636, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator initWithAlgorithm:]', symObjAddr: 0x4C, symBinAddr: 0x9298, symSize: 0x4C }
+  - { offset: 0x7E679, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator getID]', symObjAddr: 0x98, symBinAddr: 0x92E4, symSize: 0xC }
+  - { offset: 0x7E6AC, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator getName]', symObjAddr: 0xA4, symBinAddr: 0x92F0, symSize: 0xC }
+  - { offset: 0x7E6DF, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator getDescription]', symObjAddr: 0xB0, symBinAddr: 0x92FC, symSize: 0xC }
+  - { offset: 0x7E712, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator getIcon]', symObjAddr: 0xBC, symBinAddr: 0x9308, symSize: 0x44 }
+  - { offset: 0x7E749, size: 0x8, addend: 0x0, symName: '-[DASSilentAccessibilityAuthenticator getFactorType]', symObjAddr: 0x100, symBinAddr: 0x934C, symSize: 0x8 }
+  - { offset: 0x7E7F4, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getSupportedAuthenticators]', symObjAddr: 0x0, symBinAddr: 0x9354, symSize: 0x8 }
+  - { offset: 0x7E852, size: 0x8, addend: 0x0, symName: _sEmbeddedFaceEnabled, symObjAddr: 0x21AD0, symBinAddr: 0x95AA0, symSize: 0x0 }
+  - { offset: 0x7E86F, size: 0x8, addend: 0x0, symName: _sADoSFaceEnabled, symObjAddr: 0x21AE1, symBinAddr: 0x95AB1, symSize: 0x0 }
+  - { offset: 0x7E88C, size: 0x8, addend: 0x0, symName: _sFilterNonUIAuthenticators, symObjAddr: 0x21AE0, symBinAddr: 0x95AB0, symSize: 0x0 }
+  - { offset: 0x7E8A9, size: 0x8, addend: 0x0, symName: _sAvailableAuthenticators, symObjAddr: 0x21AE8, symBinAddr: 0x95AB8, symSize: 0x0 }
+  - { offset: 0x7E8C4, size: 0x8, addend: 0x0, symName: _sAuthenticatorPrecedence, symObjAddr: 0x21AD8, symBinAddr: 0x95AA8, symSize: 0x0 }
+  - { offset: 0x7E8DF, size: 0x8, addend: 0x0, symName: _sStorageProvider, symObjAddr: 0x21AF0, symBinAddr: 0x95AC0, symSize: 0x0 }
+  - { offset: 0x7EE1D, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getSupportedAuthenticators]', symObjAddr: 0x0, symBinAddr: 0x9354, symSize: 0x8 }
+  - { offset: 0x7EE52, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getAvailableAuthenticatorFrameworks:]', symObjAddr: 0x8, symBinAddr: 0x935C, symSize: 0x2AC }
+  - { offset: 0x7EF2E, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory convertPrecedenceString:]', symObjAddr: 0x2B4, symBinAddr: 0x9608, symSize: 0x1D0 }
+  - { offset: 0x7EFD6, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getSupportedAuthenticatorsWithExtensions:]', symObjAddr: 0x484, symBinAddr: 0x97D8, symSize: 0x994 }
+  - { offset: 0x7F238, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getAuthenticator:]', symObjAddr: 0xE18, symBinAddr: 0xA16C, symSize: 0x8 }
+  - { offset: 0x7F27D, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getAuthenticator:usingAlgorithm:]', symObjAddr: 0xE20, symBinAddr: 0xA174, symSize: 0x1A8 }
+  - { offset: 0x7F30A, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getMultiAuthenticatorForPolicyType:]', symObjAddr: 0xFC8, symBinAddr: 0xA31C, symSize: 0x3C }
+  - { offset: 0x7F360, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getMultiAuthenticatorForPolicyType:usingAlgorithm:]', symObjAddr: 0x1004, symBinAddr: 0xA358, symSize: 0x98 }
+  - { offset: 0x7F3C7, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getAuthenticatorContextForAuthenticator:isRegistration:isADoS:requestExtensions:requestKeys:dismissUIOnCompletion:completionHandler:]', symObjAddr: 0x109C, symBinAddr: 0xA3F0, symSize: 0xD8 }
+  - { offset: 0x7F471, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getSimpleContext]', symObjAddr: 0x1174, symBinAddr: 0xA4C8, symSize: 0x38 }
+  - { offset: 0x7F4A5, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getMultiAuthenticatorContextForAuthenticators:policy:factorsAndKeys:requestExtensions:uiCustomizationDelegate:isRegistration:signingAlgorithm:filterNonUIAuthenticators:onCompletion:onFailure:]', symObjAddr: 0x11AC, symBinAddr: 0xA500, symSize: 0x120 }
+  - { offset: 0x7F580, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getStandardADoSControllerWithContext:authenticator:requestExtensions:requestKeys:startTime:]', symObjAddr: 0x12CC, symBinAddr: 0xA620, symSize: 0x104 }
+  - { offset: 0x7F609, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getSrpADoSControllerWithContext:authenticator:requestExtensions:requestKeys:startTime:]', symObjAddr: 0x13D0, symBinAddr: 0xA724, symSize: 0x104 }
+  - { offset: 0x7F692, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getFingerprintControllerWithContext:]', symObjAddr: 0x14D4, symBinAddr: 0xA828, symSize: 0x74 }
+  - { offset: 0x7F6D7, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getFingerprintControllerWrapperWithContext:sdkHandlingLockEvents:]', symObjAddr: 0x1548, symBinAddr: 0xA89C, symSize: 0xA8 }
+  - { offset: 0x7F73E, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getFaceIdControllerWithContext:]', symObjAddr: 0x15F0, symBinAddr: 0xA944, symSize: 0x74 }
+  - { offset: 0x7F783, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getFaceIdControllerWrapperWithContext:sdkHandlingLockEvents:]', symObjAddr: 0x1664, symBinAddr: 0xA9B8, symSize: 0xA8 }
+  - { offset: 0x7F7EA, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getMetadataControllerWithDelegate:previewView:metadataTypes:]', symObjAddr: 0x170C, symBinAddr: 0xAA60, symSize: 0xA8 }
+  - { offset: 0x7F851, size: 0x8, addend: 0x0, symName: '+[DASAuthenticatorFactory getStorageProvider]', symObjAddr: 0x17B4, symBinAddr: 0xAB08, symSize: 0x60 }
+  - { offset: 0x7FACA, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess setKey:toValue:]', symObjAddr: 0x0, symBinAddr: 0xAB68, symSize: 0x84 }
+  - { offset: 0x7FAE7, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess setKey:toValue:]', symObjAddr: 0x0, symBinAddr: 0xAB68, symSize: 0x84 }
+  - { offset: 0x7FB69, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess setKey:toDataValue:]', symObjAddr: 0x84, symBinAddr: 0xABEC, symSize: 0x11C }
+  - { offset: 0x7FC02, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess getStringForKey:]', symObjAddr: 0x1A0, symBinAddr: 0xAD08, symSize: 0x60 }
+  - { offset: 0x7FC69, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess getDataForKey:]', symObjAddr: 0x200, symBinAddr: 0xAD68, symSize: 0xE4 }
+  - { offset: 0x7FD02, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess deleteForKey:]', symObjAddr: 0x2E4, symBinAddr: 0xAE4C, symSize: 0x90 }
+  - { offset: 0x7FD86, size: 0x8, addend: 0x0, symName: '+[DASKeychainAccess deleteKeysWithString:]', symObjAddr: 0x374, symBinAddr: 0xAEDC, symSize: 0x100 }
+  - { offset: 0x7FE73, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0xAFDC, symSize: 0xC }
+  - { offset: 0x80097, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getID]', symObjAddr: 0x0, symBinAddr: 0xAFDC, symSize: 0xC }
+  - { offset: 0x800CA, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getName]', symObjAddr: 0xC, symBinAddr: 0xAFE8, symSize: 0xC }
+  - { offset: 0x800FD, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getDescription]', symObjAddr: 0x18, symBinAddr: 0xAFF4, symSize: 0xC }
+  - { offset: 0x80130, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getVersionCode]', symObjAddr: 0x24, symBinAddr: 0xB000, symSize: 0x8 }
+  - { offset: 0x80163, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getVersionName]', symObjAddr: 0x2C, symBinAddr: 0xB008, symSize: 0xC }
+  - { offset: 0x80196, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getIcon]', symObjAddr: 0x38, symBinAddr: 0xB014, symSize: 0x44 }
+  - { offset: 0x801CD, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getFactorType]', symObjAddr: 0x7C, symBinAddr: 0xB058, symSize: 0x8 }
+  - { offset: 0x80200, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getMatcherProtection]', symObjAddr: 0x84, symBinAddr: 0xB060, symSize: 0x8 }
+  - { offset: 0x80233, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator getDataStoreType]', symObjAddr: 0x8C, symBinAddr: 0xB068, symSize: 0x8 }
+  - { offset: 0x80266, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator setExtensions:]', symObjAddr: 0x94, symBinAddr: 0xB070, symSize: 0xA4 }
+  - { offset: 0x802B9, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator hasUICollection]', symObjAddr: 0x138, symBinAddr: 0xB114, symSize: 0x10 }
+  - { offset: 0x802F0, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator isSupported]', symObjAddr: 0x148, symBinAddr: 0xB124, symSize: 0x8 }
+  - { offset: 0x80323, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator defaultUIClassName]', symObjAddr: 0x150, symBinAddr: 0xB12C, symSize: 0xC }
+  - { offset: 0x80356, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator weakSuperOnCollectionCompletion]', symObjAddr: 0x15C, symBinAddr: 0xB138, symSize: 0x34 }
+  - { offset: 0x80389, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator weakSuperOnCollectionFailure:]', symObjAddr: 0x190, symBinAddr: 0xB16C, symSize: 0x34 }
+  - { offset: 0x803CC, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator presentCollectionUIWithRegistration:extensions:keys:]', symObjAddr: 0x1C4, symBinAddr: 0xB1A0, symSize: 0x5C4 }
+  - { offset: 0x80523, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x788, symBinAddr: 0xB764, symSize: 0x10 }
+  - { offset: 0x80548, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x798, symBinAddr: 0xB774, symSize: 0x8 }
+  - { offset: 0x80567, size: 0x8, addend: 0x0, symName: '___82-[DASOfflineOTPAuthenticator presentCollectionUIWithRegistration:extensions:keys:]_block_invoke', symObjAddr: 0x7A0, symBinAddr: 0xB77C, symSize: 0x160 }
+  - { offset: 0x80601, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r48r56w, symObjAddr: 0x900, symBinAddr: 0xB8DC, symSize: 0x50 }
+  - { offset: 0x8062A, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r48r56w, symObjAddr: 0x950, symBinAddr: 0xB92C, symSize: 0x40 }
+  - { offset: 0x80649, size: 0x8, addend: 0x0, symName: '___82-[DASOfflineOTPAuthenticator presentCollectionUIWithRegistration:extensions:keys:]_block_invoke.323', symObjAddr: 0x990, symBinAddr: 0xB96C, symSize: 0x174 }
+  - { offset: 0x80723, size: 0x8, addend: 0x0, symName: '___82-[DASOfflineOTPAuthenticator presentCollectionUIWithRegistration:extensions:keys:]_block_invoke_2', symObjAddr: 0xB04, symBinAddr: 0xBAE0, symSize: 0x9C }
+  - { offset: 0x8079A, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b48r, symObjAddr: 0xBA0, symBinAddr: 0xBB7C, symSize: 0x44 }
+  - { offset: 0x807C3, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48r, symObjAddr: 0xBE4, symBinAddr: 0xBBC0, symSize: 0x34 }
+  - { offset: 0x807E2, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56b64r72r80w, symObjAddr: 0xC18, symBinAddr: 0xBBF4, symSize: 0x70 }
+  - { offset: 0x8080B, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64r72r80w, symObjAddr: 0xC88, symBinAddr: 0xBC64, symSize: 0x58 }
+  - { offset: 0x8082A, size: 0x8, addend: 0x0, symName: '___82-[DASOfflineOTPAuthenticator presentCollectionUIWithRegistration:extensions:keys:]_block_invoke.327', symObjAddr: 0xCE0, symBinAddr: 0xBCBC, symSize: 0xBC }
+  - { offset: 0x808C0, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b40r48w, symObjAddr: 0xD9C, symBinAddr: 0xBD78, symSize: 0x48 }
+  - { offset: 0x808E9, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r48w, symObjAddr: 0xDE4, symBinAddr: 0xBDC0, symSize: 0x34 }
+  - { offset: 0x80908, size: 0x8, addend: 0x0, symName: '-[DASOfflineOTPAuthenticator deregister:removeAllData:]', symObjAddr: 0xE18, symBinAddr: 0xBDF4, symSize: 0x90 }
+  - { offset: 0x80DC3, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController isReenrollRequired]', symObjAddr: 0x0, symBinAddr: 0xBE84, symSize: 0x5C }
+  - { offset: 0x80E9E, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController isReenrollRequired]', symObjAddr: 0x0, symBinAddr: 0xBE84, symSize: 0x5C }
+  - { offset: 0x80EE5, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController jsonWithDictionary:]', symObjAddr: 0x5C, symBinAddr: 0xBEE0, symSize: 0x70 }
+  - { offset: 0x80F38, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController deliverData:completionHandler:]', symObjAddr: 0xCC, symBinAddr: 0xBF50, symSize: 0x8F0 }
+  - { offset: 0x81114, size: 0x8, addend: 0x0, symName: '___57-[DASDefaultSRPController deliverData:completionHandler:]_block_invoke', symObjAddr: 0x9BC, symBinAddr: 0xC840, symSize: 0x354 }
+  - { offset: 0x81282, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b48w, symObjAddr: 0xD10, symBinAddr: 0xCB94, symSize: 0x40 }
+  - { offset: 0x812AB, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController encodeAuthenticationData:settings:B:M2:error:]', symObjAddr: 0xD80, symBinAddr: 0xCBD4, symSize: 0x1E0 }
+  - { offset: 0x813EC, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController encodeRegistrationData:settings:error:]', symObjAddr: 0xF60, symBinAddr: 0xCDB4, symSize: 0x19C }
+  - { offset: 0x814CF, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController checkPassword:withRestrictions:]', symObjAddr: 0x10FC, symBinAddr: 0xCF50, symSize: 0x378 }
+  - { offset: 0x81668, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController matchPassword:withRequiredPatternExtensions:]', symObjAddr: 0x1474, symBinAddr: 0xD2C8, symSize: 0x1D0 }
+  - { offset: 0x816FF, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController matchPassword:withAllowedPatternExtensions:]', symObjAddr: 0x1644, symBinAddr: 0xD498, symSize: 0x214 }
+  - { offset: 0x81793, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController matchPassword:withDisallowedPatternExtensions:]', symObjAddr: 0x1858, symBinAddr: 0xD6AC, symSize: 0x1D0 }
+  - { offset: 0x8182E, size: 0x8, addend: 0x0, symName: '-[DASDefaultSRPController patternsWithExtension:extensions:]', symObjAddr: 0x1A28, symBinAddr: 0xD87C, symSize: 0x210 }
+  - { offset: 0x81B61, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase init]', symObjAddr: 0x0, symBinAddr: 0xDA8C, symSize: 0x74 }
+  - { offset: 0x81D9B, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase init]', symObjAddr: 0x0, symBinAddr: 0xDA8C, symSize: 0x74 }
+  - { offset: 0x81DD2, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase initWithAlgorithm:]', symObjAddr: 0x74, symBinAddr: 0xDB00, symSize: 0x74 }
+  - { offset: 0x81E19, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase initWithNibName:bundle:context:]', symObjAddr: 0xE8, symBinAddr: 0xDB74, symSize: 0x18 }
+  - { offset: 0x81E74, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getID]', symObjAddr: 0x100, symBinAddr: 0xDB8C, symSize: 0xC }
+  - { offset: 0x81EA7, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getName]', symObjAddr: 0x10C, symBinAddr: 0xDB98, symSize: 0xC }
+  - { offset: 0x81EDA, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getDescription]', symObjAddr: 0x118, symBinAddr: 0xDBA4, symSize: 0xC }
+  - { offset: 0x81F0D, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getVersionCode]', symObjAddr: 0x124, symBinAddr: 0xDBB0, symSize: 0x8 }
+  - { offset: 0x81F40, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getVersionName]', symObjAddr: 0x12C, symBinAddr: 0xDBB8, symSize: 0xC }
+  - { offset: 0x81F73, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase loadIconWithName:]', symObjAddr: 0x138, symBinAddr: 0xDBC4, symSize: 0x48 }
+  - { offset: 0x81FC6, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getIcon]', symObjAddr: 0x180, symBinAddr: 0xDC0C, symSize: 0xC }
+  - { offset: 0x81FFB, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getFactorType]', symObjAddr: 0x18C, symBinAddr: 0xDC18, symSize: 0x8 }
+  - { offset: 0x8202E, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getMatcherProtection]', symObjAddr: 0x194, symBinAddr: 0xDC20, symSize: 0x8 }
+  - { offset: 0x82061, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getExtensions]', symObjAddr: 0x19C, symBinAddr: 0xDC28, symSize: 0x14 }
+  - { offset: 0x82098, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase setExtensions:]', symObjAddr: 0x1B0, symBinAddr: 0xDC3C, symSize: 0x18 }
+  - { offset: 0x820DB, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase removeExtensions]', symObjAddr: 0x1C8, symBinAddr: 0xDC54, symSize: 0x14 }
+  - { offset: 0x8210E, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase generateAuthToken]', symObjAddr: 0x1DC, symBinAddr: 0xDC68, symSize: 0xC }
+  - { offset: 0x82141, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getDataStoreType]', symObjAddr: 0x1E8, symBinAddr: 0xDC74, symSize: 0x8 }
+  - { offset: 0x82174, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getClientDelegate]', symObjAddr: 0x1F0, symBinAddr: 0xDC7C, symSize: 0x8 }
+  - { offset: 0x821AB, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase setClientDelegate:]', symObjAddr: 0x1F8, symBinAddr: 0xDC84, symSize: 0xC }
+  - { offset: 0x821EE, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getSigningAlgorithm]', symObjAddr: 0x204, symBinAddr: 0xDC90, symSize: 0x8 }
+  - { offset: 0x82225, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase setSigningAlgorithm:]', symObjAddr: 0x20C, symBinAddr: 0xDC98, symSize: 0x8 }
+  - { offset: 0x82264, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase hasUICollection]', symObjAddr: 0x214, symBinAddr: 0xDCA0, symSize: 0x8 }
+  - { offset: 0x82297, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase isSupported]', symObjAddr: 0x21C, symBinAddr: 0xDCA8, symSize: 0x8 }
+  - { offset: 0x822CA, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase isRegistered:]', symObjAddr: 0x224, symBinAddr: 0xDCB0, symSize: 0x8 }
+  - { offset: 0x8230F, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase isDataStored]', symObjAddr: 0x22C, symBinAddr: 0xDCB8, symSize: 0x8 }
+  - { offset: 0x82342, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase lockState]', symObjAddr: 0x234, symBinAddr: 0xDCC0, symSize: 0x48 }
+  - { offset: 0x82379, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase lockEndTime]', symObjAddr: 0x27C, symBinAddr: 0xDD08, symSize: 0xC4 }
+  - { offset: 0x823CF, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase unlock:]', symObjAddr: 0x340, symBinAddr: 0xDDCC, symSize: 0xE8 }
+  - { offset: 0x82416, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase resetState]', symObjAddr: 0x428, symBinAddr: 0xDEB4, symSize: 0x34 }
+  - { offset: 0x82449, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase clearEnrolledData]', symObjAddr: 0x45C, symBinAddr: 0xDEE8, symSize: 0x4 }
+  - { offset: 0x82478, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase isInvalidated]', symObjAddr: 0x460, symBinAddr: 0xDEEC, symSize: 0x8 }
+  - { offset: 0x824AF, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase invalidate]', symObjAddr: 0x468, symBinAddr: 0xDEF4, symSize: 0xC }
+  - { offset: 0x824E0, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase reenroll:]', symObjAddr: 0x474, symBinAddr: 0xDF00, symSize: 0xFC }
+  - { offset: 0x82533, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase isEnrollAllowed]', symObjAddr: 0x570, symBinAddr: 0xDFFC, symSize: 0x34 }
+  - { offset: 0x8257A, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase writeReenrollFlag]', symObjAddr: 0x5A4, symBinAddr: 0xE030, symSize: 0x88 }
+  - { offset: 0x825BF, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase removeReenrollFlag]', symObjAddr: 0x62C, symBinAddr: 0xE0B8, symSize: 0x88 }
+  - { offset: 0x82604, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase isReenrollFlagPresent]', symObjAddr: 0x6B4, symBinAddr: 0xE140, symSize: 0x90 }
+  - { offset: 0x8264D, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getPublicKey:]', symObjAddr: 0x744, symBinAddr: 0xE1D0, symSize: 0x10 }
+  - { offset: 0x826A1, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getPublicKeyFormat]', symObjAddr: 0x754, symBinAddr: 0xE1E0, symSize: 0x24 }
+  - { offset: 0x826D9, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getPublicKeyType]', symObjAddr: 0x778, symBinAddr: 0xE204, symSize: 0x24 }
+  - { offset: 0x82711, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getKeyProtection]', symObjAddr: 0x79C, symBinAddr: 0xE228, symSize: 0x54 }
+  - { offset: 0x82749, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getAlgorithm]', symObjAddr: 0x7F0, symBinAddr: 0xE27C, symSize: 0x24 }
+  - { offset: 0x82781, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase setCurrentKey:]', symObjAddr: 0x814, symBinAddr: 0xE2A0, symSize: 0x38 }
+  - { offset: 0x827C6, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase setCurrentKeys:]', symObjAddr: 0x84C, symBinAddr: 0xE2D8, symSize: 0x38 }
+  - { offset: 0x8280B, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase resetCurrentKeyOrKeys]', symObjAddr: 0x884, symBinAddr: 0xE310, symSize: 0x30 }
+  - { offset: 0x8283F, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase defaultUIClassName]', symObjAddr: 0x8B4, symBinAddr: 0xE340, symSize: 0x8 }
+  - { offset: 0x82873, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase createCollectionUIWithContext:delegate:]', symObjAddr: 0x8BC, symBinAddr: 0xE348, symSize: 0x410 }
+  - { offset: 0x82969, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase attemptUIPresentation]', symObjAddr: 0xCCC, symBinAddr: 0xE758, symSize: 0x110 }
+  - { offset: 0x829C6, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase presentCollectionUIWithRegistration:extensions:keys:]', symObjAddr: 0xDDC, symBinAddr: 0xE868, symSize: 0x4 }
+  - { offset: 0x82A1D, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase onCollectionCompletion]', symObjAddr: 0xDE0, symBinAddr: 0xE86C, symSize: 0x278 }
+  - { offset: 0x82A82, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase onCollectionFailureWithErrorObject:]', symObjAddr: 0x1058, symBinAddr: 0xEAE4, symSize: 0x27C }
+  - { offset: 0x82B07, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase register:extensions:delegate:]', symObjAddr: 0x12D4, symBinAddr: 0xED60, symSize: 0x43C }
+  - { offset: 0x82BA8, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase deregister:removeAllData:]', symObjAddr: 0x1710, symBinAddr: 0xF19C, symSize: 0xF4 }
+  - { offset: 0x82BFE, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase authenticate:extensions:delegate:]', symObjAddr: 0x1804, symBinAddr: 0xF290, symSize: 0x9AC }
+  - { offset: 0x82E3F, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase getADoSMode:]', symObjAddr: 0x21B0, symBinAddr: 0xFC3C, symSize: 0x94 }
+  - { offset: 0x82EA6, size: 0x8, addend: 0x0, symName: '-[DASAuthenticatorBase .cxx_destruct]', symObjAddr: 0x2244, symBinAddr: 0xFCD0, symSize: 0x6C }
+  - { offset: 0x830A4, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator initWithPolicyType:algorithm:filterNonUIAuthenticators:]', symObjAddr: 0x0, symBinAddr: 0xFD3C, symSize: 0xBC }
+  - { offset: 0x83728, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator initWithPolicyType:algorithm:filterNonUIAuthenticators:]', symObjAddr: 0x0, symBinAddr: 0xFD3C, symSize: 0xBC }
+  - { offset: 0x8378F, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator initWithNibName:bundle:multiAuthenticatorContext:]', symObjAddr: 0xBC, symBinAddr: 0xFDF8, symSize: 0x18 }
+  - { offset: 0x837EA, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator initWithNibName:bundle:context:cancelOnBackgrounding:]', symObjAddr: 0xD4, symBinAddr: 0xFE10, symSize: 0x18 }
+  - { offset: 0x83851, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator createAuthenticators]', symObjAddr: 0xEC, symBinAddr: 0xFE28, symSize: 0x448 }
+  - { offset: 0x83956, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator activeFactor]', symObjAddr: 0x534, symBinAddr: 0x10270, symSize: 0x14 }
+  - { offset: 0x8398D, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator executeSingleAuthenticator:delegate:]', symObjAddr: 0x548, symBinAddr: 0x10284, symSize: 0x120 }
+  - { offset: 0x839E0, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator collectDataForFactorsAndKeys:factorsAndExtensions:registerChosenKeys:delegate:]', symObjAddr: 0x668, symBinAddr: 0x103A4, symSize: 0xCB8 }
+  - { offset: 0x83B99, size: 0x8, addend: 0x0, symName: '___110-[DASDefaultMultiAuthenticator collectDataForFactorsAndKeys:factorsAndExtensions:registerChosenKeys:delegate:]_block_invoke', symObjAddr: 0x1320, symBinAddr: 0x1105C, symSize: 0x10 }
+  - { offset: 0x83BEC, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator configureContext]', symObjAddr: 0x1380, symBinAddr: 0x1106C, symSize: 0x1AC }
+  - { offset: 0x83C42, size: 0x8, addend: 0x0, symName: '___48-[DASDefaultMultiAuthenticator configureContext]_block_invoke', symObjAddr: 0x152C, symBinAddr: 0x11218, symSize: 0xC4 }
+  - { offset: 0x83CC2, size: 0x8, addend: 0x0, symName: '___48-[DASDefaultMultiAuthenticator configureContext]_block_invoke.349', symObjAddr: 0x1604, symBinAddr: 0x112DC, symSize: 0x58 }
+  - { offset: 0x83D42, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator startCollection]', symObjAddr: 0x165C, symBinAddr: 0x11334, symSize: 0x2F0 }
+  - { offset: 0x83DAE, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator createAndPolicyViewController]', symObjAddr: 0x194C, symBinAddr: 0x11624, symSize: 0xD4 }
+  - { offset: 0x83E43, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator createOrPolicyViewController]', symObjAddr: 0x1A20, symBinAddr: 0x116F8, symSize: 0x100 }
+  - { offset: 0x83EBC, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator createMultipleChoicePolicyViewController]', symObjAddr: 0x1B20, symBinAddr: 0x117F8, symSize: 0x100 }
+  - { offset: 0x83F35, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator presentViewController:context:]', symObjAddr: 0x1C20, symBinAddr: 0x118F8, symSize: 0x114 }
+  - { offset: 0x83F9C, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator onRegisterComplete:extensions:keys:]', symObjAddr: 0x1D34, symBinAddr: 0x11A0C, symSize: 0x164 }
+  - { offset: 0x84003, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator onAuthenticateComplete:keys:]', symObjAddr: 0x1E98, symBinAddr: 0x11B70, symSize: 0x110 }
+  - { offset: 0x8406A, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator onFailed:code:message:]', symObjAddr: 0x1FA8, symBinAddr: 0x11C80, symSize: 0xBC }
+  - { offset: 0x840CD, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator onAttemptFailed:info:]', symObjAddr: 0x2064, symBinAddr: 0x11D3C, symSize: 0xEC }
+  - { offset: 0x84127, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator onDataCollectionCompleteForFactor:collectedData:extensions:keys:onAnalysisComplete:]', symObjAddr: 0x2150, symBinAddr: 0x11E28, symSize: 0x110 }
+  - { offset: 0x841B0, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator handleContextCompletionWithExtensions:keys:]', symObjAddr: 0x2260, symBinAddr: 0x11F38, symSize: 0x9B0 }
+  - { offset: 0x843DD, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator handleContextFailureForAuthenticator:error:]', symObjAddr: 0x2C10, symBinAddr: 0x128E8, symSize: 0x3EC }
+  - { offset: 0x844AC, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator registerOfflineAuthenticator:withFactorKeyPairs:returnExtensions:returnKeys:]', symObjAddr: 0x2FFC, symBinAddr: 0x12CD4, symSize: 0x28C }
+  - { offset: 0x84557, size: 0x8, addend: 0x0, symName: '___108-[DASDefaultMultiAuthenticator registerOfflineAuthenticator:withFactorKeyPairs:returnExtensions:returnKeys:]_block_invoke', symObjAddr: 0x3288, symBinAddr: 0x12F60, symSize: 0xCC }
+  - { offset: 0x8461B, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64w, symObjAddr: 0x3354, symBinAddr: 0x1302C, symSize: 0x48 }
+  - { offset: 0x84644, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64w, symObjAddr: 0x339C, symBinAddr: 0x13074, symSize: 0x40 }
+  - { offset: 0x84663, size: 0x8, addend: 0x0, symName: '___108-[DASDefaultMultiAuthenticator registerOfflineAuthenticator:withFactorKeyPairs:returnExtensions:returnKeys:]_block_invoke.403', symObjAddr: 0x33DC, symBinAddr: 0x130B4, symSize: 0x78 }
+  - { offset: 0x846F4, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator authenticateOfflineAuthenticator:returnExtensions:returnKeys:]', symObjAddr: 0x34AC, symBinAddr: 0x1312C, symSize: 0x264 }
+  - { offset: 0x8479F, size: 0x8, addend: 0x0, symName: '___93-[DASDefaultMultiAuthenticator authenticateOfflineAuthenticator:returnExtensions:returnKeys:]_block_invoke', symObjAddr: 0x3710, symBinAddr: 0x13390, symSize: 0xCC }
+  - { offset: 0x84852, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56w, symObjAddr: 0x37DC, symBinAddr: 0x1345C, symSize: 0x40 }
+  - { offset: 0x8487B, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56w, symObjAddr: 0x381C, symBinAddr: 0x1349C, symSize: 0x38 }
+  - { offset: 0x8489A, size: 0x8, addend: 0x0, symName: '___93-[DASDefaultMultiAuthenticator authenticateOfflineAuthenticator:returnExtensions:returnKeys:]_block_invoke.405', symObjAddr: 0x3854, symBinAddr: 0x134D4, symSize: 0x78 }
+  - { offset: 0x8492B, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator createCompletionExtensionsForNonUIAuthenticator:]', symObjAddr: 0x38CC, symBinAddr: 0x1354C, symSize: 0x24 }
+  - { offset: 0x84970, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator keysForFactor:]', symObjAddr: 0x38F0, symBinAddr: 0x13570, symSize: 0x144 }
+  - { offset: 0x849EA, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator registeredKeysByFactor:]', symObjAddr: 0x3A34, symBinAddr: 0x136B4, symSize: 0x180 }
+  - { offset: 0x84A70, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator validAuthKeysForFactor:]', symObjAddr: 0x3BB4, symBinAddr: 0x13834, symSize: 0x13C }
+  - { offset: 0x84AFB, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator extensionsForFactor:]', symObjAddr: 0x3CF0, symBinAddr: 0x13970, symSize: 0x58 }
+  - { offset: 0x84B55, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator shouldCancelOnBackgrounding]', symObjAddr: 0x3D48, symBinAddr: 0x139C8, symSize: 0x164 }
+  - { offset: 0x84BCE, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticator .cxx_destruct]', symObjAddr: 0x3EAC, symBinAddr: 0x13B2C, symSize: 0xA4 }
+  - { offset: 0x851A3, size: 0x8, addend: 0x0, symName: '+[DASUtils getAvailableAuthenticatorBundleAndFrameworkPaths:]', symObjAddr: 0x0, symBinAddr: 0x13BD0, symSize: 0x204 }
+  - { offset: 0x851DA, size: 0x8, addend: 0x0, symName: _sAllAvailableBundles, symObjAddr: 0x31C78, symBinAddr: 0x95AC8, symSize: 0x0 }
+  - { offset: 0x851F5, size: 0x8, addend: 0x0, symName: _sCustomHostViewController, symObjAddr: 0x31C80, symBinAddr: 0x95AD0, symSize: 0x0 }
+  - { offset: 0x8573A, size: 0x8, addend: 0x0, symName: '+[DASUtils getAvailableAuthenticatorBundleAndFrameworkPaths:]', symObjAddr: 0x0, symBinAddr: 0x13BD0, symSize: 0x204 }
+  - { offset: 0x857DF, size: 0x8, addend: 0x0, symName: '+[DASUtils allBundles]', symObjAddr: 0x204, symBinAddr: 0x13DD4, symSize: 0x268 }
+  - { offset: 0x858B2, size: 0x8, addend: 0x0, symName: '+[DASUtils getPathInAllBundlesForResource:ofType:]', symObjAddr: 0x46C, symBinAddr: 0x1403C, symSize: 0x174 }
+  - { offset: 0x85930, size: 0x8, addend: 0x0, symName: '+[DASUtils bundleForResource:ofType:]', symObjAddr: 0x5E0, symBinAddr: 0x141B0, symSize: 0x178 }
+  - { offset: 0x859C5, size: 0x8, addend: 0x0, symName: '+[DASUtils localise:]', symObjAddr: 0x758, symBinAddr: 0x14328, symSize: 0xC }
+  - { offset: 0x85A08, size: 0x8, addend: 0x0, symName: '+[DASUtils localisedStringForKey:fromTable:]', symObjAddr: 0x764, symBinAddr: 0x14334, symSize: 0x170 }
+  - { offset: 0x85AAB, size: 0x8, addend: 0x0, symName: '+[DASUtils stringForError:]', symObjAddr: 0x8D4, symBinAddr: 0x144A4, symSize: 0x94 }
+  - { offset: 0x85B12, size: 0x8, addend: 0x0, symName: '+[DASUtils errorForError:integerArgument:]', symObjAddr: 0x968, symBinAddr: 0x14538, symSize: 0x110 }
+  - { offset: 0x85B89, size: 0x8, addend: 0x0, symName: '+[DASUtils errorForError:]', symObjAddr: 0xA78, symBinAddr: 0x14648, symSize: 0xDC }
+  - { offset: 0x85BE0, size: 0x8, addend: 0x0, symName: '+[DASUtils errorForError:description:]', symObjAddr: 0xB54, symBinAddr: 0x14724, symSize: 0xFC }
+  - { offset: 0x85C37, size: 0x8, addend: 0x0, symName: '+[DASUtils errorForLocalAuthError:]', symObjAddr: 0xC50, symBinAddr: 0x14820, symSize: 0x120 }
+  - { offset: 0x85C8E, size: 0x8, addend: 0x0, symName: '+[DASUtils underlyingErrorForError:]', symObjAddr: 0xD70, symBinAddr: 0x14940, symSize: 0x84 }
+  - { offset: 0x85CE4, size: 0x8, addend: 0x0, symName: '+[DASUtils reportADoSErrorToServer:]', symObjAddr: 0xDF4, symBinAddr: 0x149C4, symSize: 0x84 }
+  - { offset: 0x85D29, size: 0x8, addend: 0x0, symName: '+[DASUtils loadImageNamed:]', symObjAddr: 0xE78, symBinAddr: 0x14A48, symSize: 0x184 }
+  - { offset: 0x85D9B, size: 0x8, addend: 0x0, symName: '+[DASUtils loadImageNamed:fromBundle:]', symObjAddr: 0xFFC, symBinAddr: 0x14BCC, symSize: 0x10 }
+  - { offset: 0x85DED, size: 0x8, addend: 0x0, symName: '+[DASUtils base64DecodeImage:]', symObjAddr: 0x100C, symBinAddr: 0x14BDC, symSize: 0x9C }
+  - { offset: 0x85E74, size: 0x8, addend: 0x0, symName: '+[DASUtils rotateImage:toOrientation:]', symObjAddr: 0x10A8, symBinAddr: 0x14C78, symSize: 0x328 }
+  - { offset: 0x86056, size: 0x8, addend: 0x0, symName: '+[DASUtils resizeImage:toSize:]', symObjAddr: 0x13D0, symBinAddr: 0x14FA0, symSize: 0x78 }
+  - { offset: 0x86158, size: 0x8, addend: 0x0, symName: '+[DASUtils rotateImage:toOrientation:].cold.1', symObjAddr: 0x2738, symBinAddr: 0x5AD1C, symSize: 0x28 }
+  - { offset: 0x86170, size: 0x8, addend: 0x0, symName: '+[DASUtils resizeImage:toSize:]', symObjAddr: 0x13D0, symBinAddr: 0x14FA0, symSize: 0x78 }
+  - { offset: 0x86201, size: 0x8, addend: 0x0, symName: '+[DASUtils videoOrientation]', symObjAddr: 0x1448, symBinAddr: 0x15018, symSize: 0x28 }
+  - { offset: 0x86235, size: 0x8, addend: 0x0, symName: '+[DASUtils videoRotationAngle]', symObjAddr: 0x1470, symBinAddr: 0x15040, symSize: 0x40 }
+  - { offset: 0x86269, size: 0x8, addend: 0x0, symName: '+[DASUtils isIos9AndAbove]', symObjAddr: 0x14B0, symBinAddr: 0x15080, symSize: 0x6C }
+  - { offset: 0x8629D, size: 0x8, addend: 0x0, symName: '+[DASUtils isIos11AndAbove]', symObjAddr: 0x151C, symBinAddr: 0x150EC, symSize: 0x6C }
+  - { offset: 0x862D1, size: 0x8, addend: 0x0, symName: '+[DASUtils isTouchIDSupported]', symObjAddr: 0x1588, symBinAddr: 0x15158, symSize: 0x50 }
+  - { offset: 0x86327, size: 0x8, addend: 0x0, symName: '+[DASUtils isTouchIDEnabled]', symObjAddr: 0x15D8, symBinAddr: 0x151A8, symSize: 0x5C }
+  - { offset: 0x86399, size: 0x8, addend: 0x0, symName: '+[DASUtils isPlatformVersionOrBetter:forDevice:]', symObjAddr: 0x1634, symBinAddr: 0x15204, symSize: 0x108 }
+  - { offset: 0x86488, size: 0x8, addend: 0x0, symName: '+[DASUtils isFaceIDSupported]', symObjAddr: 0x173C, symBinAddr: 0x1530C, symSize: 0x50 }
+  - { offset: 0x864DC, size: 0x8, addend: 0x0, symName: '+[DASUtils isFaceIDEnabled]', symObjAddr: 0x178C, symBinAddr: 0x1535C, symSize: 0x70 }
+  - { offset: 0x8653D, size: 0x8, addend: 0x0, symName: '+[DASUtils devicePlatform]', symObjAddr: 0x17FC, symBinAddr: 0x153CC, symSize: 0x8C }
+  - { offset: 0x86634, size: 0x8, addend: 0x0, symName: '+[DASUtils deviceSupportsSecureEnclave]', symObjAddr: 0x1888, symBinAddr: 0x15458, symSize: 0x90 }
+  - { offset: 0x8668E, size: 0x8, addend: 0x0, symName: '+[DASUtils isDarkModeEnabled]', symObjAddr: 0x1918, symBinAddr: 0x154E8, symSize: 0x48 }
+  - { offset: 0x866C2, size: 0x8, addend: 0x0, symName: '+[DASUtils determineHostViewController]', symObjAddr: 0x1960, symBinAddr: 0x15530, symSize: 0x1FC }
+  - { offset: 0x8676D, size: 0x8, addend: 0x0, symName: '+[DASUtils keyWindow]', symObjAddr: 0x1B5C, symBinAddr: 0x1572C, symSize: 0x124 }
+  - { offset: 0x867E7, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x1C80, symBinAddr: 0x15850, symSize: 0x10 }
+  - { offset: 0x8680C, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x1C90, symBinAddr: 0x15860, symSize: 0x8 }
+  - { offset: 0x8682B, size: 0x8, addend: 0x0, symName: '___21+[DASUtils keyWindow]_block_invoke', symObjAddr: 0x1C98, symBinAddr: 0x15868, symSize: 0x88 }
+  - { offset: 0x868A7, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32r, symObjAddr: 0x1D20, symBinAddr: 0x158F0, symSize: 0x10 }
+  - { offset: 0x868D0, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32r, symObjAddr: 0x1D30, symBinAddr: 0x15900, symSize: 0xC }
+  - { offset: 0x868EF, size: 0x8, addend: 0x0, symName: '+[DASUtils findTopMostViewControllerOn:]', symObjAddr: 0x1D3C, symBinAddr: 0x1590C, symSize: 0x160 }
+  - { offset: 0x86949, size: 0x8, addend: 0x0, symName: '+[DASUtils setHostViewController:]', symObjAddr: 0x1E9C, symBinAddr: 0x15A6C, symSize: 0x10 }
+  - { offset: 0x8698A, size: 0x8, addend: 0x0, symName: '+[DASUtils presentNavigationControllerWithRoot:fromHost:]', symObjAddr: 0x1EAC, symBinAddr: 0x15A7C, symSize: 0xA4 }
+  - { offset: 0x869ED, size: 0x8, addend: 0x0, symName: '+[DASUtils currentTimeMilliseconds]', symObjAddr: 0x1F50, symBinAddr: 0x15B20, symSize: 0x50 }
+  - { offset: 0x86A67, size: 0x8, addend: 0x0, symName: '+[DASUtils generateAuthToken]', symObjAddr: 0x1FA0, symBinAddr: 0x15B70, symSize: 0x40 }
+  - { offset: 0x86A9F, size: 0x8, addend: 0x0, symName: '+[DASUtils buildReturnExtensionsWithStartTime:currentExtensions:authenticator:addAuthToken:addLockInfo:addErrorInfo:]', symObjAddr: 0x1FE0, symBinAddr: 0x15BB0, symSize: 0x314 }
+  - { offset: 0x86B6E, size: 0x8, addend: 0x0, symName: '+[DASUtils extensionForKeyStoreType:]', symObjAddr: 0x22F4, symBinAddr: 0x15EC4, symSize: 0x1C }
+  - { offset: 0x86BB1, size: 0x8, addend: 0x0, symName: '+[DASUtils extensionForDataStoreType:]', symObjAddr: 0x2310, symBinAddr: 0x15EE0, symSize: 0x2C }
+  - { offset: 0x86C05, size: 0x8, addend: 0x0, symName: '+[DASUtils extensionForLockState:]', symObjAddr: 0x233C, symBinAddr: 0x15F0C, symSize: 0x2C }
+  - { offset: 0x86C59, size: 0x8, addend: 0x0, symName: '+[DASUtils isADoSFactor:]', symObjAddr: 0x2368, symBinAddr: 0x15F38, symSize: 0x14 }
+  - { offset: 0x86C9C, size: 0x8, addend: 0x0, symName: '+[DASUtils isLocalAuthenticatorFactor:version:]', symObjAddr: 0x237C, symBinAddr: 0x15F4C, symSize: 0x1C }
+  - { offset: 0x86CEE, size: 0x8, addend: 0x0, symName: '+[DASUtils setIdleTimerDisabled:]', symObjAddr: 0x2398, symBinAddr: 0x15F68, symSize: 0x74 }
+  - { offset: 0x86D4F, size: 0x8, addend: 0x0, symName: '+[DASUtils statusBarOrientation]', symObjAddr: 0x240C, symBinAddr: 0x15FDC, symSize: 0x68 }
+  - { offset: 0x86DA3, size: 0x8, addend: 0x0, symName: '+[DASUtils interfaceOrientation]', symObjAddr: 0x2474, symBinAddr: 0x16044, symSize: 0xE4 }
+  - { offset: 0x86E0F, size: 0x8, addend: 0x0, symName: '+[DASUtils addConstrainEqualConstraintToView:containerView:childView:]', symObjAddr: 0x2558, symBinAddr: 0x16128, symSize: 0x1E0 }
+  - { offset: 0x87107, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext initWithAuthenticators:policy:factorsAndKeys:requestExtensions:uiCustomizationDelegate:registerChosenKeys:signingAlgorithm:authenticatorPrecedence:filterNonUIAuthenticators:onCompletion:onFailure:]', symObjAddr: 0x0, symBinAddr: 0x16308, symSize: 0x490 }
+  - { offset: 0x878EA, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext initWithAuthenticators:policy:factorsAndKeys:requestExtensions:uiCustomizationDelegate:registerChosenKeys:signingAlgorithm:authenticatorPrecedence:filterNonUIAuthenticators:onCompletion:onFailure:]', symObjAddr: 0x0, symBinAddr: 0x16308, symSize: 0x490 }
+  - { offset: 0x879E0, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext checkForAndDeleteInvalidKeys]', symObjAddr: 0x490, symBinAddr: 0x16798, symSize: 0x468 }
+  - { offset: 0x87AC2, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext addNonUIAuthenticatorKeysForReturn:inFactorsAndKeys:]', symObjAddr: 0x8F8, symBinAddr: 0x16C00, symSize: 0x23C }
+  - { offset: 0x87B83, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext filterOutNonUIAuthenticators:]', symObjAddr: 0xB34, symBinAddr: 0x16E3C, symSize: 0x3CC }
+  - { offset: 0x87C84, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext addReturnExtensionsForFactor:]', symObjAddr: 0xF00, symBinAddr: 0x17208, symSize: 0x128 }
+  - { offset: 0x87CE7, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext addReturnKeysForFactor:]', symObjAddr: 0x1028, symBinAddr: 0x17330, symSize: 0xA4 }
+  - { offset: 0x87D2A, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext keysForFactor:]', symObjAddr: 0x10CC, symBinAddr: 0x173D4, symSize: 0x324 }
+  - { offset: 0x87DFE, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext setActiveViewController:]', symObjAddr: 0x13F0, symBinAddr: 0x176F8, symSize: 0xC }
+  - { offset: 0x87E43, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext activeViewController]', symObjAddr: 0x13FC, symBinAddr: 0x17704, symSize: 0x18 }
+  - { offset: 0x87E7B, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext setActiveFactor:]', symObjAddr: 0x1414, symBinAddr: 0x1771C, symSize: 0x8 }
+  - { offset: 0x87EBC, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext activeFactor]', symObjAddr: 0x141C, symBinAddr: 0x17724, symSize: 0x8 }
+  - { offset: 0x87EF4, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext authenticatorPrecedence]', symObjAddr: 0x1424, symBinAddr: 0x1772C, symSize: 0x8 }
+  - { offset: 0x87F2C, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext isCaptureComplete]', symObjAddr: 0x142C, symBinAddr: 0x17734, symSize: 0x8 }
+  - { offset: 0x87F64, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext cancelCapture]', symObjAddr: 0x1434, symBinAddr: 0x1773C, symSize: 0x80 }
+  - { offset: 0x87F98, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext completeCapture]', symObjAddr: 0x14B4, symBinAddr: 0x177BC, symSize: 0x1D4 }
+  - { offset: 0x87FF0, size: 0x8, addend: 0x0, symName: '___54-[DASDefaultMultiAuthenticatorContext completeCapture]_block_invoke', symObjAddr: 0x1688, symBinAddr: 0x17990, symSize: 0x44 }
+  - { offset: 0x8806F, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext completeCaptureWithError:]', symObjAddr: 0x1724, symBinAddr: 0x179D4, symSize: 0x250 }
+  - { offset: 0x880F0, size: 0x8, addend: 0x0, symName: '___64-[DASDefaultMultiAuthenticatorContext completeCaptureWithError:]_block_invoke', symObjAddr: 0x1974, symBinAddr: 0x17C24, symSize: 0x48 }
+  - { offset: 0x88191, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext cleanup]', symObjAddr: 0x1A24, symBinAddr: 0x17C6C, symSize: 0xB4 }
+  - { offset: 0x881C5, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext requestedAuthenticatorGroups]', symObjAddr: 0x1AD8, symBinAddr: 0x17D20, symSize: 0x490 }
+  - { offset: 0x882F1, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext authenticatorViewControllerForFactor:completionHandler:failureHandler:]', symObjAddr: 0x1F68, symBinAddr: 0x181B0, symSize: 0x1CC }
+  - { offset: 0x883A0, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext authenticatorContextForFactor:completionHandler:failureHandler:]', symObjAddr: 0x2134, symBinAddr: 0x1837C, symSize: 0x55C }
+  - { offset: 0x884F6, size: 0x8, addend: 0x0, symName: '___102-[DASDefaultMultiAuthenticatorContext authenticatorContextForFactor:completionHandler:failureHandler:]_block_invoke', symObjAddr: 0x2690, symBinAddr: 0x188D8, symSize: 0x36C }
+  - { offset: 0x88687, size: 0x8, addend: 0x0, symName: '___102-[DASDefaultMultiAuthenticatorContext authenticatorContextForFactor:completionHandler:failureHandler:]_block_invoke_2', symObjAddr: 0x29FC, symBinAddr: 0x18C44, symSize: 0x1B0 }
+  - { offset: 0x887B0, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64s72b80b88w, symObjAddr: 0x2BAC, symBinAddr: 0x18DF4, symSize: 0x70 }
+  - { offset: 0x887D9, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s72s80s88w, symObjAddr: 0x2C1C, symBinAddr: 0x18E64, symSize: 0x58 }
+  - { offset: 0x887F8, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56b64b72w, symObjAddr: 0x2C74, symBinAddr: 0x18EBC, symSize: 0x60 }
+  - { offset: 0x88821, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s72w, symObjAddr: 0x2CD4, symBinAddr: 0x18F1C, symSize: 0x48 }
+  - { offset: 0x88840, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext hasInvalidatedFactors]', symObjAddr: 0x2D1C, symBinAddr: 0x18F64, symSize: 0x20 }
+  - { offset: 0x88878, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext resetActiveFactorContext]', symObjAddr: 0x2D3C, symBinAddr: 0x18F84, symSize: 0x68 }
+  - { offset: 0x888BD, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext errorForCode:]', symObjAddr: 0x2DA4, symBinAddr: 0x18FEC, symSize: 0xC }
+  - { offset: 0x88900, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext localise:]', symObjAddr: 0x2DB0, symBinAddr: 0x18FF8, symSize: 0xC }
+  - { offset: 0x88943, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext getADoSMode:]', symObjAddr: 0x2DBC, symBinAddr: 0x19004, symSize: 0x94 }
+  - { offset: 0x889AA, size: 0x8, addend: 0x0, symName: '-[DASDefaultMultiAuthenticatorContext .cxx_destruct]', symObjAddr: 0x2E50, symBinAddr: 0x19098, symSize: 0xD4 }
+  - { offset: 0x88FF6, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController initWithAuthenticator:extensions:keys:captureStartTime:registration:]', symObjAddr: 0x0, symBinAddr: 0x1916C, symSize: 0x1AC }
+  - { offset: 0x890E4, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController initWithAuthenticator:extensions:keys:captureStartTime:registration:]', symObjAddr: 0x0, symBinAddr: 0x1916C, symSize: 0x1AC }
+  - { offset: 0x8916B, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController isReenrollRequired]', symObjAddr: 0x1AC, symBinAddr: 0x19318, symSize: 0x8 }
+  - { offset: 0x8919E, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForPassword:]', symObjAddr: 0x1B4, symBinAddr: 0x19320, symSize: 0x94 }
+  - { offset: 0x891E5, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForImage:]', symObjAddr: 0x248, symBinAddr: 0x193B4, symSize: 0x14 }
+  - { offset: 0x89228, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForImage:quality:format:]', symObjAddr: 0x25C, symBinAddr: 0x193C8, symSize: 0x2A4 }
+  - { offset: 0x89355, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForPortraitImage:quality:format:]', symObjAddr: 0x500, symBinAddr: 0x1966C, symSize: 0x214 }
+  - { offset: 0x893F4, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForTemplate:]', symObjAddr: 0x714, symBinAddr: 0x19880, symSize: 0x11C }
+  - { offset: 0x89447, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForVoiceSamples:]', symObjAddr: 0x830, symBinAddr: 0x1999C, symSize: 0x22C }
+  - { offset: 0x894EF, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController dataForDataArray:]', symObjAddr: 0xA5C, symBinAddr: 0x19BC8, symSize: 0x74 }
+  - { offset: 0x89532, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController cancel]', symObjAddr: 0xAD0, symBinAddr: 0x19C3C, symSize: 0x38 }
+  - { offset: 0x89565, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController deliverData:completionHandler:]', symObjAddr: 0xB08, symBinAddr: 0x19C74, symSize: 0x3D8 }
+  - { offset: 0x8961F, size: 0x8, addend: 0x0, symName: '___58-[DASDefaultADoSController deliverData:completionHandler:]_block_invoke', symObjAddr: 0xEE0, symBinAddr: 0x1A04C, symSize: 0x70 }
+  - { offset: 0x896A9, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b40w, symObjAddr: 0xF50, symBinAddr: 0x1A0BC, symSize: 0x38 }
+  - { offset: 0x896D2, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController handleServerError:data:completionHandler:]', symObjAddr: 0xFB0, symBinAddr: 0x1A0F4, symSize: 0x294 }
+  - { offset: 0x8978B, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController completeWithError:handler:]', symObjAddr: 0x1244, symBinAddr: 0x1A388, symSize: 0x110 }
+  - { offset: 0x897ED, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController errorForServerADoSModifiedError:originalError:responseData:]', symObjAddr: 0x1354, symBinAddr: 0x1A498, symSize: 0x394 }
+  - { offset: 0x898BA, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController compressData:]', symObjAddr: 0x16E8, symBinAddr: 0x1A82C, symSize: 0x234 }
+  - { offset: 0x899F4, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController rotateImage:degrees:]', symObjAddr: 0x191C, symBinAddr: 0x1AA60, symSize: 0x1A8 }
+  - { offset: 0x89BA8, size: 0x8, addend: 0x0, symName: '-[DASDefaultADoSController .cxx_destruct]', symObjAddr: 0x1AC4, symBinAddr: 0x1AC08, symSize: 0x50 }
+  - { offset: 0x89DE5, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h4d4b6367dbdad672E', symObjAddr: 0x36F8, symBinAddr: 0x1E324, symSize: 0xA8 }
+  - { offset: 0x89F6A, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h4d4b6367dbdad672E', symObjAddr: 0x36F8, symBinAddr: 0x1E324, symSize: 0xA8 }
+  - { offset: 0x8A0FC, size: 0x8, addend: 0x0, symName: __ZN5alloc7raw_vec11finish_grow17h3862af7561debb67E, symObjAddr: 0x37A0, symBinAddr: 0x5AD70, symSize: 0x6C }
+  - { offset: 0x8A178, size: 0x8, addend: 0x0, symName: __ZN5alloc7raw_vec12handle_error17he09142c7b19918a2E, symObjAddr: 0x380C, symBinAddr: 0x5ADDC, symSize: 0x18 }
+  - { offset: 0x8A1B9, size: 0x8, addend: 0x0, symName: __ZN5alloc7raw_vec17capacity_overflow17hc4d57a3a12bf29acE, symObjAddr: 0x3824, symBinAddr: 0x1E3CC, symSize: 0x34 }
+  - { offset: 0x8A1F5, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec20RawVecInner$LT$A$GT$7reserve21do_reserve_and_handle17hc66982fab7666c4bE', symObjAddr: 0x3870, symBinAddr: 0x5AE0C, symSize: 0xA4 }
+  - { offset: 0x8A3D0, size: 0x8, addend: 0x0, symName: __ZN5alloc5alloc18handle_alloc_error17ha0d5d600201def9dE, symObjAddr: 0x3858, symBinAddr: 0x5ADF4, symSize: 0x18 }
+  - { offset: 0x8A4AF, size: 0x8, addend: 0x0, symName: '__ZN72_$LT$$RF$str$u20$as$u20$alloc..ffi..c_str..CString..new..SpecNewImpl$GT$13spec_new_impl17hb704a22b0ff0a3e0E', symObjAddr: 0x3914, symBinAddr: 0x1E400, symSize: 0xF8 }
+  - { offset: 0x8A6AF, size: 0x8, addend: 0x0, symName: __ZN5alloc3ffi5c_str7CString19_from_vec_unchecked17h66250b890f436eacE, symObjAddr: 0x3A0C, symBinAddr: 0x1E4F8, symSize: 0x12C }
+  - { offset: 0x8AB42, size: 0x8, addend: 0x0, symName: __ZN5alloc6string6String15from_utf8_lossy17hacf24b828b989f4eE, symObjAddr: 0x3B38, symBinAddr: 0x1E624, symSize: 0x21C }
+  - { offset: 0x8B0F3, size: 0x8, addend: 0x0, symName: '__ZN58_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$9write_str17ha94f862aec3525d2E.12', symObjAddr: 0x3F18, symBinAddr: 0x1EA04, symSize: 0x78 }
+  - { offset: 0x8B257, size: 0x8, addend: 0x0, symName: '__ZN58_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$10write_char17h67074ff378bd50ffE.13', symObjAddr: 0x3F90, symBinAddr: 0x1EA7C, symSize: 0x148 }
+  - { offset: 0x8B4E0, size: 0x8, addend: 0x0, symName: '__ZN98_$LT$alloc..string..String$u20$as$u20$core..convert..From$LT$alloc..borrow..Cow$LT$str$GT$$GT$$GT$4from17h8b808b9b77f5f1aaE', symObjAddr: 0x40F4, symBinAddr: 0x1EBE0, symSize: 0xAC }
+  - { offset: 0x8B6A5, size: 0x8, addend: 0x0, symName: __ZN5alloc3fmt6format12format_inner17hec1d7969e2b4dc66E, symObjAddr: 0x3D54, symBinAddr: 0x1E840, symSize: 0x17C }
+  - { offset: 0x8BB56, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write9write_fmt17h27ad817cbd7187cdE, symObjAddr: 0x40D8, symBinAddr: 0x1EBC4, symSize: 0x1C }
+  - { offset: 0x8BB8D, size: 0x8, addend: 0x0, symName: '__ZN53_$LT$core..fmt..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17ha5295acf02a402e7E.11', symObjAddr: 0x3ED0, symBinAddr: 0x1E9BC, symSize: 0x24 }
+  - { offset: 0x8BC66, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr42drop_in_place$LT$alloc..string..String$GT$17h2457420574756c38E', symObjAddr: 0x3EF4, symBinAddr: 0x1E9E0, symSize: 0x24 }
+  - { offset: 0x8BF1D, size: 0x8, addend: 0x0, symName: __ZN3std3sys9backtrace26__rust_end_short_backtrace17h174bea5781e7284aE, symObjAddr: 0x1B97C, symBinAddr: 0x35408, symSize: 0xC }
+  - { offset: 0x8BF4B, size: 0x8, addend: 0x0, symName: __ZN3std3sys9backtrace13BacktraceLock5print17h4e3ead8358188a80E, symObjAddr: 0x1DE34, symBinAddr: 0x374F0, symSize: 0x50 }
+  - { offset: 0x8BF9D, size: 0x8, addend: 0x0, symName: '__ZN98_$LT$std..sys..backtrace..BacktraceLock..print..DisplayBacktrace$u20$as$u20$core..fmt..Display$GT$3fmt17h61e2649b5b13e864E', symObjAddr: 0x1DE84, symBinAddr: 0x37540, symSize: 0x314 }
+  - { offset: 0x8CB1A, size: 0x8, addend: 0x0, symName: '__ZN3std3sys9backtrace10_print_fmt28_$u7b$$u7b$closure$u7d$$u7d$17h76d38c6411fd0839E', symObjAddr: 0x1E224, symBinAddr: 0x378E0, symSize: 0x2738 }
+  - { offset: 0x934F3, size: 0x8, addend: 0x0, symName: '__ZN3std3sys9backtrace10_print_fmt28_$u7b$$u7b$closure$u7d$$u7d$28_$u7b$$u7b$closure$u7d$$u7d$17h1aa7ebff04533b03E', symObjAddr: 0x3C080, symBinAddr: 0x554B8, symSize: 0x254 }
+  - { offset: 0x93749, size: 0x8, addend: 0x0, symName: '__ZN3std3sys9backtrace10_print_fmt28_$u7b$$u7b$closure$u7d$$u7d$17hb146d02177c08530E', symObjAddr: 0x3C7EC, symBinAddr: 0x55C24, symSize: 0x30 }
+  - { offset: 0x93774, size: 0x8, addend: 0x0, symName: __ZN3std3sys9backtrace15output_filename17h430df0a23b8a18d5E, symObjAddr: 0x3C81C, symBinAddr: 0x55C54, symSize: 0x3DC }
+  - { offset: 0x93ADC, size: 0x8, addend: 0x0, symName: __ZN3std3sys9backtrace26__rust_end_short_backtrace17he16c6fb03f6a6cfeE, symObjAddr: 0x3E054, symBinAddr: 0x5722C, symSize: 0xC }
+  - { offset: 0x93B1E, size: 0x8, addend: 0x0, symName: _rust_eh_personality, symObjAddr: 0x1B9B8, symBinAddr: 0x35444, symSize: 0x334 }
+  - { offset: 0x93E27, size: 0x8, addend: 0x0, symName: '__ZN3std3sys11personality3gcc14find_eh_action28_$u7b$$u7b$closure$u7d$$u7d$17ha5924cb5e2b39824E', symObjAddr: 0x3E00C, symBinAddr: 0x571E4, symSize: 0x18 }
+  - { offset: 0x93E49, size: 0x8, addend: 0x0, symName: '__ZN3std3sys11personality3gcc14find_eh_action28_$u7b$$u7b$closure$u7d$$u7d$17h86615d3cc7f3ad34E', symObjAddr: 0x3E03C, symBinAddr: 0x57214, symSize: 0x18 }
+  - { offset: 0x93E9F, size: 0x8, addend: 0x0, symName: __ZN3std3sys11personality5dwarf2eh19read_encoded_offset17h50e69915218ee403E, symObjAddr: 0x3DEA4, symBinAddr: 0x5707C, symSize: 0x150 }
+  - { offset: 0x940B8, size: 0x8, addend: 0x0, symName: __ZN3std3sys4sync6rwlock5queue6RwLock12unlock_queue17h7f1dff2012dbdf99E, symObjAddr: 0x1CE24, symBinAddr: 0x3676C, symSize: 0x1AC }
+  - { offset: 0x947E3, size: 0x8, addend: 0x0, symName: __ZN3std3sys4sync6rwlock5queue6RwLock21read_unlock_contended17h48c7f86f28c7a3ffE, symObjAddr: 0x3D5A4, symBinAddr: 0x5C49C, symSize: 0x50 }
+  - { offset: 0x94963, size: 0x8, addend: 0x0, symName: __ZN3std3sys4sync6rwlock5queue6RwLock16unlock_contended17hba4ff4578f1905fdE, symObjAddr: 0x3D5F4, symBinAddr: 0x5C4EC, symSize: 0x50 }
+  - { offset: 0x94AF1, size: 0x8, addend: 0x0, symName: __ZN3std3sys4sync6rwlock5queue9read_lock17h8ba94b59915bbe9aE, symObjAddr: 0x1CCB4, symBinAddr: 0x36740, symSize: 0x2C }
+  - { offset: 0x94CAA, size: 0x8, addend: 0x0, symName: __ZN3std3sys3pal6common14small_c_string24run_with_cstr_allocating17h816a0561fbcb4fdeE, symObjAddr: 0x32728, symBinAddr: 0x5C218, symSize: 0xA4 }
+  - { offset: 0x94D8B, size: 0x8, addend: 0x0, symName: __ZN3std3sys3pal6common14small_c_string24run_with_cstr_allocating17h2d794a7ecec1012cE, symObjAddr: 0x3BEA0, symBinAddr: 0x5C2BC, symSize: 0x1E0 }
+  - { offset: 0x95089, size: 0x8, addend: 0x0, symName: __ZN3std3sys3pal4unix4sync5mutex5Mutex4lock4fail17hfddfbcc3154ecaf5E, symObjAddr: 0x1D0CC, symBinAddr: 0x5C010, symSize: 0xC4 }
+  - { offset: 0x953A8, size: 0x8, addend: 0x0, symName: __ZN3std3sys3pal4unix14abort_internal17hbdc43b9e2b4a6ea3E, symObjAddr: 0x1CC3C, symBinAddr: 0x366C8, symSize: 0xC }
+  - { offset: 0x954D3, size: 0x8, addend: 0x0, symName: __ZN3std3sys3pal4unix2fs7readdir17h520467b4cae592c7E, symObjAddr: 0x24C50, symBinAddr: 0x3E30C, symSize: 0x194 }
+  - { offset: 0x957FB, size: 0x8, addend: 0x0, symName: '__ZN91_$LT$std..sys..pal..unix..fs..ReadDir$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17hd7b2157a09b8fca3E', symObjAddr: 0x24DE4, symBinAddr: 0x3E4A0, symSize: 0x138 }
+  - { offset: 0x95AC2, size: 0x8, addend: 0x0, symName: '__ZN70_$LT$std..sys..pal..unix..fs..Dir$u20$as$u20$core..ops..drop..Drop$GT$4drop17he3c20d205fb6e63aE', symObjAddr: 0x32660, symBinAddr: 0x4BD1C, symSize: 0xC8 }
+  - { offset: 0x95C0B, size: 0x8, addend: 0x0, symName: '__ZN69_$LT$std..sys..pal..unix..stdio..Stderr$u20$as$u20$std..io..Write$GT$5write17hb55279b57e969782E', symObjAddr: 0x3D1C8, symBinAddr: 0x56600, symSize: 0x4C }
+  - { offset: 0x95CD4, size: 0x8, addend: 0x0, symName: '__ZN69_$LT$std..sys..pal..unix..stdio..Stderr$u20$as$u20$std..io..Write$GT$14write_vectored17h0812cc9cb8bad212E', symObjAddr: 0x3D214, symBinAddr: 0x5664C, symSize: 0x4C }
+  - { offset: 0x95D9D, size: 0x8, addend: 0x0, symName: '__ZN69_$LT$std..sys..pal..unix..stdio..Stderr$u20$as$u20$std..io..Write$GT$17is_write_vectored17h0afc114d1fa26b05E', symObjAddr: 0x3D260, symBinAddr: 0x56698, symSize: 0x14 }
+  - { offset: 0x95DB7, size: 0x8, addend: 0x0, symName: '__ZN69_$LT$std..sys..pal..unix..stdio..Stderr$u20$as$u20$std..io..Write$GT$5flush17h73ca07cf4a78a1a1E', symObjAddr: 0x3D274, symBinAddr: 0x566AC, symSize: 0x14 }
+  - { offset: 0x95E71, size: 0x8, addend: 0x0, symName: __ZN3std3sys12thread_local5guard5apple6enable9run_dtors17h8849542d513e6d46E, symObjAddr: 0x3D50C, symBinAddr: 0x56944, symSize: 0x98 }
+  - { offset: 0x96302, size: 0x8, addend: 0x0, symName: __ZN3std5alloc24default_alloc_error_hook17h129b89230b0a25f0E, symObjAddr: 0x3E5E8, symBinAddr: 0x577C0, symSize: 0xD0 }
+  - { offset: 0x965DC, size: 0x8, addend: 0x0, symName: __ZN3std5alloc8rust_oom17h39533d37fb6ce92dE, symObjAddr: 0x3E778, symBinAddr: 0x57950, symSize: 0x10 }
+  - { offset: 0x965FD, size: 0x8, addend: 0x0, symName: ___rg_oom, symObjAddr: 0x3E788, symBinAddr: 0x57960, symSize: 0x18 }
+  - { offset: 0x9661C, size: 0x8, addend: 0x0, symName: '__ZN3std9panicking41begin_panic$u7b$$u7b$reify.shim$u7d$$u7d$17h601ea09cd48cf5b5E', symObjAddr: 0x1B94C, symBinAddr: 0x5BE9C, symSize: 0x14 }
+  - { offset: 0x96637, size: 0x8, addend: 0x0, symName: __ZN3std9panicking11begin_panic17hcc0847dd1cc16767E, symObjAddr: 0x1B960, symBinAddr: 0x5BEB0, symSize: 0x1C }
+  - { offset: 0x96658, size: 0x8, addend: 0x0, symName: '__ZN3std9panicking11begin_panic28_$u7b$$u7b$closure$u7d$$u7d$17h030c770260d27584E', symObjAddr: 0x1B988, symBinAddr: 0x35414, symSize: 0x30 }
+  - { offset: 0x96679, size: 0x8, addend: 0x0, symName: '__ZN84_$LT$std..panicking..begin_panic..Payload$LT$A$GT$$u20$as$u20$core..fmt..Display$GT$3fmt17h7f7339011506b032E', symObjAddr: 0x3DDB8, symBinAddr: 0x56F9C, symSize: 0x28 }
+  - { offset: 0x966C8, size: 0x8, addend: 0x0, symName: '__ZN91_$LT$std..panicking..begin_panic..Payload$LT$A$GT$$u20$as$u20$core..panic..PanicPayload$GT$8take_box17h244f65a0bfe054aaE', symObjAddr: 0x3DDE0, symBinAddr: 0x56FC4, symSize: 0x54 }
+  - { offset: 0x967CB, size: 0x8, addend: 0x0, symName: '__ZN91_$LT$std..panicking..begin_panic..Payload$LT$A$GT$$u20$as$u20$core..panic..PanicPayload$GT$3get17h8358ed3b4938b0a6E', symObjAddr: 0x3DE34, symBinAddr: 0x57018, symSize: 0x20 }
+  - { offset: 0x96866, size: 0x8, addend: 0x0, symName: __ZN3std9panicking11panic_count17is_zero_slow_path17h60f017bcaf3bf568E, symObjAddr: 0x1D190, symBinAddr: 0x5C0D4, symSize: 0x2C }
+  - { offset: 0x96920, size: 0x8, addend: 0x0, symName: '__ZN3std9panicking12default_hook28_$u7b$$u7b$closure$u7d$$u7d$28_$u7b$$u7b$closure$u7d$$u7d$17h70cdff014971a0d8E', symObjAddr: 0x1DB2C, symBinAddr: 0x371E8, symSize: 0x308 }
+  - { offset: 0x97110, size: 0x8, addend: 0x0, symName: __ZN3std9panicking20rust_panic_with_hook17hee17170979274221E, symObjAddr: 0x1BCEC, symBinAddr: 0x35778, symSize: 0xDA0 }
+  - { offset: 0x991C3, size: 0x8, addend: 0x0, symName: _rust_panic, symObjAddr: 0x1D06C, symBinAddr: 0x369B4, symSize: 0x60 }
+  - { offset: 0x99228, size: 0x8, addend: 0x0, symName: '__ZN3std9panicking19begin_panic_handler28_$u7b$$u7b$closure$u7d$$u7d$17hf7d5912d64d332d6E', symObjAddr: 0x3E060, symBinAddr: 0x57238, symSize: 0xC0 }
+  - { offset: 0x993C1, size: 0x8, addend: 0x0, symName: '__ZN92_$LT$std..panicking..begin_panic_handler..StaticStrPayload$u20$as$u20$core..fmt..Display$GT$3fmt17h8928694a3953d3adE', symObjAddr: 0x3E120, symBinAddr: 0x572F8, symSize: 0x20 }
+  - { offset: 0x993FA, size: 0x8, addend: 0x0, symName: '__ZN99_$LT$std..panicking..begin_panic_handler..StaticStrPayload$u20$as$u20$core..panic..PanicPayload$GT$8take_box17h141946a67a871fefE', symObjAddr: 0x3E140, symBinAddr: 0x57318, symSize: 0x48 }
+  - { offset: 0x994A3, size: 0x8, addend: 0x0, symName: '__ZN99_$LT$std..panicking..begin_panic_handler..StaticStrPayload$u20$as$u20$core..panic..PanicPayload$GT$3get17h8b48a3dd9895ee75E', symObjAddr: 0x3E188, symBinAddr: 0x57360, symSize: 0x18 }
+  - { offset: 0x994BE, size: 0x8, addend: 0x0, symName: '__ZN99_$LT$std..panicking..begin_panic_handler..StaticStrPayload$u20$as$u20$core..panic..PanicPayload$GT$6as_str17h3d50104ed1010b45E', symObjAddr: 0x3E1A0, symBinAddr: 0x57378, symSize: 0x18 }
+  - { offset: 0x994E0, size: 0x8, addend: 0x0, symName: '__ZN95_$LT$std..panicking..begin_panic_handler..FormatStringPayload$u20$as$u20$core..fmt..Display$GT$3fmt17h740ca1b715360fdeE', symObjAddr: 0x3E1B8, symBinAddr: 0x57390, symSize: 0x60 }
+  - { offset: 0x9962D, size: 0x8, addend: 0x0, symName: '__ZN102_$LT$std..panicking..begin_panic_handler..FormatStringPayload$u20$as$u20$core..panic..PanicPayload$GT$8take_box17hf7baede4a2ad24f2E', symObjAddr: 0x3E218, symBinAddr: 0x573F0, symSize: 0x100 }
+  - { offset: 0x998DE, size: 0x8, addend: 0x0, symName: '__ZN102_$LT$std..panicking..begin_panic_handler..FormatStringPayload$u20$as$u20$core..panic..PanicPayload$GT$3get17h5f79d6e9e586d753E', symObjAddr: 0x3E318, symBinAddr: 0x574F0, symSize: 0xAC }
+  - { offset: 0x99A4D, size: 0x8, addend: 0x0, symName: ___rust_drop_panic, symObjAddr: 0x3E6B8, symBinAddr: 0x57890, symSize: 0xA0 }
+  - { offset: 0x99D0C, size: 0x8, addend: 0x0, symName: _rust_begin_unwind, symObjAddr: 0x3E758, symBinAddr: 0x57930, symSize: 0x20 }
+  - { offset: 0x99E01, size: 0x8, addend: 0x0, symName: __ZN3std6thread6Thread3new17h1c4496d952e407a7E, symObjAddr: 0x3D7F8, symBinAddr: 0x569DC, symSize: 0x1AC }
+  - { offset: 0x9A331, size: 0x8, addend: 0x0, symName: __ZN3std6thread7current12init_current17h80c62855a13ab5a0E, symObjAddr: 0x3D644, symBinAddr: 0x5C53C, symSize: 0x17C }
+  - { offset: 0x9A769, size: 0x8, addend: 0x0, symName: __ZN3std6thread8ThreadId3new9exhausted17h1af5cf29e80041bbE, symObjAddr: 0x3D7C0, symBinAddr: 0x5C6B8, symSize: 0x38 }
+  - { offset: 0x9AA0E, size: 0x8, addend: 0x0, symName: '__ZN60_$LT$std..io..error..Error$u20$as$u20$core..fmt..Display$GT$3fmt17h61d605c5557146c2E', symObjAddr: 0x1D430, symBinAddr: 0x36B1C, symSize: 0x1FC }
+  - { offset: 0x9AD32, size: 0x8, addend: 0x0, symName: '__ZN62_$LT$std..io..error..ErrorKind$u20$as$u20$core..fmt..Debug$GT$3fmt17h0335407dda5f9c45E', symObjAddr: 0x1DAF4, symBinAddr: 0x371B0, symSize: 0x38 }
+  - { offset: 0x9AD63, size: 0x8, addend: 0x0, symName: '__ZN58_$LT$std..io..error..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17he3dab85e739f5ac3E', symObjAddr: 0x1D6B0, symBinAddr: 0x36D6C, symSize: 0x390 }
+  - { offset: 0x9B314, size: 0x8, addend: 0x0, symName: __ZN3std2io5Write9write_fmt17h08da44a04c992012E, symObjAddr: 0x1CAF4, symBinAddr: 0x36580, symSize: 0x10C }
+  - { offset: 0x9B61E, size: 0x8, addend: 0x0, symName: '__ZN80_$LT$std..io..Write..write_fmt..Adapter$LT$T$GT$$u20$as$u20$core..fmt..Write$GT$9write_str17hbb085bc119fb7876E', symObjAddr: 0x3CF68, symBinAddr: 0x563A0, symSize: 0xD0 }
+  - { offset: 0x9B7F8, size: 0x8, addend: 0x0, symName: '__ZN80_$LT$std..io..Write..write_fmt..Adapter$LT$T$GT$$u20$as$u20$core..fmt..Write$GT$9write_str17h74520a27e24830afE', symObjAddr: 0x3DB44, symBinAddr: 0x56D28, symSize: 0xD8 }
+  - { offset: 0x9B96C, size: 0x8, addend: 0x0, symName: __ZN3std2io5Write9write_all17hb6653f23b2398c9cE, symObjAddr: 0x3D288, symBinAddr: 0x566C0, symSize: 0xB8 }
+  - { offset: 0x9BAAB, size: 0x8, addend: 0x0, symName: __ZN3std2io5Write18write_all_vectored17h7082707f753f778aE, symObjAddr: 0x3D340, symBinAddr: 0x56778, symSize: 0x1CC }
+  - { offset: 0x9C076, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs5print17BacktraceFrameFmt21print_raw_with_column17h3c3f552063672e33E, symObjAddr: 0x2095C, symBinAddr: 0x3A018, symSize: 0x4CC }
+  - { offset: 0x9C30E, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9backtrace9libunwind5trace8trace_fn17h3a55f234d69c3e5fE, symObjAddr: 0x1E198, symBinAddr: 0x37854, symSize: 0x44 }
+  - { offset: 0x9C4D1, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize5gimli5macho6Object5parse17h549555250cf00770E, symObjAddr: 0x21F78, symBinAddr: 0x3B634, symSize: 0xA64 }
+  - { offset: 0x9E6DF, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize5gimli5macho6Object7section17hbb3077c45897748aE, symObjAddr: 0x32824, symBinAddr: 0x4BE3C, symSize: 0x294 }
+  - { offset: 0x9EC50, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize5gimli5macho11find_header17hc11245fa4cd8e619E, symObjAddr: 0x21568, symBinAddr: 0x3AC24, symSize: 0x1CC }
+  - { offset: 0x9F499, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize5gimli4mmap17h3c172e6db6b3f3c1E, symObjAddr: 0x212C4, symBinAddr: 0x3A980, symSize: 0x204 }
+  - { offset: 0x9FB52, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize5gimli7Context3new17h0f49daad688a222eE, symObjAddr: 0x229DC, symBinAddr: 0x3C098, symSize: 0x2274 }
+  - { offset: 0xA40CC, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize5gimli7Context11find_frames17h7fac3516d056280fE, symObjAddr: 0x253D8, symBinAddr: 0x3EA94, symSize: 0x368 }
+  - { offset: 0xA45D5, size: 0x8, addend: 0x0, symName: '__ZN79_$LT$std..backtrace_rs..symbolize..SymbolName$u20$as$u20$core..fmt..Display$GT$3fmt17h4c8d79b04b8bbad0E', symObjAddr: 0x20EF4, symBinAddr: 0x3A5B0, symSize: 0x240 }
+  - { offset: 0xA4721, size: 0x8, addend: 0x0, symName: __ZN3std12backtrace_rs9symbolize6Symbol4name17h1e5b4af05e304f4fE, symObjAddr: 0x3C2D4, symBinAddr: 0x5570C, symSize: 0xD0 }
+  - { offset: 0xA491C, size: 0x8, addend: 0x0, symName: __ZN3std4path4Path5_join17h78614f1ee2ad7ffdE, symObjAddr: 0x24FC4, symBinAddr: 0x3E680, symSize: 0x178 }
+  - { offset: 0xA4F71, size: 0x8, addend: 0x0, symName: __ZN3std4path10Components7as_path17hd8487d3c46e1d3ebE, symObjAddr: 0x21A58, symBinAddr: 0x3B114, symSize: 0x520 }
+  - { offset: 0xA548F, size: 0x8, addend: 0x0, symName: __ZN3std4path10Components25parse_next_component_back17h3ba37d5d311332fbE, symObjAddr: 0x3BC48, symBinAddr: 0x55260, symSize: 0x104 }
+  - { offset: 0xA5662, size: 0x8, addend: 0x0, symName: __ZN3std4path10Components15len_before_body17h74141558a133fc3eE, symObjAddr: 0x3BD4C, symBinAddr: 0x55364, symSize: 0x154 }
+  - { offset: 0xA567A, size: 0x8, addend: 0x0, symName: __ZN3std4path10Components15len_before_body17h74141558a133fc3eE, symObjAddr: 0x3BD4C, symBinAddr: 0x55364, symSize: 0x154 }
+  - { offset: 0xA5690, size: 0x8, addend: 0x0, symName: __ZN3std4path10Components15len_before_body17h74141558a133fc3eE, symObjAddr: 0x3BD4C, symBinAddr: 0x55364, symSize: 0x154 }
+  - { offset: 0xA587F, size: 0x8, addend: 0x0, symName: '__ZN95_$LT$std..path..Components$u20$as$u20$core..iter..traits..double_ended..DoubleEndedIterator$GT$9next_back17h4589a9207f5801f5E', symObjAddr: 0x21734, symBinAddr: 0x3ADF0, symSize: 0x324 }
+  - { offset: 0xA5AF6, size: 0x8, addend: 0x0, symName: '__ZN80_$LT$std..path..Components$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h03b3e15078e24557E', symObjAddr: 0x3CBF8, symBinAddr: 0x56030, symSize: 0x370 }
+  - { offset: 0xA5F8E, size: 0x8, addend: 0x0, symName: __ZN3std7process5abort17h9292379a18d79401E, symObjAddr: 0x3DE68, symBinAddr: 0x5C6F0, symSize: 0xC }
+  - { offset: 0xA720B, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr81drop_in_place$LT$core..result..Result$LT$$LP$$RP$$C$std..io..error..Error$GT$$GT$17h7901a6362f2cda72E', symObjAddr: 0x1CC00, symBinAddr: 0x3668C, symSize: 0x20 }
+  - { offset: 0xA72AB, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr62drop_in_place$LT$std..sys..sync..rwlock..queue..PanicGuard$GT$17hd5022ca62487e47bE', symObjAddr: 0x1CFD0, symBinAddr: 0x36918, symSize: 0x44 }
+  - { offset: 0xA72F4, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr79drop_in_place$LT$std..sync..poison..rwlock..RwLockReadGuard$LT$$LP$$RP$$GT$$GT$17h59105f5831abdd67E', symObjAddr: 0x1D014, symBinAddr: 0x3695C, symSize: 0x58 }
+  - { offset: 0xA73B4, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr46drop_in_place$LT$std..io..stdio..StdinLock$GT$17he3e4711b7c1271daE', symObjAddr: 0x1D1BC, symBinAddr: 0x36A14, symSize: 0x54 }
+  - { offset: 0xA73D3, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr46drop_in_place$LT$std..io..stdio..StdinLock$GT$17he3e4711b7c1271daE', symObjAddr: 0x1D1BC, symBinAddr: 0x36A14, symSize: 0x54 }
+  - { offset: 0xA73E9, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr46drop_in_place$LT$std..io..stdio..StdinLock$GT$17he3e4711b7c1271daE', symObjAddr: 0x1D1BC, symBinAddr: 0x36A14, symSize: 0x54 }
+  - { offset: 0xA74D8, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr42drop_in_place$LT$std..io..error..Error$GT$17h8b232db1aa6dea09E', symObjAddr: 0x1D210, symBinAddr: 0x36A68, symSize: 0x94 }
+  - { offset: 0xA7777, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr118drop_in_place$LT$std..io..Write..write_fmt..Adapter$LT$std..io..cursor..Cursor$LT$$RF$mut$u20$$u5b$u8$u5d$$GT$$GT$$GT$17hb195754742c47d0cE', symObjAddr: 0x1D2A4, symBinAddr: 0x36AFC, symSize: 0x20 }
+  - { offset: 0xA77B0, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr42drop_in_place$LT$alloc..string..String$GT$17he301a894cd6290eaE', symObjAddr: 0x1DA7C, symBinAddr: 0x37138, symSize: 0x24 }
+  - { offset: 0xA78BF, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr66drop_in_place$LT$std..backtrace_rs..backtrace..libunwind..Bomb$GT$17h58d6340edf8fa12dE', symObjAddr: 0x1E1DC, symBinAddr: 0x37898, symSize: 0x38 }
+  - { offset: 0xA7B0E, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr88drop_in_place$LT$alloc..vec..Vec$LT$std..backtrace_rs..symbolize..gimli..Library$GT$$GT$17h45bed6f98920d5acE', symObjAddr: 0x21134, symBinAddr: 0x3A7F0, symSize: 0x80 }
+  - { offset: 0xA7D9F, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr95drop_in_place$LT$core..option..IntoIter$LT$std..backtrace_rs..symbolize..gimli..Library$GT$$GT$17h8b35a654198e8f12E', symObjAddr: 0x21274, symBinAddr: 0x3A930, symSize: 0x50 }
+  - { offset: 0xA7DBE, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr95drop_in_place$LT$core..option..IntoIter$LT$std..backtrace_rs..symbolize..gimli..Library$GT$$GT$17h8b35a654198e8f12E', symObjAddr: 0x21274, symBinAddr: 0x3A930, symSize: 0x50 }
+  - { offset: 0xA7DD4, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr95drop_in_place$LT$core..option..IntoIter$LT$std..backtrace_rs..symbolize..gimli..Library$GT$$GT$17h8b35a654198e8f12E', symObjAddr: 0x21274, symBinAddr: 0x3A930, symSize: 0x50 }
+  - { offset: 0xA8054, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr70drop_in_place$LT$std..backtrace_rs..symbolize..gimli..stash..Stash$GT$17h49df87d40c1fcb62E', symObjAddr: 0x214C8, symBinAddr: 0x3AB84, symSize: 0xA0 }
+  - { offset: 0xA866B, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr65drop_in_place$LT$std..backtrace_rs..symbolize..gimli..Context$GT$17h6d35cf7f83369df2E', symObjAddr: 0x2513C, symBinAddr: 0x3E7F8, symSize: 0x18C }
+  - { offset: 0xA8AA9, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr65drop_in_place$LT$std..backtrace_rs..symbolize..gimli..Mapping$GT$17h77796f98a8fb061cE', symObjAddr: 0x252C8, symBinAddr: 0x3E984, symSize: 0x50 }
+  - { offset: 0xA8B18, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr93drop_in_place$LT$core..option..Option$LT$std..backtrace_rs..symbolize..gimli..Mapping$GT$$GT$17hf5c07d0f47a63704E', symObjAddr: 0x25318, symBinAddr: 0x3E9D4, symSize: 0x6C }
+  - { offset: 0xA8B9E, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr81drop_in_place$LT$$LP$usize$C$std..backtrace_rs..symbolize..gimli..Mapping$RP$$GT$17h2d9a7224b5941abcE', symObjAddr: 0x25384, symBinAddr: 0x3EA40, symSize: 0x54 }
+  - { offset: 0xA8DCF, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr275drop_in_place$LT$gimli..read..line..LineRows$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$C$gimli..read..line..IncompleteLineProgram$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$C$usize$GT$$C$usize$GT$$GT$17h1eb6cd40a5c4be16E', symObjAddr: 0x27D6C, symBinAddr: 0x41428, symSize: 0x64 }
+  - { offset: 0xA90C2, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr73drop_in_place$LT$alloc..vec..Vec$LT$addr2line..line..LineSequence$GT$$GT$17h50d470e93c95364fE', symObjAddr: 0x27DD0, symBinAddr: 0x4148C, symSize: 0x70 }
+  - { offset: 0xA9241, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr77drop_in_place$LT$alloc..boxed..Box$LT$$u5b$alloc..string..String$u5d$$GT$$GT$17ha9944792bc9cd1d0E', symObjAddr: 0x27E40, symBinAddr: 0x414FC, symSize: 0x5C }
+  - { offset: 0xA9259, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr77drop_in_place$LT$alloc..boxed..Box$LT$$u5b$alloc..string..String$u5d$$GT$$GT$17ha9944792bc9cd1d0E', symObjAddr: 0x27E40, symBinAddr: 0x414FC, symSize: 0x5C }
+  - { offset: 0xA93AD, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr65drop_in_place$LT$alloc..vec..Vec$LT$alloc..string..String$GT$$GT$17hb291890be554c252E', symObjAddr: 0x28200, symBinAddr: 0x418BC, symSize: 0x70 }
+  - { offset: 0xA9590, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr92drop_in_place$LT$core..result..Result$LT$addr2line..line..Lines$C$gimli..read..Error$GT$$GT$17hfe13de7630f986bbE', symObjAddr: 0x286C8, symBinAddr: 0x41D84, symSize: 0xAC }
+  - { offset: 0xA9A0D, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr181drop_in_place$LT$core..result..Result$LT$addr2line..frame..FrameIter$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$C$gimli..read..Error$GT$$GT$17h6e4521211e6736b7E', symObjAddr: 0x2B3A0, symBinAddr: 0x44A5C, symSize: 0x34 }
+  - { offset: 0xA9B9C, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr138drop_in_place$LT$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17ha12b77b0e57e86b8E', symObjAddr: 0x2D684, symBinAddr: 0x46D40, symSize: 0x50 }
+  - { offset: 0xA9BB4, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr138drop_in_place$LT$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17ha12b77b0e57e86b8E', symObjAddr: 0x2D684, symBinAddr: 0x46D40, symSize: 0x50 }
+  - { offset: 0xA9BCA, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr138drop_in_place$LT$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17ha12b77b0e57e86b8E', symObjAddr: 0x2D684, symBinAddr: 0x46D40, symSize: 0x50 }
+  - { offset: 0xA9BE0, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr138drop_in_place$LT$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17ha12b77b0e57e86b8E', symObjAddr: 0x2D684, symBinAddr: 0x46D40, symSize: 0x50 }
+  - { offset: 0xA9D24, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr161drop_in_place$LT$alloc..vec..Vec$LT$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$$GT$17h6abc42c485e0d6a1E', symObjAddr: 0x2DDD0, symBinAddr: 0x4748C, symSize: 0x8C }
+  - { offset: 0xA9F86, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr173drop_in_place$LT$alloc..boxed..Box$LT$$u5b$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$u5d$$GT$$GT$17h008a8ecf6c7dd952E', symObjAddr: 0x2DE5C, symBinAddr: 0x47518, symSize: 0x78 }
+  - { offset: 0xA9F9E, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr173drop_in_place$LT$alloc..boxed..Box$LT$$u5b$addr2line..function..LazyFunction$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$u5d$$GT$$GT$17h008a8ecf6c7dd952E', symObjAddr: 0x2DE5C, symBinAddr: 0x47518, symSize: 0x78 }
+  - { offset: 0xAA1B7, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr184drop_in_place$LT$core..result..Result$LT$addr2line..function..Functions$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$C$gimli..read..Error$GT$$GT$17he33380c4acdfe62fE', symObjAddr: 0x2DED4, symBinAddr: 0x47590, symSize: 0x9C }
+  - { offset: 0xAA591, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr60drop_in_place$LT$gimli..read..abbrev..AbbreviationsCache$GT$17h1f028d88f62d0eb5E', symObjAddr: 0x31780, symBinAddr: 0x4AE3C, symSize: 0xD0 }
+  - { offset: 0xAA847, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr280drop_in_place$LT$$LT$alloc..collections..btree..map..IntoIter$LT$K$C$V$C$A$GT$$u20$as$u20$core..ops..drop..Drop$GT$..drop..DropGuard$LT$u64$C$core..result..Result$LT$alloc..sync..Arc$LT$gimli..read..abbrev..Abbreviations$GT$$C$gimli..read..Error$GT$$C$alloc..alloc..Global$GT$$GT$17h27cdd4b721d9c2d8E', symObjAddr: 0x31AB0, symBinAddr: 0x4B16C, symSize: 0x88 }
+  - { offset: 0xAA9FA, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr108drop_in_place$LT$alloc..collections..btree..map..BTreeMap$LT$u64$C$gimli..read..abbrev..Abbreviation$GT$$GT$17habfc518bf971ddc0E', symObjAddr: 0x31B38, symBinAddr: 0x4B1F4, symSize: 0xA8 }
+  - { offset: 0xAAC62, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr130drop_in_place$LT$addr2line..unit..ResUnits$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17hc5a9268379de318fE', symObjAddr: 0x320CC, symBinAddr: 0x4B788, symSize: 0xB0 }
+  - { offset: 0xAAE1F, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr130drop_in_place$LT$addr2line..unit..SupUnits$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17h5d74581b82fd2350E', symObjAddr: 0x3217C, symBinAddr: 0x4B838, symSize: 0xCC }
+  - { offset: 0xAAFE6, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr71drop_in_place$LT$std..backtrace_rs..symbolize..gimli..macho..Object$GT$17h18e96be8f4198900E', symObjAddr: 0x32248, symBinAddr: 0x4B904, symSize: 0xA0 }
+  - { offset: 0xAB33F, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr131drop_in_place$LT$$u5b$core..option..Option$LT$core..option..Option$LT$std..backtrace_rs..symbolize..gimli..Mapping$GT$$GT$$u5d$$GT$17h8a00ba9a262dcea2E', symObjAddr: 0x322E8, symBinAddr: 0x4B9A4, symSize: 0xE4 }
+  - { offset: 0xAB3F1, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr181drop_in_place$LT$core..option..Option$LT$gimli..read..line..IncompleteLineProgram$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$C$usize$GT$$GT$$GT$17hb0d65fb3c4731394E', symObjAddr: 0x323CC, symBinAddr: 0x4BA88, symSize: 0x70 }
+  - { offset: 0xAB6E4, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr129drop_in_place$LT$addr2line..unit..SupUnit$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17hb9955735dc6dbc16E', symObjAddr: 0x3243C, symBinAddr: 0x4BAF8, symSize: 0x54 }
+  - { offset: 0xAB801, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr129drop_in_place$LT$addr2line..unit..ResUnit$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17hcf414ce633bcc5ceE', symObjAddr: 0x32490, symBinAddr: 0x4BB4C, symSize: 0xCC }
+  - { offset: 0xABAB7, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr231drop_in_place$LT$core..result..Result$LT$core..option..Option$LT$alloc..boxed..Box$LT$addr2line..unit..DwoUnit$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$$GT$$C$gimli..read..Error$GT$$GT$17h4f60b28e79b5a4b2E', symObjAddr: 0x3255C, symBinAddr: 0x4BC18, symSize: 0xB0 }
+  - { offset: 0xABD2B, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr137drop_in_place$LT$gimli..read..dwarf..Unit$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$C$usize$GT$$GT$17h108dee077f4edabcE', symObjAddr: 0x3260C, symBinAddr: 0x4BCC8, symSize: 0x54 }
+  - { offset: 0xABDF9, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr87drop_in_place$LT$alloc..sync..ArcInner$LT$std..sys..pal..unix..fs..InnerReadDir$GT$$GT$17h217d7e9ebc504939E', symObjAddr: 0x327CC, symBinAddr: 0x4BDE4, symSize: 0x58 }
+  - { offset: 0xAC00C, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr159drop_in_place$LT$alloc..sync..ArcInner$LT$gimli..read..dwarf..Dwarf$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$$GT$17hf0f64605919117b6E', symObjAddr: 0x32AB8, symBinAddr: 0x4C0D0, symSize: 0x58 }
+  - { offset: 0xAC128, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr152drop_in_place$LT$alloc..vec..Vec$LT$addr2line..unit..ResUnit$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$$GT$17hbdc6565d4a3a2cf2E', symObjAddr: 0x3536C, symBinAddr: 0x4E984, symSize: 0xAC }
+  - { offset: 0xAC2D2, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr152drop_in_place$LT$alloc..vec..Vec$LT$addr2line..unit..SupUnit$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$$GT$17h6d4c6102f907ee18E', symObjAddr: 0x35418, symBinAddr: 0x4EA30, symSize: 0xDC }
+  - { offset: 0xAC521, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr123drop_in_place$LT$addr2line..Context$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17hded4e1a1a058a63aE', symObjAddr: 0x35C7C, symBinAddr: 0x4F294, symSize: 0x70 }
+  - { offset: 0xAC5D3, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr130drop_in_place$LT$gimli..read..dwarf..Dwarf$LT$gimli..read..endian_slice..EndianSlice$LT$gimli..endianity..LittleEndian$GT$$GT$$GT$17h365a86ec651acf5bE', symObjAddr: 0x35CEC, symBinAddr: 0x4F304, symSize: 0x58 }
+  - { offset: 0xAC6C3, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr55drop_in_place$LT$gimli..read..abbrev..Abbreviations$GT$17h98170b269d7a3a61E', symObjAddr: 0x36A90, symBinAddr: 0x500A8, symSize: 0x70 }
+  - { offset: 0xAC89C, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr84drop_in_place$LT$alloc..sync..ArcInner$LT$gimli..read..abbrev..Abbreviations$GT$$GT$17ha935557439ec9bc3E', symObjAddr: 0x36B00, symBinAddr: 0x50118, symSize: 0x70 }
+  - { offset: 0xACABD, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr144drop_in_place$LT$alloc..vec..Vec$LT$core..option..Option$LT$core..option..Option$LT$std..backtrace_rs..symbolize..gimli..Mapping$GT$$GT$$GT$$GT$17ha6db05b17fd3541eE', symObjAddr: 0x38CE8, symBinAddr: 0x52300, symSize: 0x68 }
+  - { offset: 0xACCD0, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr44drop_in_place$LT$object..read..ObjectMap$GT$17h18d9daf28978926eE', symObjAddr: 0x395A0, symBinAddr: 0x52BB8, symSize: 0x44 }
+  - { offset: 0xACE4C, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr72drop_in_place$LT$core..option..Option$LT$object..read..ObjectMap$GT$$GT$17h8431108d7f030260E', symObjAddr: 0x395E4, symBinAddr: 0x52BFC, symSize: 0x50 }
+  - { offset: 0xAD0B5, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr77drop_in_place$LT$std..panicking..begin_panic_handler..FormatStringPayload$GT$17h74e8bde55e848a12E', symObjAddr: 0x3C720, symBinAddr: 0x55B58, symSize: 0x30 }
+  - { offset: 0xAD25C, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr48drop_in_place$LT$alloc..ffi..c_str..NulError$GT$17h6c8710d2d297688bE', symObjAddr: 0x3D9DC, symBinAddr: 0x56BC0, symSize: 0x24 }
+  - { offset: 0xAE434, size: 0x8, addend: 0x0, symName: '__ZN4core4cell4once17OnceCell$LT$T$GT$8try_init17h62fc777d04b43ae8E', symObjAddr: 0x1CCE0, symBinAddr: 0x5BECC, symSize: 0x144 }
+  - { offset: 0xAEB4C, size: 0x8, addend: 0x0, symName: '__ZN4core3ops8function6FnOnce40call_once$u7b$$u7b$vtable.shim$u7d$$u7d$17hee8bb2fa3dcbf6ccE', symObjAddr: 0x1E214, symBinAddr: 0x378D0, symSize: 0x10 }
+  - { offset: 0xAEBCA, size: 0x8, addend: 0x0, symName: '__ZN4core3ops8function6FnOnce40call_once$u7b$$u7b$vtable.shim$u7d$$u7d$17h9fc4e37fff26e8e8E', symObjAddr: 0x3C750, symBinAddr: 0x55B88, symSize: 0x9C }
+  - { offset: 0xAED58, size: 0x8, addend: 0x0, symName: '__ZN4core3ops8function6FnOnce40call_once$u7b$$u7b$vtable.shim$u7d$$u7d$17he8eb883d9b67e366E', symObjAddr: 0x3DFF4, symBinAddr: 0x571CC, symSize: 0x18 }
+  - { offset: 0xAEDAB, size: 0x8, addend: 0x0, symName: '__ZN4core3ops8function6FnOnce40call_once$u7b$$u7b$vtable.shim$u7d$$u7d$17hfd51fb33cb7b7e2dE', symObjAddr: 0x3E024, symBinAddr: 0x571FC, symSize: 0x18 }
+  - { offset: 0xB282B, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort8unstable7ipnsort17h1fd7f5876ae8436aE, symObjAddr: 0x38D50, symBinAddr: 0x52368, symSize: 0x1A4 }
+  - { offset: 0xB2966, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort8unstable7ipnsort17h9c7de0cd15529890E, symObjAddr: 0x38FA8, symBinAddr: 0x525C0, symSize: 0x244 }
+  - { offset: 0xB2C9E, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort8unstable9quicksort9quicksort17h80391fe1ad9e75dfE, symObjAddr: 0x3A428, symBinAddr: 0x53A40, symSize: 0x5B4 }
+  - { offset: 0xB3959, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort8unstable9quicksort9quicksort17h3ca777b5ca77e5efE, symObjAddr: 0x3B1D0, symBinAddr: 0x547E8, symSize: 0x42C }
+  - { offset: 0xB425E, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort8unstable8heapsort8heapsort17h8dea38ef838450e4E, symObjAddr: 0x3ADBC, symBinAddr: 0x543D4, symSize: 0x160 }
+  - { offset: 0xB4594, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort8unstable8heapsort8heapsort17hded46ad7d4a617c4E, symObjAddr: 0x3BA84, symBinAddr: 0x5509C, symSize: 0xF4 }
+  - { offset: 0xB47EF, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable14driftsort_main17h182ebfa4eabc0939E, symObjAddr: 0x27E9C, symBinAddr: 0x41558, symSize: 0x124 }
+  - { offset: 0xB4C32, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable5drift4sort17h04d6a43952fcfa9cE, symObjAddr: 0x2895C, symBinAddr: 0x42018, symSize: 0x5E0 }
+  - { offset: 0xB53AA, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable5drift4sort17h2dcbf0b0b2f4b7fdE, symObjAddr: 0x2F580, symBinAddr: 0x48C3C, symSize: 0x6A8 }
+  - { offset: 0xB5B4D, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable5drift4sort17he6543cc34b1587c3E, symObjAddr: 0x308C0, symBinAddr: 0x49F7C, symSize: 0x630 }
+  - { offset: 0xB62B0, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable5drift4sort17hb6de83499171a4e9E, symObjAddr: 0x35D44, symBinAddr: 0x4F35C, symSize: 0x5E0 }
+  - { offset: 0xB6A28, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable5drift4sort17h0ac77ed871a4083fE, symObjAddr: 0x37CC8, symBinAddr: 0x512E0, symSize: 0x4D4 }
+  - { offset: 0xB7146, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable5drift4sort17hf45e55438810b71aE, symObjAddr: 0x39634, symBinAddr: 0x52C4C, symSize: 0x538 }
+  - { offset: 0xB7AF0, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable9quicksort9quicksort17h7a744e32174992f4E, symObjAddr: 0x28F3C, symBinAddr: 0x425F8, symSize: 0x698 }
+  - { offset: 0xB8619, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable9quicksort9quicksort17h68f027f679ab028eE, symObjAddr: 0x2FC28, symBinAddr: 0x492E4, symSize: 0x700 }
+  - { offset: 0xB8D99, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable9quicksort9quicksort17h9d40006150944421E, symObjAddr: 0x30EF0, symBinAddr: 0x4A5AC, symSize: 0x7C0 }
+  - { offset: 0xB9A13, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable9quicksort9quicksort17he0a8c22dcf7d0773E, symObjAddr: 0x36324, symBinAddr: 0x4F93C, symSize: 0x6A0 }
+  - { offset: 0xBA53C, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable9quicksort9quicksort17h5d83e87d8fcdaa5eE, symObjAddr: 0x3819C, symBinAddr: 0x517B4, symSize: 0x7C8 }
+  - { offset: 0xBB704, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable9quicksort9quicksort17he38904e590cf11ecE, symObjAddr: 0x39B6C, symBinAddr: 0x53184, symSize: 0x7EC }
+  - { offset: 0xBC380, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable14driftsort_main17h591f14ed27f98890E, symObjAddr: 0x2B3D4, symBinAddr: 0x44A90, symSize: 0x138 }
+  - { offset: 0xBC6CA, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable14driftsort_main17h11c63e796347395bE, symObjAddr: 0x2EDA4, symBinAddr: 0x48460, symSize: 0x11C }
+  - { offset: 0xBC9CF, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable14driftsort_main17h93e1f9fe35257712E, symObjAddr: 0x32DB8, symBinAddr: 0x4C3D0, symSize: 0x11C }
+  - { offset: 0xBCCD4, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable14driftsort_main17hec2ef3477f4d3ca0E, symObjAddr: 0x3519C, symBinAddr: 0x4E7B4, symSize: 0x11C }
+  - { offset: 0xBCFD9, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6stable14driftsort_main17h53a253f84a43d44dE, symObjAddr: 0x392E0, symBinAddr: 0x528F8, symSize: 0x138 }
+  - { offset: 0xBD3A7, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17hab77b6e8c9ad0525E, symObjAddr: 0x27FC0, symBinAddr: 0x4167C, symSize: 0xB0 }
+  - { offset: 0xBD58F, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17h4c930247ff23bb85E, symObjAddr: 0x2B50C, symBinAddr: 0x44BC8, symSize: 0xA8 }
+  - { offset: 0xBD64E, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17hbceafd915dd9d404E, symObjAddr: 0x2EEC0, symBinAddr: 0x4857C, symSize: 0xC4 }
+  - { offset: 0xBD7A6, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort12sort4_stable17hb67c5eda3fb00ce1E, symObjAddr: 0x30328, symBinAddr: 0x499E4, symSize: 0x180 }
+  - { offset: 0xBD9C4, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17h6edf72041a6134d9E, symObjAddr: 0x32ED4, symBinAddr: 0x4C4EC, symSize: 0x88 }
+  - { offset: 0xBDA83, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17h9ae42df828879682E, symObjAddr: 0x352B8, symBinAddr: 0x4E8D0, symSize: 0xB4 }
+  - { offset: 0xBDBD6, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort12sort8_stable17h250096302d12a7feE, symObjAddr: 0x38964, symBinAddr: 0x51F7C, symSize: 0x2B8 }
+  - { offset: 0xBE0F9, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17h6e911c94dfc041a6E, symObjAddr: 0x38EF4, symBinAddr: 0x5250C, symSize: 0xB4 }
+  - { offset: 0xBE1D0, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17h8eba880d8405324bE, symObjAddr: 0x391EC, symBinAddr: 0x52804, symSize: 0xF4 }
+  - { offset: 0xBE39D, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort25insertion_sort_shift_left17h8242cf5ca42a9bd2E, symObjAddr: 0x39418, symBinAddr: 0x52A30, symSize: 0xC4 }
+  - { offset: 0xBE524, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort18small_sort_general17hf390eb2911c9a8b6E, symObjAddr: 0x3A9DC, symBinAddr: 0x53FF4, symSize: 0x3E0 }
+  - { offset: 0xBEA6B, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort12sort4_stable17h3c5964abc408ac21E, symObjAddr: 0x3B050, symBinAddr: 0x54668, symSize: 0x180 }
+  - { offset: 0xBEEC7, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort18small_sort_general17h8ba1462975e9a540E, symObjAddr: 0x3B5FC, symBinAddr: 0x54C14, symSize: 0x488 }
+  - { offset: 0xBF624, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17h7a374ae6a3e6bb14E, symObjAddr: 0x295D4, symBinAddr: 0x42C90, symSize: 0xCC }
+  - { offset: 0xBF735, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17h9b0fe95bdb24314cE, symObjAddr: 0x304A8, symBinAddr: 0x49B64, symSize: 0x11C }
+  - { offset: 0xBF84A, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17hbc9097206e083d5eE, symObjAddr: 0x316B0, symBinAddr: 0x4AD6C, symSize: 0xD0 }
+  - { offset: 0xBF95B, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17hea7e9d41df4e320dE, symObjAddr: 0x369C4, symBinAddr: 0x4FFDC, symSize: 0xCC }
+  - { offset: 0xBFA6C, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17hfbeadc78366da234E, symObjAddr: 0x38C1C, symBinAddr: 0x52234, symSize: 0xCC }
+  - { offset: 0xBFBD7, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17hb152e4c3d3336f1cE, symObjAddr: 0x3A358, symBinAddr: 0x53970, symSize: 0xD0 }
+  - { offset: 0xBFCE8, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17hcb8c34bd0915cda7E, symObjAddr: 0x3AF1C, symBinAddr: 0x54534, symSize: 0x134 }
+  - { offset: 0xBFF33, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared5pivot11median3_rec17h311410eab34c41ffE, symObjAddr: 0x3BB78, symBinAddr: 0x55190, symSize: 0xD0 }
+  - { offset: 0xC00F1, size: 0x8, addend: 0x0, symName: '__ZN36_$LT$T$u20$as$u20$core..any..Any$GT$7type_id17hdaa2d7e197efa23fE', symObjAddr: 0x3DE74, symBinAddr: 0x5704C, symSize: 0x30 }
+  - { offset: 0xC010B, size: 0x8, addend: 0x0, symName: '__ZN36_$LT$T$u20$as$u20$core..any..Any$GT$7type_id17h5642f8b3c62710f0E', symObjAddr: 0x3E3C4, symBinAddr: 0x5759C, symSize: 0x30 }
+  - { offset: 0xC03C1, size: 0x8, addend: 0x0, symName: '__ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h5c4870f32fb6658bE', symObjAddr: 0x1CA8C, symBinAddr: 0x36518, symSize: 0x68 }
+  - { offset: 0xC04AB, size: 0x8, addend: 0x0, symName: '__ZN44_$LT$$RF$T$u20$as$u20$core..fmt..Display$GT$3fmt17h725d0089ffe75f2fE', symObjAddr: 0x1CC20, symBinAddr: 0x366AC, symSize: 0x1C }
+  - { offset: 0xC0513, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num50_$LT$impl$u20$core..fmt..Debug$u20$for$u20$i32$GT$3fmt17hb2f28eb25c0eeed0E.653', symObjAddr: 0x1DAC0, symBinAddr: 0x3717C, symSize: 0x34 }
+  - { offset: 0xC0558, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num52_$LT$impl$u20$core..fmt..Debug$u20$for$u20$usize$GT$3fmt17h1d17fcf8b27ec8d6E.655', symObjAddr: 0x3DB10, symBinAddr: 0x56CF4, symSize: 0x34 }
+  - { offset: 0xC0590, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h87a55fa2fef112a0E', symObjAddr: 0x1D678, symBinAddr: 0x36D34, symSize: 0x38 }
+  - { offset: 0xC05E6, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17hd9e194c012911a3eE', symObjAddr: 0x1DA40, symBinAddr: 0x370FC, symSize: 0x1C }
+  - { offset: 0xC0618, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h72a5435c86acf990E', symObjAddr: 0x1DA5C, symBinAddr: 0x37118, symSize: 0x20 }
+  - { offset: 0xC0633, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h57052ed84746f7acE', symObjAddr: 0x3DA48, symBinAddr: 0x56C2C, symSize: 0x90 }
+  - { offset: 0xC07C7, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h5c783dfbe1d602ccE', symObjAddr: 0x3DAD8, symBinAddr: 0x56CBC, symSize: 0x38 }
+  - { offset: 0xC0840, size: 0x8, addend: 0x0, symName: '__ZN50_$LT$$BP$mut$u20$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h2b7e77eaade32390E', symObjAddr: 0x20E28, symBinAddr: 0x3A4E4, symSize: 0xCC }
+  - { offset: 0xC0964, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write10write_char17h93b883575af52b64E, symObjAddr: 0x3D038, symBinAddr: 0x56470, symSize: 0x174 }
+  - { offset: 0xC0BB4, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write9write_fmt17h6a6de8b26a25496dE, symObjAddr: 0x3D1AC, symBinAddr: 0x565E4, symSize: 0x1C }
+  - { offset: 0xC0BE4, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write10write_char17h75c7cb177e7f9c64E, symObjAddr: 0x3DC1C, symBinAddr: 0x56E00, symSize: 0x180 }
+  - { offset: 0xC0D97, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write9write_fmt17hf7b5e6302f2ba9f1E, symObjAddr: 0x3DD9C, symBinAddr: 0x56F80, symSize: 0x1C }
+  - { offset: 0xC0DC7, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write9write_fmt17h1a2fbf69fa7bb687E, symObjAddr: 0x3E5CC, symBinAddr: 0x577A4, symSize: 0x1C }
+  - { offset: 0xC0E51, size: 0x8, addend: 0x0, symName: __ZN4core5panic12PanicPayload6as_str17h0c17134c3117c445E, symObjAddr: 0x3DE54, symBinAddr: 0x57038, symSize: 0x14 }
+  - { offset: 0xC104C, size: 0x8, addend: 0x0, symName: __ZN4core9panicking13assert_failed17hadb735c44715fc90E, symObjAddr: 0x1D648, symBinAddr: 0x5C1E8, symSize: 0x30 }
+  - { offset: 0xC14F4, size: 0x8, addend: 0x0, symName: '__ZN55_$LT$$RF$str$u20$as$u20$core..str..pattern..Pattern$GT$15is_contained_in17h7ebc9611912faf19E', symObjAddr: 0x3C3A4, symBinAddr: 0x557DC, symSize: 0x37C }
+  - { offset: 0xC1B34, size: 0x8, addend: 0x0, symName: '__ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17h0063cec270e9fdb6E', symObjAddr: 0x1CC48, symBinAddr: 0x366D4, symSize: 0x6C }
+  - { offset: 0xC1E00, size: 0x8, addend: 0x0, symName: '__ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17h4daa7ca87b9593f9E', symObjAddr: 0x24F1C, symBinAddr: 0x3E5D8, symSize: 0xA8 }
+  - { offset: 0xC2239, size: 0x8, addend: 0x0, symName: '__ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17haf725d83362467e8E', symObjAddr: 0x29E58, symBinAddr: 0x43514, symSize: 0xC0 }
+  - { offset: 0xC24E7, size: 0x8, addend: 0x0, symName: '__ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17hbf41fad7e5834019E', symObjAddr: 0x319D4, symBinAddr: 0x4B090, symSize: 0xDC }
+  - { offset: 0xC2920, size: 0x8, addend: 0x0, symName: '__ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17hac21e115ec1ce2eaE', symObjAddr: 0x3D9A4, symBinAddr: 0x56B88, symSize: 0x38 }
+  - { offset: 0xC3448, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h7ee2f336a575010cE', symObjAddr: 0x211B4, symBinAddr: 0x3A870, symSize: 0xC0 }
+  - { offset: 0xC37D9, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17ha39e9106258e4ea0E', symObjAddr: 0x27CA0, symBinAddr: 0x4135C, symSize: 0xCC }
+  - { offset: 0xC394B, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h100a03a86a77a77eE', symObjAddr: 0x28070, symBinAddr: 0x4172C, symSize: 0xD0 }
+  - { offset: 0xC3AB0, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h422b0210cc09fc70E', symObjAddr: 0x28140, symBinAddr: 0x417FC, symSize: 0xC0 }
+  - { offset: 0xC3CCA, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h58312b1e9255a111E', symObjAddr: 0x2D5C0, symBinAddr: 0x46C7C, symSize: 0xC4 }
+  - { offset: 0xC3E75, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h2ed690b958c7a9bcE', symObjAddr: 0x305C4, symBinAddr: 0x49C80, symSize: 0xC4 }
+  - { offset: 0xC3FDB, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17hbdaa34c2ca8d6a41E', symObjAddr: 0x31D64, symBinAddr: 0x4B420, symSize: 0xB4 }
+  - { offset: 0xC416A, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h6395bb4c74ea7807E', symObjAddr: 0x350DC, symBinAddr: 0x4E6F4, symSize: 0xC0 }
+  - { offset: 0xC42DD, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h55aa7be37d8afb8eE', symObjAddr: 0x354F4, symBinAddr: 0x4EB0C, symSize: 0xC0 }
+  - { offset: 0xC446C, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h643262b04cb9547dE', symObjAddr: 0x37C14, symBinAddr: 0x5122C, symSize: 0xB4 }
+  - { offset: 0xC45DF, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17hb0074a0b518a8680E', symObjAddr: 0x394DC, symBinAddr: 0x52AF4, symSize: 0xC4 }
+  - { offset: 0xC4926, size: 0x8, addend: 0x0, symName: '__ZN5alloc7raw_vec20RawVecInner$LT$A$GT$7reserve21do_reserve_and_handle17hefba459289231a85E', symObjAddr: 0x1D2C4, symBinAddr: 0x5C100, symSize: 0xE8 }
+  - { offset: 0xC5D1D, size: 0x8, addend: 0x0, symName: '__ZN60_$LT$alloc..string..String$u20$as$u20$core..fmt..Display$GT$3fmt17h83e46d02226ff5daE', symObjAddr: 0x1D62C, symBinAddr: 0x36D18, symSize: 0x1C }
+  - { offset: 0xC5DF6, size: 0x8, addend: 0x0, symName: '__ZN58_$LT$alloc..string..String$u20$as$u20$core..fmt..Debug$GT$3fmt17hba6261a06dc4edcdE.652', symObjAddr: 0x1DAA0, symBinAddr: 0x3715C, symSize: 0x20 }
+  - { offset: 0xC5ECE, size: 0x8, addend: 0x0, symName: '__ZN58_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$9write_str17ha94f862aec3525d2E.666', symObjAddr: 0x3E3F4, symBinAddr: 0x575CC, symSize: 0x80 }
+  - { offset: 0xC6032, size: 0x8, addend: 0x0, symName: '__ZN58_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$10write_char17h67074ff378bd50ffE.667', symObjAddr: 0x3E474, symBinAddr: 0x5764C, symSize: 0x158 }
+  - { offset: 0xC6331, size: 0x8, addend: 0x0, symName: '__ZN64_$LT$alloc..ffi..c_str..NulError$u20$as$u20$core..fmt..Debug$GT$3fmt17h98aed6b5dbb68210E.654', symObjAddr: 0x3DA00, symBinAddr: 0x56BE4, symSize: 0x48 }
+  - { offset: 0xC640C, size: 0x8, addend: 0x0, symName: '__ZN5alloc11collections5btree3map25IntoIter$LT$K$C$V$C$A$GT$10dying_next17h48ca534ef9100643E', symObjAddr: 0x31850, symBinAddr: 0x4AF0C, symSize: 0x184 }
+  - { offset: 0xC68CF, size: 0x8, addend: 0x0, symName: '__ZN5alloc11collections5btree3map25IntoIter$LT$K$C$V$C$A$GT$10dying_next17hb44e7a6a9c52588bE', symObjAddr: 0x31BE0, symBinAddr: 0x4B29C, symSize: 0x184 }
+  - { offset: 0xC765B, size: 0x8, addend: 0x0, symName: __ZN6object4read7archive13ArchiveMember5parse17hea54ad909103ec10E, symObjAddr: 0x259A0, symBinAddr: 0x3F05C, symSize: 0x7E8 }
+  - { offset: 0xC90F7, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read5dwarf14Dwarf$LT$R$GT$11attr_string17hff0460a208c0252eE', symObjAddr: 0x28774, symBinAddr: 0x41E30, symSize: 0x1E8 }
+  - { offset: 0xC99AD, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read5dwarf13Unit$LT$R$GT$3new17h0f2efcf3164f5fedE', symObjAddr: 0x33480, symBinAddr: 0x4CA98, symSize: 0x1C5C }
+  - { offset: 0xCDA45, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read7aranges30ArangeHeader$LT$R$C$Offset$GT$5parse17he570cf1ec1a58cdbE', symObjAddr: 0x32B10, symBinAddr: 0x4C128, symSize: 0x2A8 }
+  - { offset: 0xCE4CA, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read4unit22EntriesCursor$LT$R$GT$10next_entry17he0b635c58927515aE', symObjAddr: 0x31E18, symBinAddr: 0x4B4D4, symSize: 0x2B4 }
+  - { offset: 0xCEC05, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read4unit18Attribute$LT$R$GT$5value17hbe3b3ff12e557972E', symObjAddr: 0x2D6D4, symBinAddr: 0x46D90, symSize: 0x6FC }
+  - { offset: 0xCF39F, size: 0x8, addend: 0x0, symName: __ZN5gimli4read4unit15skip_attributes17h6700b5f7103aef83E, symObjAddr: 0x2B5B4, symBinAddr: 0x44C70, symSize: 0x500 }
+  - { offset: 0xCFE0F, size: 0x8, addend: 0x0, symName: __ZN5gimli4read4unit15parse_attribute17h5a888ff34a0e69aaE, symObjAddr: 0x2C6DC, symBinAddr: 0x45D98, symSize: 0xEE4 }
+  - { offset: 0xD2E30, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read4unit32AttributeValue$LT$R$C$Offset$GT$11udata_value17hb6fb923d6ee6ebdfE', symObjAddr: 0x30688, symBinAddr: 0x49D44, symSize: 0x90 }
+  - { offset: 0xD2E9D, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read4unit33DebugInfoUnitHeadersIter$LT$R$GT$4next17haab6742d3911a7b0E', symObjAddr: 0x32F5C, symBinAddr: 0x4C574, symSize: 0x524 }
+  - { offset: 0xD40E1, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read5index18UnitIndex$LT$R$GT$5parse17h85b46bafa00226aeE', symObjAddr: 0x355B4, symBinAddr: 0x4EBCC, symSize: 0x6C8 }
+  - { offset: 0xD47FB, size: 0x8, addend: 0x0, symName: __ZN5gimli4read6reader6Reader12read_sleb12817hf547ea73f9196a17E, symObjAddr: 0x27A84, symBinAddr: 0x41140, symSize: 0x21C }
+  - { offset: 0xD4921, size: 0x8, addend: 0x0, symName: __ZN5gimli4read6reader6Reader17read_sized_offset17h254c90997702e08dE, symObjAddr: 0x30718, symBinAddr: 0x49DD4, symSize: 0xEC }
+  - { offset: 0xD4D0D, size: 0x8, addend: 0x0, symName: __ZN5gimli4read6reader6Reader11read_offset17h28c65e374f615335E, symObjAddr: 0x30804, symBinAddr: 0x49EC0, symSize: 0xBC }
+  - { offset: 0xD4F9B, size: 0x8, addend: 0x0, symName: __ZN5gimli4read6reader6Reader12read_uleb12817h508e4dd64ba003c9E, symObjAddr: 0x36E0C, symBinAddr: 0x50424, symSize: 0xA4 }
+  - { offset: 0xD5356, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read8rnglists20RngListIter$LT$R$GT$4next17hc963998a9dee1613E', symObjAddr: 0x2BAB4, symBinAddr: 0x45170, symSize: 0xC28 }
+  - { offset: 0xD829C, size: 0x8, addend: 0x0, symName: '__ZN5gimli4read4line27FileEntry$LT$R$C$Offset$GT$5parse17h2859f6a04d67ad8dE', symObjAddr: 0x3723C, symBinAddr: 0x50854, symSize: 0x1F4 }
+  - { offset: 0xD85F4, size: 0x8, addend: 0x0, symName: __ZN5gimli4read4line15FileEntryFormat5parse17h588a61ccab542461E, symObjAddr: 0x36B70, symBinAddr: 0x50188, symSize: 0x29C }
+  - { offset: 0xD8E82, size: 0x8, addend: 0x0, symName: __ZN5gimli4read4line18parse_directory_v517he07c74d14219eec0E, symObjAddr: 0x36EB0, symBinAddr: 0x504C8, symSize: 0xE4 }
+  - { offset: 0xD8F1B, size: 0x8, addend: 0x0, symName: __ZN5gimli4read4line13parse_file_v517hd10bdbbb908a3d8dE, symObjAddr: 0x36F94, symBinAddr: 0x505AC, symSize: 0x2A8 }
+  - { offset: 0xD90A7, size: 0x8, addend: 0x0, symName: __ZN5gimli4read4line15parse_attribute17h6eba6c01f093b6beE, symObjAddr: 0x37430, symBinAddr: 0x50A48, symSize: 0x7E4 }
+  - { offset: 0xDAEA7, size: 0x8, addend: 0x0, symName: '__ZN9addr2line4unit16ResUnit$LT$R$GT$25find_function_or_location28_$u7b$$u7b$closure$u7d$$u7d$17h9fc9a4192e5d25dcE', symObjAddr: 0x29F18, symBinAddr: 0x435D4, symSize: 0x1488 }
+  - { offset: 0xDDC04, size: 0x8, addend: 0x0, symName: '__ZN9addr2line4unit16ResUnit$LT$R$GT$25find_function_or_location17ha9724b23605a071dE', symObjAddr: 0x296A0, symBinAddr: 0x42D5C, symSize: 0x390 }
+  - { offset: 0xDE169, size: 0x8, addend: 0x0, symName: __ZN9addr2line4line9LazyLines6borrow17heca96803fd4fba5eE, symObjAddr: 0x26188, symBinAddr: 0x3F844, symSize: 0x18FC }
+  - { offset: 0xE1CC3, size: 0x8, addend: 0x0, symName: __ZN9addr2line4line11render_file17hc25710ebe36c0f4aE, symObjAddr: 0x28270, symBinAddr: 0x4192C, symSize: 0x458 }
+  - { offset: 0xE2720, size: 0x8, addend: 0x0, symName: '__ZN9addr2line6lookup30LoopingLookup$LT$T$C$L$C$F$GT$10new_lookup17h7b359d31c2313d91E', symObjAddr: 0x29A30, symBinAddr: 0x430EC, symSize: 0x428 }
+  - { offset: 0xE2D2C, size: 0x8, addend: 0x0, symName: '__ZN9addr2line5frame18FrameIter$LT$R$GT$4next17h2d498aec1b2101b8E', symObjAddr: 0x25740, symBinAddr: 0x3EDFC, symSize: 0x260 }
+  - { offset: 0xE31B3, size: 0x8, addend: 0x0, symName: '__ZN9addr2line8function17Function$LT$R$GT$14parse_children17h8f01b5c6aec8e751E', symObjAddr: 0x2DF70, symBinAddr: 0x4762C, symSize: 0xE34 }
+  - { offset: 0xE4CF2, size: 0x8, addend: 0x0, symName: __ZN9addr2line8function9name_attr17h32ba181de8e85633E, symObjAddr: 0x2EF84, symBinAddr: 0x48640, symSize: 0x288 }
+  - { offset: 0xE4FF9, size: 0x8, addend: 0x0, symName: __ZN9addr2line8function10name_entry17ha59cad36aea38090E, symObjAddr: 0x2F20C, symBinAddr: 0x488C8, symSize: 0x374 }
+  - { offset: 0xE552D, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_42, symObjAddr: 0x40640, symBinAddr: 0x59478, symSize: 0x8 }
+  - { offset: 0xE5545, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_77, symObjAddr: 0x4085C, symBinAddr: 0x59694, symSize: 0xC }
+  - { offset: 0xE555D, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_129, symObjAddr: 0x40B40, symBinAddr: 0x59978, symSize: 0x8 }
+  - { offset: 0xE5575, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_267, symObjAddr: 0x41390, symBinAddr: 0x5A1C8, symSize: 0x18 }
+  - { offset: 0xE558D, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_320, symObjAddr: 0x41688, symBinAddr: 0x5A4C0, symSize: 0x8 }
+  - { offset: 0xE55A5, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_341, symObjAddr: 0x41750, symBinAddr: 0x5A588, symSize: 0xC }
+  - { offset: 0xE55BD, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_342, symObjAddr: 0x4175C, symBinAddr: 0x5A594, symSize: 0xC }
+  - { offset: 0xE5659, size: 0x8, addend: 0x0, symName: __ZN4core3fmt9Formatter12pad_integral17hfad9613aa329f1dfE, symObjAddr: 0x4444, symBinAddr: 0x1EEB4, symSize: 0x28C }
+  - { offset: 0xE59DD, size: 0x8, addend: 0x0, symName: __ZN4core3fmt9Formatter3pad17h2e5b9947962a9253E, symObjAddr: 0x4B28, symBinAddr: 0x1F58C, symSize: 0x36C }
+  - { offset: 0xE5EF3, size: 0x8, addend: 0x0, symName: __ZN4core3fmt9Formatter26debug_struct_field2_finish17h3c24cd7f8ca34480E, symObjAddr: 0x6C24, symBinAddr: 0x212EC, symSize: 0x104 }
+  - { offset: 0xE5FD2, size: 0x8, addend: 0x0, symName: __ZN4core3fmt9Formatter25debug_tuple_field1_finish17h40366936e70ceeddE, symObjAddr: 0x6D28, symBinAddr: 0x213F0, symSize: 0x134 }
+  - { offset: 0xE61B1, size: 0x8, addend: 0x0, symName: __ZN4core3fmt9Formatter25debug_tuple_field2_finish17h4a45d3d40f4f5983E, symObjAddr: 0x6E5C, symBinAddr: 0x21524, symSize: 0x1D4 }
+  - { offset: 0xE65ED, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u64$GT$3fmt17h10a9edd8d44cbd98E', symObjAddr: 0x42D8, symBinAddr: 0x1ED68, symSize: 0x1C }
+  - { offset: 0xE6615, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp21_$LT$impl$u20$u64$GT$4_fmt17h95eb5e731d4ffb09E', symObjAddr: 0x4314, symBinAddr: 0x1ED84, symSize: 0x130 }
+  - { offset: 0xE6700, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u32$GT$3fmt17h9e100e9200ebda85E', symObjAddr: 0x5310, symBinAddr: 0x1FBF8, symSize: 0x1C }
+  - { offset: 0xE6721, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp21_$LT$impl$u20$u32$GT$4_fmt17hb4e1a73e61a804b4E', symObjAddr: 0x532C, symBinAddr: 0x1FC14, symSize: 0x124 }
+  - { offset: 0xE6820, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp51_$LT$impl$u20$core..fmt..Display$u20$for$u20$u8$GT$3fmt17h47e17da233026ba5E', symObjAddr: 0x66AC, symBinAddr: 0x20EC8, symSize: 0xA4 }
+  - { offset: 0xE6909, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17hf6613b1361ccfa13E', symObjAddr: 0x8630, symBinAddr: 0x22C30, symSize: 0x28 }
+  - { offset: 0xE6957, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i64$GT$3fmt17hc8be91af3e9644a5E', symObjAddr: 0x8658, symBinAddr: 0x22C58, symSize: 0x28 }
+  - { offset: 0xE6A8D, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num53_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$i64$GT$3fmt17h0b0f7feaa43b3f83E', symObjAddr: 0x6870, symBinAddr: 0x20F6C, symSize: 0x80 }
+  - { offset: 0xE6BA4, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num52_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$i8$GT$3fmt17h40f674aa913cda60E', symObjAddr: 0x8374, symBinAddr: 0x229A8, symSize: 0x84 }
+  - { offset: 0xE6C7F, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num53_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$i32$GT$3fmt17h3b29dc51654ff718E', symObjAddr: 0x83F8, symBinAddr: 0x22A2C, symSize: 0x80 }
+  - { offset: 0xE6D46, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num52_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$i8$GT$3fmt17hbda6c4748b940fa5E', symObjAddr: 0x8478, symBinAddr: 0x22AAC, symSize: 0x84 }
+  - { offset: 0xE6E0D, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num53_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$i32$GT$3fmt17h9c7b22833c82b9ecE', symObjAddr: 0x84FC, symBinAddr: 0x22B30, symSize: 0x80 }
+  - { offset: 0xE6ED4, size: 0x8, addend: 0x0, symName: '__ZN4core3fmt3num53_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$i64$GT$3fmt17h6cb5058024e3440fE', symObjAddr: 0x85B0, symBinAddr: 0x22BB0, symSize: 0x80 }
+  - { offset: 0xE6FB7, size: 0x8, addend: 0x0, symName: __ZN4core3fmt9Formatter12pad_integral12write_prefix17h9cbdf976677dafceE, symObjAddr: 0x4A00, symBinAddr: 0x1F470, symSize: 0x7C }
+  - { offset: 0xE6FF1, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h7cfd04ea2b85eb6dE', symObjAddr: 0x4FDC, symBinAddr: 0x1F8F8, symSize: 0x1C }
+  - { offset: 0xE700C, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h0b1e53644a5c1cafE', symObjAddr: 0x51F4, symBinAddr: 0x1FB10, symSize: 0xE8 }
+  - { offset: 0xE7159, size: 0x8, addend: 0x0, symName: '__ZN42_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$3fmt17h94a1a02631f09940E', symObjAddr: 0x6924, symBinAddr: 0x20FEC, symSize: 0xF0 }
+  - { offset: 0xE72AD, size: 0x8, addend: 0x0, symName: '__ZN59_$LT$core..fmt..Arguments$u20$as$u20$core..fmt..Display$GT$3fmt17h11b40c4e235f68c5E', symObjAddr: 0x4FF8, symBinAddr: 0x1F914, symSize: 0x18 }
+  - { offset: 0xE730D, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5write17hef9e6987c4ad2cbaE, symObjAddr: 0x5010, symBinAddr: 0x1F92C, symSize: 0x1E4 }
+  - { offset: 0xE753C, size: 0x8, addend: 0x0, symName: '__ZN43_$LT$char$u20$as$u20$core..fmt..Display$GT$3fmt17h0791d3e8ee429cb4E', symObjAddr: 0x5D1C, symBinAddr: 0x205DC, symSize: 0xF0 }
+  - { offset: 0xE75FB, size: 0x8, addend: 0x0, symName: __ZN4core3fmt8builders11DebugStruct5field17h67d82499d92a072eE, symObjAddr: 0x61C0, symBinAddr: 0x20A38, symSize: 0x1B0 }
+  - { offset: 0xE7820, size: 0x8, addend: 0x0, symName: __ZN4core3fmt8builders11DebugStruct6finish17hbfcfc3dc7a4d41d4E, symObjAddr: 0x6A14, symBinAddr: 0x210DC, symSize: 0x80 }
+  - { offset: 0xE7969, size: 0x8, addend: 0x0, symName: '__ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$9write_str17h5412266e4f1351feE', symObjAddr: 0x6370, symBinAddr: 0x20BE8, symSize: 0x244 }
+  - { offset: 0xE7BD0, size: 0x8, addend: 0x0, symName: '__ZN68_$LT$core..fmt..builders..PadAdapter$u20$as$u20$core..fmt..Write$GT$10write_char17h552051b0876cb7c3E', symObjAddr: 0x65B4, symBinAddr: 0x20E2C, symSize: 0x80 }
+  - { offset: 0xE7C62, size: 0x8, addend: 0x0, symName: __ZN4core3fmt8builders8DebugSet5entry17hc1ec25b82d52aa2aE, symObjAddr: 0x6A94, symBinAddr: 0x2115C, symSize: 0x144 }
+  - { offset: 0xE7E1B, size: 0x8, addend: 0x0, symName: __ZN4core3fmt8builders9DebugList6finish17h2389e8fbf6d1d91aE, symObjAddr: 0x6BD8, symBinAddr: 0x212A0, symSize: 0x4C }
+  - { offset: 0xE7F2A, size: 0x8, addend: 0x0, symName: __ZN4core3fmt5Write9write_fmt17h0100430d5cf49a25E, symObjAddr: 0x6634, symBinAddr: 0x20EAC, symSize: 0x1C }
+  - { offset: 0xE7F76, size: 0x8, addend: 0x0, symName: '__ZN43_$LT$bool$u20$as$u20$core..fmt..Display$GT$3fmt17h60baab6751dd7ee1E', symObjAddr: 0x7030, symBinAddr: 0x216F8, symSize: 0x44 }
+  - { offset: 0xE7FE8, size: 0x8, addend: 0x0, symName: '__ZN40_$LT$str$u20$as$u20$core..fmt..Debug$GT$3fmt17hb23dfa2a3d53e6e3E', symObjAddr: 0x7074, symBinAddr: 0x2173C, symSize: 0x338 }
+  - { offset: 0xE84D6, size: 0x8, addend: 0x0, symName: '__ZN41_$LT$char$u20$as$u20$core..fmt..Debug$GT$3fmt17h0a44029d4f1e16acE', symObjAddr: 0x770C, symBinAddr: 0x21DC8, symSize: 0xAC }
+  - { offset: 0xE8610, size: 0x8, addend: 0x0, symName: __ZN4core5slice5index26slice_start_index_len_fail8do_panic7runtime17h832d042f5e03f3b9E, symObjAddr: 0x4A7C, symBinAddr: 0x1F4EC, symSize: 0x50 }
+  - { offset: 0xE8644, size: 0x8, addend: 0x0, symName: __ZN4core5slice5index26slice_start_index_len_fail17hee6788eb5ebf1b12E, symObjAddr: 0x427C, symBinAddr: 0x5AEB0, symSize: 0xC }
+  - { offset: 0xE87F7, size: 0x8, addend: 0x0, symName: __ZN4core5slice5index24slice_end_index_len_fail8do_panic7runtime17h95fca5098ac13409E, symObjAddr: 0x4AD8, symBinAddr: 0x1F53C, symSize: 0x50 }
+  - { offset: 0xE882B, size: 0x8, addend: 0x0, symName: __ZN4core5slice5index24slice_end_index_len_fail17h77b0f5aae97b29d2E, symObjAddr: 0x4ACC, symBinAddr: 0x5AF2C, symSize: 0xC }
+  - { offset: 0xE896C, size: 0x8, addend: 0x0, symName: __ZN4core5slice5index22slice_index_order_fail8do_panic7runtime17h80c918e2b2ebcc87E, symObjAddr: 0x5CCC, symBinAddr: 0x2058C, symSize: 0x50 }
+  - { offset: 0xE89A0, size: 0x8, addend: 0x0, symName: __ZN4core5slice5index22slice_index_order_fail17h69ae3300e79383f3E, symObjAddr: 0x5CA4, symBinAddr: 0x5B0B4, symSize: 0xC }
+  - { offset: 0xE8BB7, size: 0x8, addend: 0x0, symName: '__ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$15copy_from_slice17len_mismatch_fail8do_panic7runtime17had4667c3235ec454E', symObjAddr: 0x7AFC, symBinAddr: 0x22168, symSize: 0x54 }
+  - { offset: 0xE8BEB, size: 0x8, addend: 0x0, symName: '__ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$15copy_from_slice17len_mismatch_fail17h4d10da55ccbb5d74E', symObjAddr: 0x7AE4, symBinAddr: 0x5B318, symSize: 0x18 }
+  - { offset: 0xE8E10, size: 0x8, addend: 0x0, symName: __ZN4core5slice6memchr14memchr_aligned17h7d61ace9d22637aaE, symObjAddr: 0x79BC, symBinAddr: 0x22078, symSize: 0xF0 }
+  - { offset: 0xE8F44, size: 0x8, addend: 0x0, symName: __ZN4core5slice4sort6shared9smallsort22panic_on_ord_violation17hfbfc19870999b1d9E, symObjAddr: 0x7AAC, symBinAddr: 0x5B2E0, symSize: 0x38 }
+  - { offset: 0xE8F9B, size: 0x8, addend: 0x0, symName: __ZN4core9panicking18panic_bounds_check17hc57d03bae9326b3bE, symObjAddr: 0x4288, symBinAddr: 0x5AEBC, symSize: 0x50 }
+  - { offset: 0xE8FCE, size: 0x8, addend: 0x0, symName: __ZN4core9panicking9panic_fmt17hf2779395da27540fE, symObjAddr: 0x42F4, symBinAddr: 0x5AF0C, symSize: 0x20 }
+  - { offset: 0xE8FFE, size: 0x8, addend: 0x0, symName: __ZN4core9panicking5panic17hd24b0c1000b8024eE, symObjAddr: 0x4E94, symBinAddr: 0x5AF38, symSize: 0x34 }
+  - { offset: 0xE902E, size: 0x8, addend: 0x0, symName: __ZN4core9panicking13assert_failed17h8cde6234fb537ae4E, symObjAddr: 0x4EC8, symBinAddr: 0x5AF6C, symSize: 0x30 }
+  - { offset: 0xE9049, size: 0x8, addend: 0x0, symName: __ZN4core9panicking19assert_failed_inner17h18af14c6bb90c29fE, symObjAddr: 0x4EF8, symBinAddr: 0x5AF9C, symSize: 0xE4 }
+  - { offset: 0xE9099, size: 0x8, addend: 0x0, symName: __ZN4core9panicking11panic_const23panic_const_div_by_zero17h7892f8bb28f93376E, symObjAddr: 0x52DC, symBinAddr: 0x5B080, symSize: 0x34 }
+  - { offset: 0xE90C9, size: 0x8, addend: 0x0, symName: __ZN4core9panicking11panic_const23panic_const_rem_by_zero17hd1aff077669cada9E, symObjAddr: 0x857C, symBinAddr: 0x5B368, symSize: 0x34 }
+  - { offset: 0xE911D, size: 0x8, addend: 0x0, symName: __ZN4core9panicking18panic_nounwind_fmt17hbadb53607a357b59E, symObjAddr: 0x6798, symBinAddr: 0x5B1C8, symSize: 0x3C }
+  - { offset: 0xE9164, size: 0x8, addend: 0x0, symName: __ZN4core9panicking19panic_cannot_unwind17h6af329849b0feef6E, symObjAddr: 0x67D4, symBinAddr: 0x5B204, symSize: 0xC }
+  - { offset: 0xE917F, size: 0x8, addend: 0x0, symName: __ZN4core9panicking14panic_nounwind17h56659d97f1eba38dE, symObjAddr: 0x67E0, symBinAddr: 0x5B210, symSize: 0x48 }
+  - { offset: 0xE91B0, size: 0x8, addend: 0x0, symName: __ZN4core9panicking26panic_nounwind_nobacktrace17hc09abad26504dd63E, symObjAddr: 0x6828, symBinAddr: 0x5B258, symSize: 0x48 }
+  - { offset: 0xE91E1, size: 0x8, addend: 0x0, symName: __ZN4core9panicking16panic_in_cleanup17h531f2f715efac6eaE, symObjAddr: 0x68F0, symBinAddr: 0x5B2A0, symSize: 0xC }
+  - { offset: 0xE91FC, size: 0x8, addend: 0x0, symName: __ZN4core9panicking13assert_failed17h9784aeb98d2ff9e1E, symObjAddr: 0x68FC, symBinAddr: 0x5B2AC, symSize: 0x28 }
+  - { offset: 0xE9524, size: 0x8, addend: 0x0, symName: __ZN4core3str5count14do_count_chars17hcf8b0596e0ce7916E, symObjAddr: 0x46D0, symBinAddr: 0x1F140, symSize: 0x330 }
+  - { offset: 0xE9852, size: 0x8, addend: 0x0, symName: __ZN4core3str5count23char_count_general_case17h299ef46f330563ccE, symObjAddr: 0x7B50, symBinAddr: 0x221BC, symSize: 0xE0 }
+  - { offset: 0xE9B66, size: 0x8, addend: 0x0, symName: __ZN4core3str6traits23str_index_overflow_fail17h6ff8e5bae074e2b5E, symObjAddr: 0x7C30, symBinAddr: 0x5B330, symSize: 0x38 }
+  - { offset: 0xE9BB8, size: 0x8, addend: 0x0, symName: '__ZN87_$LT$core..str..lossy..Utf8Chunks$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h7cab9cc470d7e86aE', symObjAddr: 0x5450, symBinAddr: 0x1FD38, symSize: 0x1DC }
+  - { offset: 0xE9DD8, size: 0x8, addend: 0x0, symName: __ZN4core3str8converts9from_utf817hdb88817dbcb234e4E, symObjAddr: 0x5F7C, symBinAddr: 0x207F4, symSize: 0x244 }
+  - { offset: 0xE9EE7, size: 0x8, addend: 0x0, symName: __ZN4core3str7pattern11StrSearcher3new17h6db76b6cd8c4f161E, symObjAddr: 0x7C68, symBinAddr: 0x2229C, symSize: 0x70C }
+  - { offset: 0xEA15B, size: 0x8, addend: 0x0, symName: __ZN4core3str16slice_error_fail17hcd9bfe4e37cfa7edE, symObjAddr: 0x73AC, symBinAddr: 0x5B2D4, symSize: 0xC }
+  - { offset: 0xEA175, size: 0x8, addend: 0x0, symName: __ZN4core3str19slice_error_fail_rt17h1bfdca01a7aba220E, symObjAddr: 0x73B8, symBinAddr: 0x21A74, symSize: 0x354 }
+  - { offset: 0xEA4D0, size: 0x8, addend: 0x0, symName: __ZN4core6option13unwrap_failed17h5ad634d8b5336cd5E, symObjAddr: 0x5CB0, symBinAddr: 0x5B0C0, symSize: 0x1C }
+  - { offset: 0xEA4EB, size: 0x8, addend: 0x0, symName: __ZN4core6option13expect_failed17he3a541ede7223b55E, symObjAddr: 0x6750, symBinAddr: 0x5B180, symSize: 0x48 }
+  - { offset: 0xEA6E0, size: 0x8, addend: 0x0, symName: __ZN4core6result13unwrap_failed17h367f22c5968940acE, symObjAddr: 0x6650, symBinAddr: 0x5B124, symSize: 0x5C }
+  - { offset: 0xEAA72, size: 0x8, addend: 0x0, symName: '__ZN71_$LT$core..ops..range..Range$LT$Idx$GT$$u20$as$u20$core..fmt..Debug$GT$3fmt17ha70135844d059979E', symObjAddr: 0x77B8, symBinAddr: 0x21E74, symSize: 0x204 }
+  - { offset: 0xEAD71, size: 0x8, addend: 0x0, symName: '__ZN4core4char7methods22_$LT$impl$u20$char$GT$16escape_debug_ext17hb36e9717eb2dde90E', symObjAddr: 0x562C, symBinAddr: 0x1FF14, symSize: 0x264 }
+  - { offset: 0xEAFB4, size: 0x8, addend: 0x0, symName: __ZN4core7unicode12unicode_data15grapheme_extend11lookup_slow17he63a978da8454952E, symObjAddr: 0x5B50, symBinAddr: 0x20438, symSize: 0x154 }
+  - { offset: 0xEB1F4, size: 0x8, addend: 0x0, symName: __ZN4core7unicode9printable12is_printable17h2164c17a44856f04E, symObjAddr: 0x5890, symBinAddr: 0x20178, symSize: 0x2C0 }
+  - { offset: 0xEB6F1, size: 0x8, addend: 0x0, symName: '__ZN63_$LT$core..cell..BorrowMutError$u20$as$u20$core..fmt..Debug$GT$3fmt17h6c49e807eddbac0cE', symObjAddr: 0x5E0C, symBinAddr: 0x206CC, symSize: 0x24 }
+  - { offset: 0xEB751, size: 0x8, addend: 0x0, symName: __ZN4core4cell22panic_already_borrowed17hdb17705d42d47e98E, symObjAddr: 0x5E30, symBinAddr: 0x5B0DC, symSize: 0x48 }
+  - { offset: 0xEB798, size: 0x8, addend: 0x0, symName: __ZN4core3ffi5c_str4CStr19from_bytes_with_nul17hff42c270530985b8E, symObjAddr: 0x5E78, symBinAddr: 0x206F0, symSize: 0x104 }
+  - { offset: 0xEB864, size: 0x8, addend: 0x0, symName: _OUTLINED_FUNCTION_170, symObjAddr: 0x40D8C, symBinAddr: 0x59BC4, symSize: 0x14 }
+  - { offset: 0xEB89A, size: 0x8, addend: 0x0, symName: ___rust_start_panic, symObjAddr: 0xFF90, symBinAddr: 0x2A278, symSize: 0xA0 }
+  - { offset: 0xEB8D0, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr49drop_in_place$LT$panic_unwind..imp..Exception$GT$17h853b363a7d6ab810E', symObjAddr: 0x10030, symBinAddr: 0x2A318, symSize: 0x70 }
+  - { offset: 0xEBA3C, size: 0x8, addend: 0x0, symName: '__ZN4core3ptr74drop_in_place$LT$alloc..boxed..Box$LT$panic_unwind..imp..Exception$GT$$GT$17h3c8462463182e5aaE', symObjAddr: 0x100B8, symBinAddr: 0x2A3A0, symSize: 0x74 }
+  - { offset: 0xEBD95, size: 0x8, addend: 0x0, symName: __ZN12panic_unwind3imp5panic17exception_cleanup17h25743783e7f119a2E, symObjAddr: 0x100A0, symBinAddr: 0x2A388, symSize: 0x18 }
+  - { offset: 0xEBDB1, size: 0x8, addend: 0x0, symName: ___rust_start_panic, symObjAddr: 0xFF90, symBinAddr: 0x2A278, symSize: 0xA0 }
+  - { offset: 0xEBE9E, size: 0x8, addend: 0x0, symName: __ZN17compiler_builtins3int19specialized_div_rem12u128_div_rem17h2660fe1470f0d791E, symObjAddr: 0x0, symBinAddr: 0x5A994, symSize: 0x338 }
+  - { offset: 0xEBF70, size: 0x8, addend: 0x0, symName: __ZN17compiler_builtins3int19specialized_div_rem12u128_div_rem17h2660fe1470f0d791E, symObjAddr: 0x0, symBinAddr: 0x5A994, symSize: 0x338 }
+  - { offset: 0xEBF8E, size: 0x8, addend: 0x0, symName: __ZN17compiler_builtins3int19specialized_div_rem12u128_div_rem17h2660fe1470f0d791E, symObjAddr: 0x0, symBinAddr: 0x5A994, symSize: 0x338 }
+  - { offset: 0xEC2C2, size: 0x8, addend: 0x0, symName: ___udivti3, symObjAddr: 0x0, symBinAddr: 0x5ACCC, symSize: 0x28 }
+  - { offset: 0xEC2E8, size: 0x8, addend: 0x0, symName: ___udivti3, symObjAddr: 0x0, symBinAddr: 0x5ACCC, symSize: 0x28 }
+...
