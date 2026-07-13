@@ -9,22 +9,20 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
     private var callbackId: String?
     private var sdk: TrustSDK?
 
-    @objc(startOnboarding:)
-    func startOnboarding(command: CDVInvokedUrlCommand) {
-        callbackId = command.callbackId
+    override func pluginInitialize() {
+        super.pluginInitialize()
+        NSLog("DAON DEBUG: pluginInitialize called")
 
-        let options = command.argument(at: 0) as? [String: Any]
-        let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-        NSLog("DAON DEBUG: serverUrl received = %@", serverUrl)
-
-        guard let viewController = self.viewController else { return }
+        guard let viewController = self.viewController else {
+            NSLog("DAON DEBUG: pluginInitialize — no viewController yet")
+            return
+        }
 
         let sdkInstance = TrustSDK(withViewController: viewController, delegate: self)
         self.sdk = sdkInstance
 
         do {
             let documentProcessor = try DocumentProcessor.Builder().build()
-            NSLog("DAON DEBUG: documentProcessor built OK")
             sdkInstance.addDocumentProcessor(documentProcessor)
 
             let appkeysProcessor = try AppkeysProcessor.Builder()
@@ -34,25 +32,40 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
                 .setBiometricRegistrationReason("Secure your account with biometrics")
                 .setBiometricAuthenticationReason("Verify your identity")
                 .build()
-            NSLog("DAON DEBUG: appkeysProcessor built OK")
             sdkInstance.addAppkeysProcessor(appkeysProcessor)
 
             let deviceIntegrityProcessor = DeviceIntegrityProcessor()
             sdkInstance.addDeviceIntegrityProcessor(deviceIntegrityProcessor)
 
-            let daonOptions = DaonOptions()
-            daonOptions.initializationTimeout = 60
-            if !serverUrl.isEmpty {
-                daonOptions.serverUrl = serverUrl
-            }
-
-            NSLog("DAON DEBUG: about to call sdk.start, serverUrl empty = %@", "\(serverUrl.isEmpty)")
-            sdkInstance.start(withDaonOptions: daonOptions)
-            NSLog("DAON DEBUG: sdk.start returned")
+            NSLog("DAON DEBUG: SDK and processors initialized early in pluginInitialize")
         } catch {
-            NSLog("DAON DEBUG: CAUGHT ERROR = %@", error.localizedDescription)
-            sendEvent(type: "failure", message: error.localizedDescription, keepCallback: false)
+            NSLog("DAON DEBUG: pluginInitialize setup error = %@", error.localizedDescription)
         }
+    }
+
+    @objc(startOnboarding:)
+    func startOnboarding(command: CDVInvokedUrlCommand) {
+        callbackId = command.callbackId
+
+        let options = command.argument(at: 0) as? [String: Any]
+        let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        NSLog("DAON DEBUG: serverUrl received = %@", serverUrl)
+
+        guard let sdkInstance = self.sdk else {
+            NSLog("DAON DEBUG: sdk was never initialized — pluginInitialize may have run before viewController existed")
+            sendEvent(type: "failure", message: "SDK not initialized", keepCallback: false)
+            return
+        }
+
+        let daonOptions = DaonOptions()
+        daonOptions.initializationTimeout = 60
+        if !serverUrl.isEmpty {
+            daonOptions.serverUrl = serverUrl
+        }
+
+        NSLog("DAON DEBUG: about to call sdk.start, serverUrl empty = %@", "\(serverUrl.isEmpty)")
+        sdkInstance.start(withDaonOptions: daonOptions)
+        NSLog("DAON DEBUG: sdk.start returned")
     }
 
     func didReceive(successResponse daonEvent: DaonEvent) {
