@@ -25,44 +25,38 @@ public class DaonTrustPlugin extends CordovaPlugin {
     private CallbackContext callbackContext;
     private DaonTrustSDK sdk;
 
-   @Override
+  @Override
 public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
-    final ComponentActivity activity = (ComponentActivity) cordova.getActivity();
+    ComponentActivity activity = (ComponentActivity) cordova.getActivity();
 
-    Handler mainHandler = new Handler(Looper.getMainLooper());
-    mainHandler.post(new Runnable() {
+    sdk = new DaonTrustSDK(activity, new DaonEventListener() {
         @Override
-        public void run() {
-            sdk = new DaonTrustSDK(activity, new DaonEventListener() {
-                @Override
-                public void onSuccess(String description) {
-                    sendEvent("success", description, true);
-                }
+        public void onSuccess(String description) {
+            sendEvent("success", description, true);
+        }
 
-                @Override
-                public void onFail(DaonEvent daonEvent) {
-                    String message = daonEvent != null ? daonEvent.toString() : "Onboarding failed";
-                    sendEvent("failure", message, false);
-                }
+        @Override
+        public void onFail(DaonEvent daonEvent) {
+            String message = daonEvent != null ? daonEvent.toString() : "Onboarding failed";
+            sendEvent("failure", message, false);
+        }
 
-                @Override
-                public void onInfo(DaonEvent daonEvent) {
-                    String message = daonEvent != null ? daonEvent.toString() : "Onboarding info";
-                    sendEvent("info", message, true);
-                }
-            });
-
-            activity.getLifecycle().addObserver(sdk);
-
-            try {
-                TrustNFCManager trustNFCManager = new TrustNFCManager.Builder().build();
-                sdk.addTrustNFCManager(trustNFCManager);
-            } catch (Exception ex) {
-                Log.e(TAG, "Failed to add NFC manager", ex);
-            }
+        @Override
+        public void onInfo(DaonEvent daonEvent) {
+            String message = daonEvent != null ? daonEvent.toString() : "Onboarding info";
+            sendEvent("info", message, true);
         }
     });
+
+    activity.getLifecycle().addObserver(sdk);
+
+    try {
+        TrustNFCManager trustNFCManager = new TrustNFCManager.Builder().build();
+        sdk.addTrustNFCManager(trustNFCManager);
+    } catch (Exception ex) {
+        Log.e(TAG, "Failed to add NFC manager", ex);
+    }
 }
 
     @Override

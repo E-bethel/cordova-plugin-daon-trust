@@ -15,11 +15,12 @@
   </js-module>
 
   <platform name="android">
-    <config-file target="config.xml" parent="/*">
-      <feature name="DaonTrustPlugin">
-        <param name="android-package" value="cordova.plugin.daontrust.DaonTrustPlugin" />
-      </feature>
-    </config-file>
+   <config-file target="config.xml" parent="/*">
+<feature name="DaonTrustPlugin">
+<param name="android-package" value="cordova.plugin.daontrust.DaonTrustPlugin" />
+<param name="onload" value="true" />
+</feature>
+</config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest">
       <uses-permission android:name="android.permission.CAMERA" />
