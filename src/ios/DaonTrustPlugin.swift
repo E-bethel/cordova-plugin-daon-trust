@@ -14,8 +14,7 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
         callbackId = command.callbackId
 
         let options = command.argument(at: 0) as? [String: Any]
-        let serverUrl = (options?[
-            "serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
 
         guard let viewController = self.viewController else { return }
 
@@ -50,15 +49,15 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
     }
 
     func didReceive(successResponse daonEvent: DaonEvent) {
-        sendEvent(type: "success", message: daonEvent.localizedDescription ?? daonEvent.code.rawValue, keepCallback: true)
+        sendEvent(type: "success", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
     }
 
     func didReceive(failedResponse daonEvent: DaonEvent) {
-        sendEvent(type: "failure", message: daonEvent.localizedDescription ?? daonEvent.code.rawValue, keepCallback: false)
+        sendEvent(type: "failure", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: false)
     }
 
     func didReceive(infoResponse daonEvent: DaonEvent) {
-        sendEvent(type: "info", message: daonEvent.localizedDescription ?? daonEvent.code.rawValue, keepCallback: true)
+        sendEvent(type: "info", message: daonEvent.localizedDescription ?? String(daonEvent.code.rawValue), keepCallback: true)
     }
 
     private func sendEvent(type: String, message: String, keepCallback: Bool) {
