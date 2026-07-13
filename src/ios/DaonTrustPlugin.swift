@@ -14,8 +14,7 @@ class DaonTrustPlugin: CDVPlugin, DaonEventDelegate {
         callbackId = command.callbackId
 
         let options = command.argument(at: 0) as? [String: Any]
-        let serverUrl = (options?["serverUrl"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-
+        let serverUrl = "" // TEMP DEBUG: force QR flow to test bare presentation
         guard let viewController = self.viewController else { return }
         print("DAON DEBUG: viewController = \(viewController), isViewLoaded = \(viewController.isViewLoaded), window = \(String(describing: viewController.view.window))")
         let sdkInstance = TrustSDK(withViewController: viewController, delegate: self)
